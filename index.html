@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>世界遺産マスター - インタラクティブWebクイズ＆図鑑</title>
+  <meta name="description" content="世界の感動的なUNESCO世界遺産を美しい写真やトリビアで楽しく学べるインタラクティブWebクイズゲーム。図鑑機能、音声効果音、ハイスコア対応。" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Sticky Navigation Header -->
+    <header class="header">
+      <div class="header-inner">
+        <a href="#" class="logo" id="logo-home-link">
+          <span class="logo-icon">🏛️</span>
+          <span>世界遺産クイズ</span>
+        </a>
+
+        <nav class="nav-tabs">
+          <button class="nav-btn active" data-view="home">クイズ挑戦</button>
+          <button class="nav-btn" data-view="explorer">世界遺産図鑑</button>
+          <button class="nav-btn" data-view="achievements">実績・ハイスコア</button>
+        </nav>
+
+        <div class="header-controls">
+          <button class="icon-btn" id="audio-toggle-btn" title="効果音のオン/オフ">🔊</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- VIEW 1: HOME / MODE SELECTOR -->
+      <section id="view-home" class="view-section active">
+        <div class="hero">
+          <span class="hero-badge">✨ UNESCO World Heritage Discovery</span>
+          <h1 class="hero-title">世界中の秘境と文化遺産に挑戦しよう</h1>
+          <p class="hero-subtitle">
+            マチュ・ピチュからタージ・マハル、日本の富士山まで。圧倒的ビジュアルとトリビアで学ぶ究極のクイズ体験！
+          </p>
+
+          <div class="mode-grid">
+            <div class="mode-card">
+              <div>
+                <div class="mode-icon">📸</div>
+                <h3 class="mode-title">写真鑑定クイズ</h3>
+                <p class="mode-desc">高画質な遺産カード写真から、正しい世界遺産名を素早く見つけ出そう。</p>
+              </div>
+              <button class="btn btn-primary start-quiz-btn" data-mode="photo">挑戦を開始 ➔</button>
+            </div>
+
+            <div class="mode-card">
+              <div>
+                <div class="mode-icon">🌍</div>
+                <h3 class="mode-title">所在地・国当て</h3>
+                <p class="mode-desc">遺産の名前からそれが位置する国や大陸を当てる地理知識テスト。</p>
+              </div>
+              <button class="btn btn-primary start-quiz-btn" data-mode="country">挑戦を開始 ➔</button>
+            </div>
+
+            <div class="mode-card">
+              <div>
+                <div class="mode-icon">📜</div>
+                <h3 class="mode-title">歴史＆トリビア</h3>
+                <p class="mode-desc">建設エピソードや珍しい豆知識に関するディープな質問に挑戦。</p>
+              </div>
+              <button class="btn btn-primary start-quiz-btn" data-mode="trivia">挑戦を開始 ➔</button>
+            </div>
+
+            <div class="mode-card" style="border-color: rgba(251, 191, 36, 0.4);">
+              <div>
+                <div class="mode-icon">⚡</div>
+                <h3 class="mode-title">スピードラン（全総合）</h3>
+                <p class="mode-desc">1問15秒の制限時間付き！全種類の問題がミックスして出題される高得点モード。</p>
+              </div>
+              <button class="btn btn-gold start-quiz-btn" data-mode="all" data-speedrun="true">スピードラン挑戦 ⚡</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIEW 2: ACTIVE QUIZ -->
+      <section id="view-quiz" class="view-section">
+        <div class="quiz-container">
+          <div class="quiz-header">
+            <div class="quiz-stats">
+              <div class="stat-box">
+                <span class="stat-label">スコア</span>
+                <span class="stat-val" id="quiz-score">0</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-label">問題</span>
+                <span class="stat-val" id="quiz-progress-text">1 / 10</span>
+              </div>
+            </div>
+
+            <div id="streak-container"></div>
+          </div>
+
+          <div class="progress-bar-container">
+            <div class="progress-bar-fill" id="quiz-progress-bar"></div>
+          </div>
+
+          <div class="timer-bar-container" id="timer-bar-wrapper" style="display: none;">
+            <div class="timer-bar-fill" id="quiz-timer-bar"></div>
+          </div>
+
+          <!-- Question Card -->
+          <div class="question-card">
+            <span class="question-tag" id="question-tag">📸 写真鑑定クイズ</span>
+            <h2 class="question-text" id="question-text">質問テキスト</h2>
+
+            <div class="question-media" id="question-media-wrap">
+              <img id="question-image" src="" alt="World Heritage" />
+            </div>
+
+            <div class="options-grid" id="options-container">
+              <!-- Dynamically populated option buttons -->
+            </div>
+
+            <!-- Explanation Callout -->
+            <div class="explanation-box" id="explanation-box">
+              <h4 class="explanation-title">💡 解説・詳細情報</h4>
+              <p class="explanation-text" id="explanation-text"></p>
+            </div>
+          </div>
+
+          <div style="text-align: right; display: none;" id="next-btn-wrap">
+            <button class="btn btn-primary" id="next-question-btn">次の問題へ ➔</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIEW 3: RESULTS -->
+      <section id="view-results" class="view-section">
+        <div class="results-card">
+          <div class="results-badge-icon" id="results-badge-icon">🏆</div>
+          <h2 id="results-title" style="font-size: 2rem; margin-bottom: 0.5rem;">クイズ完了！</h2>
+          <p id="results-rank-name" style="font-size: 1.2rem; color: var(--accent-gold); font-weight: 700; margin-bottom: 1.5rem;">世界遺産マスター</p>
+
+          <div class="results-score-display" id="results-score-val">1,250</div>
+
+          <div class="results-grid">
+            <div>
+              <span class="stat-label">正解数</span>
+              <div style="font-size: 1.4rem; font-weight: 700;" id="results-accuracy">8 / 10</div>
+            </div>
+            <div>
+              <span class="stat-label">最大コンボ</span>
+              <div style="font-size: 1.4rem; font-weight: 700; color: #fca5a5;" id="results-max-streak">🔥 5</div>
+            </div>
+            <div>
+              <span class="stat-label">正答率</span>
+              <div style="font-size: 1.4rem; font-weight: 700; color: var(--accent-emerald);" id="results-percentage">80%</div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem;">
+            <button class="btn btn-primary" id="retry-quiz-btn">もう一度挑戦 🔄</button>
+            <button class="btn btn-outline" id="go-explorer-btn">図鑑を見る 📖</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIEW 4: UNESCO EXPLORER -->
+      <section id="view-explorer" class="view-section">
+        <div style="margin-bottom: 2rem; text-align: center;">
+          <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">世界遺産デジタル図鑑</h2>
+          <p style="color: var(--text-secondary);">UNESCOに登録された世界の文化・自然・複合遺産を探索・学習できます。</p>
+        </div>
+
+        <div class="explorer-controls">
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="explorer-search-input" class="search-input" placeholder="遺産名、国名、地域名で検索..." />
+          </div>
+
+          <div class="filter-tags">
+            <button class="filter-btn active" data-cat="all">すべて</button>
+            <button class="filter-btn" data-cat="cultural">文化遺産</button>
+            <button class="filter-btn" data-cat="natural">自然遺産</button>
+            <button class="filter-btn" data-cat="mixed">複合遺産</button>
+          </div>
+        </div>
+
+        <div class="sites-grid" id="sites-grid-container">
+          <!-- Dynamically populated site cards -->
+        </div>
+      </section>
+
+      <!-- VIEW 5: ACHIEVEMENTS & HIGH SCORES -->
+      <section id="view-achievements" class="view-section">
+        <div style="margin-bottom: 2rem; text-align: center;">
+          <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">実績 & ハイスコア</h2>
+          <p style="color: var(--text-secondary);">あなたのクイズ挑戦記録と獲得したアチーブメント一覧です。</p>
+        </div>
+
+        <div class="results-card" style="margin-bottom: 2.5rem; max-width: 100%;">
+          <h3 style="margin-bottom: 1rem; font-size: 1.3rem;">最高スコア記録</h3>
+          <div style="font-size: 3rem; font-weight: 800; color: var(--accent-gold);" id="high-score-val">0</div>
+        </div>
+
+        <h3 style="margin-bottom: 1rem; font-size: 1.3rem;">獲得アチーブメント</h3>
+        <div class="achievements-grid" id="achievements-grid-container">
+          <!-- Dynamically populated achievements -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal Dialog for Heritage Details -->
+    <div class="modal-overlay" id="site-modal-overlay">
+      <div class="modal-container">
+        <button class="modal-close-btn" id="modal-close-btn">&times;</button>
+        <div class="modal-content-area">
+          <!-- Dynamically populated details -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2026 World Heritage Quiz & Explorer. Created with UNESCO Data & AI Visuals.</p>
+    </footer>
+  </div>
+
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
