@@ -1091,3 +1091,187 @@ button, .option-btn, .nav-btn, .mode-card, .site-card {
   }
 }
 
+/* ==========================================================================
+   1273 Text-Based Heritage Card & Filter Extensions
+   ========================================================================== */
+
+/* Hero Banner Background */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.65) contrast(1.1);
+  z-index: 0;
+  transition: transform 10s ease;
+}
+
+.hero:hover .hero-bg-banner {
+  transform: scale(1.03);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Filter Controls Extension */
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.filter-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  min-width: 80px;
+}
+
+.filter-btn-reg {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.82rem;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-glass);
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+}
+
+.filter-btn-reg.active, .filter-btn-reg:hover {
+  background: rgba(99, 102, 241, 0.2);
+  border-color: var(--accent-indigo);
+  color: var(--text-primary);
+}
+
+.explorer-results-count {
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.load-more-wrap {
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Text-based Heritage Card Design */
+.site-card-text {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-glass);
+  overflow: hidden;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.site-card-text:hover {
+  transform: translateY(-5px);
+  border-color: var(--border-glass-active);
+  box-shadow: var(--shadow-card);
+}
+
+.site-card-header-gradient {
+  padding: 1.25rem 1.25rem 1rem;
+  position: relative;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.95));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.site-card-cultural .site-card-header-gradient {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.25) 0%, rgba(15, 23, 42, 0.95) 100%);
+}
+
+.site-card-natural .site-card-header-gradient {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.25) 0%, rgba(15, 23, 42, 0.95) 100%);
+}
+
+.site-card-mixed .site-card-header-gradient {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.25) 0%, rgba(15, 23, 42, 0.95) 100%);
+}
+
+.site-card-top-tags {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.region-badge {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-secondary);
+}
+
+.site-card-header-gradient .site-title {
+  font-size: 1.15rem;
+  line-height: 1.4;
+  margin-bottom: 0.2rem;
+  color: var(--text-primary);
+}
+
+.site-title-en {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Modal Text Header */
+.modal-header-text-wrap {
+  padding: 2rem 1.5rem 1.5rem;
+  background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
+  border-bottom: 1px solid var(--border-glass);
+}
+
+.modal-header-cultural {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.4) 0%, #0f172a 100%);
+}
+
+.modal-header-natural {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.4) 0%, #0f172a 100%);
+}
+
+.modal-header-mixed {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.4) 0%, #0f172a 100%);
+}
+
+.modal-top-meta {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.question-meta-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.question-site-region {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+}
+
+

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>世界遺産マスター - インタラクティブWebクイズ＆図鑑</title>
-  <meta name="description" content="世界の感動的なUNESCO世界遺産を美しい写真やトリビアで楽しく学べるインタラクティブWebクイズゲーム。図鑑機能、音声効果音、ハイスコア対応。" />
+  <title>世界遺産マスター - 1273件のUNESCO世界遺産 Webクイズ＆デジタル図鑑</title>
+  <meta name="description" content="実在する全1273件のUNESCO世界遺産を網羅！国当て、登録年、遺産当てクイズや、地域・カテゴリ別高速検索が可能な完全テキストベースのデジタル百科事典。" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,12 +20,12 @@
       <div class="header-inner">
         <a href="#" class="logo" id="logo-home-link">
           <span class="logo-icon">🏛️</span>
-          <span>世界遺産クイズ</span>
+          <span>世界遺産マスター 1273</span>
         </a>
 
         <nav class="nav-tabs">
           <button class="nav-btn active" data-view="home">クイズ挑戦</button>
-          <button class="nav-btn" data-view="explorer">世界遺産図鑑</button>
+          <button class="nav-btn" data-view="explorer">1273遺産図鑑</button>
           <button class="nav-btn" data-view="achievements">実績・ハイスコア</button>
         </nav>
 
@@ -40,47 +40,59 @@
       <!-- VIEW 1: HOME / MODE SELECTOR -->
       <section id="view-home" class="view-section active">
         <div class="hero">
-          <span class="hero-badge">✨ UNESCO World Heritage Discovery</span>
-          <h1 class="hero-title">世界中の秘境と文化遺産に挑戦しよう</h1>
-          <p class="hero-subtitle">
-            マチュ・ピチュからタージ・マハル、日本の富士山まで。圧倒的ビジュアルとトリビアで学ぶ究極のクイズ体験！
-          </p>
+          <div class="hero-bg-banner" style="background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.95)), url('./images/hero_banner.jpg');"></div>
+          <div class="hero-content">
+            <span class="hero-badge">✨ UNESCO 1273 全世界遺産データベース</span>
+            <h1 class="hero-title">地球上の1,273件の世界遺産をマスターしよう</h1>
+            <p class="hero-subtitle">
+              文化遺産、自然遺産、複合遺産まで。実在するすべての世界遺産から出題される本格テキストクイズ＆デジタル図鑑！
+            </p>
 
-          <div class="mode-grid">
-            <div class="mode-card">
-              <div>
-                <div class="mode-icon">📸</div>
-                <h3 class="mode-title">写真鑑定クイズ</h3>
-                <p class="mode-desc">高画質な遺産カード写真から、正しい世界遺産名を素早く見つけ出そう。</p>
+            <div class="mode-grid">
+              <div class="mode-card">
+                <div>
+                  <div class="mode-icon">📘</div>
+                  <h3 class="mode-title">基礎知識・制度クイズ</h3>
+                  <p class="mode-desc">世界遺産条約やユネスコの仕組み、日本の遺産史など基本知識を学ぶ初心者・検定向けテスト。</p>
+                </div>
+                <button class="btn btn-primary start-quiz-btn" data-mode="basic">挑戦を開始 ➔</button>
               </div>
-              <button class="btn btn-primary start-quiz-btn" data-mode="photo">挑戦を開始 ➔</button>
-            </div>
 
-            <div class="mode-card">
-              <div>
-                <div class="mode-icon">🌍</div>
-                <h3 class="mode-title">所在地・国当て</h3>
-                <p class="mode-desc">遺産の名前からそれが位置する国や大陸を当てる地理知識テスト。</p>
+              <div class="mode-card">
+                <div>
+                  <div class="mode-icon">🌍</div>
+                  <h3 class="mode-title">所在地・国当て</h3>
+                  <p class="mode-desc">世界遺産の名称から、それが位置する国や地域を当てる地理テスト。</p>
+                </div>
+                <button class="btn btn-primary start-quiz-btn" data-mode="country">挑戦を開始 ➔</button>
               </div>
-              <button class="btn btn-primary start-quiz-btn" data-mode="country">挑戦を開始 ➔</button>
-            </div>
 
-            <div class="mode-card">
-              <div>
-                <div class="mode-icon">📜</div>
-                <h3 class="mode-title">歴史＆トリビア</h3>
-                <p class="mode-desc">建設エピソードや珍しい豆知識に関するディープな質問に挑戦。</p>
+              <div class="mode-card">
+                <div>
+                  <div class="mode-icon">🏛️</div>
+                  <h3 class="mode-title">遺産当て・説明クイズ</h3>
+                  <p class="mode-desc">国名や特徴・解説文から正しい世界遺産名を導き出すプロフェッショナル問題。</p>
+                </div>
+                <button class="btn btn-primary start-quiz-btn" data-mode="description">挑戦を開始 ➔</button>
               </div>
-              <button class="btn btn-primary start-quiz-btn" data-mode="trivia">挑戦を開始 ➔</button>
-            </div>
 
-            <div class="mode-card" style="border-color: rgba(251, 191, 36, 0.4);">
-              <div>
-                <div class="mode-icon">⚡</div>
-                <h3 class="mode-title">スピードラン（全総合）</h3>
-                <p class="mode-desc">1問15秒の制限時間付き！全種類の問題がミックスして出題される高得点モード。</p>
+              <div class="mode-card">
+                <div>
+                  <div class="mode-icon">📅</div>
+                  <h3 class="mode-title">登録年クイズ</h3>
+                  <p class="mode-desc">遺産がUNESCO世界遺産に登録された年代を推測する歴史年代テスト。</p>
+                </div>
+                <button class="btn btn-primary start-quiz-btn" data-mode="year">挑戦を開始 ➔</button>
               </div>
-              <button class="btn btn-gold start-quiz-btn" data-mode="all" data-speedrun="true">スピードラン挑戦 ⚡</button>
+
+              <div class="mode-card" style="border-color: rgba(251, 191, 36, 0.4);">
+                <div>
+                  <div class="mode-icon">⚡</div>
+                  <h3 class="mode-title">スピードラン（全ミックス）</h3>
+                  <p class="mode-desc">1問15秒制限！基礎知識から全世界遺産まで全ジャンルがミックス出題される高得点モード。</p>
+                </div>
+                <button class="btn btn-gold start-quiz-btn" data-mode="all" data-speedrun="true">スピードラン挑戦 ⚡</button>
+              </div>
             </div>
           </div>
         </div>
@@ -114,12 +126,12 @@
 
           <!-- Question Card -->
           <div class="question-card">
-            <span class="question-tag" id="question-tag">📸 写真鑑定クイズ</span>
-            <h2 class="question-text" id="question-text">質問テキスト</h2>
-
-            <div class="question-media" id="question-media-wrap">
-              <img id="question-image" src="" alt="World Heritage" />
+            <div class="question-meta-bar" id="question-meta-bar">
+              <span class="question-tag" id="question-tag">🌍 所在地クイズ</span>
+              <span class="question-site-region" id="question-site-region">📍 アジア</span>
             </div>
+
+            <h2 class="question-text" id="question-text">質問テキスト</h2>
 
             <div class="options-grid" id="options-container">
               <!-- Dynamically populated option buttons -->
@@ -164,7 +176,7 @@
 
           <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem;">
             <button class="btn btn-primary" id="retry-quiz-btn">もう一度挑戦 🔄</button>
-            <button class="btn btn-outline" id="go-explorer-btn">図鑑を見る 📖</button>
+            <button class="btn btn-outline" id="go-explorer-btn">1273遺産図鑑を見る 📖</button>
           </div>
         </div>
       </section>
@@ -172,25 +184,41 @@
       <!-- VIEW 4: UNESCO EXPLORER -->
       <section id="view-explorer" class="view-section">
         <div style="margin-bottom: 2rem; text-align: center;">
-          <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">世界遺産デジタル図鑑</h2>
-          <p style="color: var(--text-secondary);">UNESCOに登録された世界の文化・自然・複合遺産を探索・学習できます。</p>
+          <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">1273世界遺産 デジタル図鑑</h2>
+          <p style="color: var(--text-secondary);">UNESCOに登録されている全1,273件の遺産を高速検索・フィルタリング。</p>
         </div>
 
         <div class="explorer-controls">
           <div class="search-box">
             <span class="search-icon">🔍</span>
-            <input type="text" id="explorer-search-input" class="search-input" placeholder="遺産名、国名、地域名で検索..." />
+            <input type="text" id="explorer-search-input" class="search-input" placeholder="遺産名、国名、英語名、登録年でリアルタイム検索..." />
           </div>
 
-          <div class="filter-tags">
-            <button class="filter-btn active" data-cat="all">すべて</button>
-            <button class="filter-btn" data-cat="cultural">文化遺産</button>
-            <button class="filter-btn" data-cat="natural">自然遺産</button>
-            <button class="filter-btn" data-cat="mixed">複合遺産</button>
+          <div class="filter-group">
+            <div class="filter-label">遺産種別:</div>
+            <div class="filter-tags" id="cat-filter-tags">
+              <button class="filter-btn active" data-cat="all">すべて</button>
+              <button class="filter-btn" data-cat="cultural">🏛️ 文化遺産</button>
+              <button class="filter-btn" data-cat="natural">🌿 自然遺産</button>
+              <button class="filter-btn" data-cat="mixed">🌋 複合遺産</button>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-label">地域区分:</div>
+            <div class="filter-tags" id="reg-filter-tags">
+              <button class="filter-btn-reg active" data-reg="all">全地域</button>
+              <button class="filter-btn-reg" data-reg="アジア">アジア</button>
+              <button class="filter-btn-reg" data-reg="ヨーロッパ">ヨーロッパ</button>
+              <button class="filter-btn-reg" data-reg="北アメリカ">北アメリカ</button>
+              <button class="filter-btn-reg" data-reg="南アメリカ">南アメリカ</button>
+              <button class="filter-btn-reg" data-reg="アフリカ">アフリカ</button>
+              <button class="filter-btn-reg" data-reg="オセアニア">オセアニア</button>
+            </div>
           </div>
         </div>
 
-        <div class="sites-grid" id="sites-grid-container">
+        <div id="sites-grid-container">
           <!-- Dynamically populated site cards -->
         </div>
       </section>
@@ -226,7 +254,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <p>© 2026 World Heritage Quiz & Explorer. Created with UNESCO Data & AI Visuals.</p>
+      <p>© 2026 cuio.net  Created with UNESCO Data (1,273 Sites).</p>
     </footer>
   </div>
 

@@ -5,25 +5,17 @@ export class ExplorerModule {
     this.container = containerEl;
     this.modal = modalEl;
     this.currentCategory = 'all';
+    this.currentRegion = 'all';
     this.searchQuery = '';
+    this.pageSize = 40;
+    this.displayedCount = 40;
     this.viewedSites = new Set();
   }
 
   render() {
     if (!this.container) return;
 
-    const filtered = SITES_DATA.filter(site => {
-      const matchesCat = this.currentCategory === 'all' || site.category === this.currentCategory;
-      const query = this.searchQuery.toLowerCase().trim();
-      const matchesSearch = !query || 
-        site.name.toLowerCase().includes(query) ||
-        site.nameEn.toLowerCase().includes(query) ||
-        site.country.toLowerCase().includes(query) ||
-        site.countryEn.toLowerCase().includes(query) ||
-        site.region.toLowerCase().includes(query);
-      
-      return matchesCat && matchesSearch;
-    });
+    const filtered = this.getFilteredSites();
 
     if (filtered.length === 0) {
       this.container.innerHTML = `
@@ -35,40 +27,103 @@ export class ExplorerModule {
       return;
     }
 
-    this.container.innerHTML = filtered.map(site => `
-      <div class="site-card" data-id="${site.id}">
-        <div class="site-card-image-wrap">
-          <img src="${site.image}" alt="${site.name}" loading="lazy" class="site-card-img" />
-          <span class="badge badge-${site.category}">${site.categoryJa}</span>
-        </div>
-        <div class="site-card-body">
-          <div class="site-card-meta">
-            <span class="site-country">📍 ${site.country}</span>
-            <span class="site-year">📜 ${site.yearInscribed}年登録</span>
+    const itemsToDisplay = filtered.slice(0, this.displayedCount);
+
+    const cardsHtml = itemsToDisplay.map(site => {
+      const categoryIcon = site.category === 'natural' ? '🌿' : site.category === 'mixed' ? '🌋' : '🏛️';
+      
+      return `
+        <div class="site-card site-card-text site-card-${site.category}" data-id="${site.id}">
+          <div class="site-card-header-gradient">
+            <div class="site-card-top-tags">
+              <span class="badge badge-${site.category}">${categoryIcon} ${site.categoryJa}</span>
+              <span class="region-badge">📍 ${site.region}</span>
+            </div>
+            <h3 class="site-title">${site.name}</h3>
+            <p class="site-title-en">${site.nameEn}</p>
           </div>
-          <h3 class="site-title">${site.name}</h3>
-          <p class="site-desc">${site.description.substring(0, 75)}...</p>
-          <button class="btn btn-outline btn-sm view-detail-btn" data-id="${site.id}">詳細を見る ➔</button>
+          <div class="site-card-body">
+            <div class="site-card-meta">
+              <span class="site-country">🏳️ ${site.country}</span>
+              <span class="site-year">📜 ${site.yearInscribed}年登録</span>
+            </div>
+            <p class="site-desc">${site.description.substring(0, 80)}${site.description.length > 80 ? '...' : ''}</p>
+            <button class="btn btn-outline btn-sm view-detail-btn" data-id="${site.id}">詳細を見る ➔</button>
+          </div>
         </div>
+      `;
+    }).join('');
+
+    let loadMoreHtml = '';
+    if (this.displayedCount < filtered.length) {
+      const remaining = filtered.length - this.displayedCount;
+      loadMoreHtml = `
+        <div class="load-more-wrap">
+          <button id="load-more-btn" class="btn btn-secondary">
+            さらに表示する（残り ${remaining} 件 / 全 ${filtered.length} 件）
+          </button>
+        </div>
+      `;
+    }
+
+    const countSummaryHtml = `
+      <div class="explorer-results-count">
+        検索結果: <strong>${filtered.length}</strong> 件の世界遺産
       </div>
-    `).join('');
+    `;
+
+    this.container.innerHTML = countSummaryHtml + `<div class="sites-grid">${cardsHtml}</div>` + loadMoreHtml;
 
     // Attach click handlers
     this.container.querySelectorAll('.site-card, .view-detail-btn').forEach(el => {
       el.addEventListener('click', (e) => {
+        // Prevent trigger twice if button inside card clicked
         const id = el.getAttribute('data-id');
         this.openModal(id);
       });
+    });
+
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', () => {
+        this.displayedCount += this.pageSize;
+        this.render();
+      });
+    }
+  }
+
+  getFilteredSites() {
+    return SITES_DATA.filter(site => {
+      const matchesCat = this.currentCategory === 'all' || site.category === this.currentCategory;
+      const matchesReg = this.currentRegion === 'all' || site.region === this.currentRegion;
+      const query = this.searchQuery.toLowerCase().trim();
+      const matchesSearch = !query || 
+        site.name.toLowerCase().includes(query) ||
+        site.nameEn.toLowerCase().includes(query) ||
+        site.country.toLowerCase().includes(query) ||
+        site.countryEn.toLowerCase().includes(query) ||
+        site.region.toLowerCase().includes(query) ||
+        String(site.yearInscribed).includes(query);
+      
+      return matchesCat && matchesReg && matchesSearch;
     });
   }
 
   setCategory(cat) {
     this.currentCategory = cat;
+    this.displayedCount = this.pageSize;
+    this.render();
+  }
+
+  setRegion(reg) {
+    this.currentRegion = reg;
+    this.displayedCount = this.pageSize;
     this.render();
   }
 
   setSearch(query) {
     this.searchQuery = query;
+    this.displayedCount = this.pageSize;
     this.render();
   }
 
@@ -79,42 +134,37 @@ export class ExplorerModule {
     this.viewedSites.add(siteId);
     this.checkAchievements();
 
-    const categoryBadgeClass = `badge-${site.category}`;
+    const categoryIcon = site.category === 'natural' ? '🌿' : site.category === 'mixed' ? '🌋' : '🏛️';
 
     this.modal.querySelector('.modal-content-area').innerHTML = `
       <div class="site-detail-modal">
-        <div class="modal-header-img-wrap">
-          <img src="${site.image}" alt="${site.name}" class="modal-header-img" />
-          <div class="modal-header-overlay">
-            <span class="badge ${categoryBadgeClass}">${site.categoryJa}</span>
-            <h2>${site.name}</h2>
-            <p class="en-title">${site.nameEn}</p>
+        <div class="modal-header-text-wrap modal-header-${site.category}">
+          <div class="modal-top-meta">
+            <span class="badge badge-${site.category}">${categoryIcon} ${site.categoryJa}</span>
+            <span class="region-badge">📍 ${site.region}</span>
           </div>
+          <h2>${site.name}</h2>
+          <p class="en-title">${site.nameEn}</p>
         </div>
         <div class="modal-body-content">
           <div class="detail-grid">
             <div class="detail-item">
-              <span class="detail-label">国・地域</span>
-              <span class="detail-val">📍 ${site.country} (${site.region})</span>
+              <span class="detail-label">所在国</span>
+              <span class="detail-val">🏳️ ${site.country} (${site.countryEn})</span>
             </div>
             <div class="detail-item">
               <span class="detail-label">登録年</span>
               <span class="detail-val">🏛️ ${site.yearInscribed}年</span>
             </div>
             <div class="detail-item">
-              <span class="detail-label">地理座標</span>
-              <span class="detail-val">🗺️ ${site.coordinates}</span>
+              <span class="detail-label">地域区分</span>
+              <span class="detail-val">🗺️ ${site.region}</span>
             </div>
           </div>
 
           <div class="detail-section">
-            <h3>📖 概要</h3>
+            <h3>📖 遺産概要</h3>
             <p>${site.description}</p>
-          </div>
-
-          <div class="detail-section fun-fact-box">
-            <h3>💡 豆知識 / トリビア</h3>
-            <p>${site.funFact}</p>
           </div>
         </div>
       </div>

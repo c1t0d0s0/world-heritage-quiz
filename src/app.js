@@ -34,9 +34,8 @@ class App {
     this.timerBarEl = document.getElementById('quiz-timer-bar');
 
     this.questionTag = document.getElementById('question-tag');
+    this.questionSiteRegion = document.getElementById('question-site-region');
     this.questionText = document.getElementById('question-text');
-    this.questionMediaWrap = document.getElementById('question-media-wrap');
-    this.questionImage = document.getElementById('question-image');
     this.optionsContainer = document.getElementById('options-container');
 
     this.explanationBox = document.getElementById('explanation-box');
@@ -61,7 +60,8 @@ class App {
 
     // Explorer Search/Filter
     this.explorerSearchInput = document.getElementById('explorer-search-input');
-    this.explorerFilterBtns = document.querySelectorAll('.filter-btn');
+    this.catFilterBtns = document.querySelectorAll('#cat-filter-tags .filter-btn');
+    this.regFilterBtns = document.querySelectorAll('#reg-filter-tags .filter-btn-reg');
 
     // Achievements UI
     this.highScoreVal = document.getElementById('high-score-val');
@@ -156,13 +156,24 @@ class App {
       });
     }
 
-    // Explorer Filters
-    this.explorerFilterBtns.forEach(btn => {
+    // Explorer Category Filters
+    this.catFilterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
-        this.explorerFilterBtns.forEach(b => b.classList.remove('active'));
+        this.catFilterBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         const cat = btn.getAttribute('data-cat');
         this.explorer.setCategory(cat);
+        audio.playClick();
+      });
+    });
+
+    // Explorer Region Filters
+    this.regFilterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        this.regFilterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const reg = btn.getAttribute('data-reg');
+        this.explorer.setRegion(reg);
         audio.playClick();
       });
     });
@@ -211,9 +222,10 @@ class App {
 
     // Question content
     this.questionTag.textContent = q.title;
+    if (this.questionSiteRegion && q.site) {
+      this.questionSiteRegion.textContent = `📍 ${q.site.region} / ${q.site.categoryJa}`;
+    }
     this.questionText.textContent = q.question;
-    this.questionImage.src = q.image;
-    this.questionMediaWrap.style.display = q.image ? 'block' : 'none';
 
     // Hide explanation & next button initially
     this.explanationBox.classList.remove('active');
@@ -228,7 +240,7 @@ class App {
     `).join('');
 
     this.optionsContainer.querySelectorAll('.option-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
+      btn.addEventListener('click', () => {
         const idx = parseInt(btn.getAttribute('data-index'), 10);
         this.handleAnswer(idx);
       });
@@ -253,91 +265,91 @@ class App {
   }
 
   handleAnswer(selectedIndex) {
+    const res = this.quiz.answerCurrentQuestion(selectedIndex);
+    if (!res) return;
+
+    // Disable option buttons
     const buttons = this.optionsContainer.querySelectorAll('.option-btn');
-    buttons.forEach(btn => btn.disabled = true);
-
-    const result = this.quiz.answerCurrentQuestion(selectedIndex);
-    if (!result) return;
-
-    // Highlight correct & selected buttons
     buttons.forEach((btn, idx) => {
-      if (idx === result.question.correctIndex) {
+      btn.disabled = true;
+      if (idx === res.correctIndex) {
         btn.classList.add('correct');
       } else if (idx === selectedIndex) {
         btn.classList.add('wrong');
       }
     });
 
-    // Audio feedback
-    if (result.isCorrect) {
-      if (result.currentStreak >= 5) {
-        audio.playCombo();
+    // Play Sound & Effects
+    if (res.isCorrect) {
+      audio.playCorrect();
+      if (res.streak >= 3) {
+        confetti({
+          particleCount: 50,
+          spread: 60,
+          origin: { y: 0.8 }
+        });
+      }
+      if (res.streak >= 5) {
         this.checkAchievement('streak_5');
-      } else {
-        audio.playCorrect();
       }
     } else {
       audio.playWrong();
     }
 
-    // Update score display immediately
-    this.scoreEl.textContent = this.quiz.score;
+    // Update Score UI
+    this.scoreEl.textContent = res.totalScore;
+    if (res.streak > 1) {
+      this.streakContainer.innerHTML = `<span class="streak-badge">🔥 ${res.streak} コンボ (+${res.pointsEarned}pt)</span>`;
+    }
 
-    // Show explanation
-    this.explanationText.textContent = result.question.explanation;
+    // Show Explanation
+    this.explanationText.textContent = res.explanation;
     this.explanationBox.classList.add('active');
-
-    // Show Next button
     this.nextBtnWrap.style.display = 'block';
   }
 
   advanceQuiz() {
-    if (this.quiz.isFinished()) {
-      this.showResults();
+    const nextQ = this.quiz.nextQuestion();
+    if (nextQ) {
+      this.renderQuestion(nextQ);
     } else {
-      const q = this.quiz.nextQuestion();
-      if (q) {
-        this.renderQuestion(q);
-      } else {
-        this.showResults();
-      }
+      this.showResults();
     }
   }
 
   showResults() {
-    this.switchView('results');
     const summary = this.quiz.getSummary();
 
-    this.resultsBadgeIcon.textContent = summary.rankBadge;
-    this.resultsTitle.textContent = summary.accuracy === 100 ? '全問正解！素晴らしい！' : 'クイズ完了！';
+    this.resultsBadgeIcon.textContent = summary.badge;
     this.resultsRankName.textContent = summary.rank;
     this.resultsScoreVal.textContent = summary.score.toLocaleString();
     this.resultsAccuracy.textContent = `${summary.correctCount} / ${summary.totalQuestions}`;
     this.resultsMaxStreak.textContent = `🔥 ${summary.maxStreak}`;
     this.resultsPercentage.textContent = `${summary.accuracy}%`;
 
-    // Confetti celebration if score > 70%
-    if (summary.accuracy >= 70) {
-      confetti({
-        particleCount: 100,
-        spread: 70,
-        origin: { y: 0.6 }
-      });
-      audio.playFanfare();
+    this.switchView('results');
+
+    // Update High Score
+    const currentHighScore = parseInt(localStorage.getItem('whq_highscore') || '0', 10);
+    if (summary.score > currentHighScore) {
+      localStorage.setItem('whq_highscore', summary.score.toString());
     }
 
     // Achievements check
     if (summary.accuracy === 100) {
       this.checkAchievement('perfect_score');
     }
-    if (summary.speedrun) {
-      this.checkAchievement('speedrun_clear');
+    if (this.lastSpeedrun) {
+      this.checkAchievement('speedrunner');
     }
 
-    // Save High Score
-    const savedHighScore = parseInt(localStorage.getItem('whq_high_score') || '0', 10);
-    if (summary.score > savedHighScore) {
-      localStorage.setItem('whq_high_score', summary.score.toString());
+    // Big confetti celebrate
+    if (summary.accuracy >= 70) {
+      confetti({
+        particleCount: 120,
+        spread: 90,
+        origin: { y: 0.6 }
+      });
     }
   }
 
@@ -350,21 +362,23 @@ class App {
   }
 
   updateAchievementsView() {
-    const savedHighScore = parseInt(localStorage.getItem('whq_high_score') || '0', 10);
+    const highScore = localStorage.getItem('whq_highscore') || '0';
     if (this.highScoreVal) {
-      this.highScoreVal.textContent = savedHighScore.toLocaleString();
+      this.highScoreVal.textContent = parseInt(highScore, 10).toLocaleString();
     }
 
     const unlocked = JSON.parse(localStorage.getItem('whq_achievements') || '[]');
+
     if (this.achievementsGrid) {
       this.achievementsGrid.innerHTML = ACHIEVEMENTS.map(ach => {
         const isUnlocked = unlocked.includes(ach.id);
         return `
-          <div class="achievement-card ${isUnlocked ? 'unlocked' : ''}">
-            <div class="achievement-icon">${ach.icon}</div>
-            <div>
-              <h4 style="font-size: 1rem; margin-bottom: 0.2rem;">${ach.name}</h4>
-              <p style="font-size: 0.82rem; color: var(--text-secondary);">${ach.desc}</p>
+          <div class="achievement-card ${isUnlocked ? 'unlocked' : 'locked'}">
+            <span class="achievement-icon">${ach.icon}</span>
+            <div class="achievement-info">
+              <h4>${ach.name}</h4>
+              <p>${ach.desc}</p>
+              <span class="achievement-status">${isUnlocked ? '✅ 達成済み' : '🔒 未開放'}</span>
             </div>
           </div>
         `;
@@ -373,7 +387,7 @@ class App {
   }
 }
 
-// Initialize application on DOM ready
+// Initialize on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
-  window.app = new App();
+  new App();
 });
