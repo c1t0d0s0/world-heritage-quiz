@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 // Region classifier based on country
 const REGION_LOOKUP = {
   // Asia
-  '日本': 'アジア', '中国': 'アジア', '大韓民国': 'アジア', '韓国': 'アジア', 'インド': 'アジア', 'インドネシア': 'アジア',
+  '日本': 'アジア', '中国': 'アジア', '中華人民共和国': 'アジア', '大韓民国': 'アジア', '韓国': 'アジア', 'インド': 'アジア', 'インドネシア': 'アジア',
   'ベトナム': 'アジア', 'タイ': 'アジア', 'カンボジア': 'アジア', 'フィリピン': 'アジア', 'マレーシア': 'アジア',
   'スリランカ': 'アジア', 'ネパール': 'アジア', 'モンゴル': 'アジア', 'ミャンマー': 'アジア', 'ラオス': 'アジア',
   'パキスタン': 'アジア', 'バングラデシュ': 'アジア', 'シンガポール': 'アジア', 'ウズベキスタン': 'アジア',
@@ -38,6 +38,33 @@ const REGION_LOOKUP = {
   'バヌアツ': 'オセアニア', 'フィジー': 'オセアニア', 'パラオ': 'オセアニア', 'ミクロネシア連邦': 'オセアニア'
 };
 
+// Known Japan Sites Exact Classification Override
+const JAPAN_SITES_CATEGORY = {
+  '屋久島': 'natural',
+  '白神山地': 'natural',
+  '知床': 'natural',
+  '小笠原諸島': 'natural',
+  '奄美大島、徳之島、沖縄島北部及び西表島': 'natural'
+};
+
+// Known Famous Mixed Sites Exact Override
+const FAMOUS_MIXED_SITES = [
+  'マチュ・ピチュの歴史保護区', 'マチュ・ピチュ', 'マチュピチュ', 'テウアカン・クイカトラン',
+  'タッシリ・ナッジェール', 'ウルル＝カタ・ジュタ国立公園', 'ウルル', 'トンガリロ国立公園',
+  'ンゴロンゴロ保全地域', 'メテオラ', 'アトス山', 'ラプラランドの地域'
+];
+
+// Natural Keywords
+const NATURAL_KEYWORDS = [
+  '屋久島', '白神', '知床', '小笠原', '奄美', '西表', 'ガラパゴス', 'イエローストーン',
+  'グランド・キャニオン', 'グレート・バリア', 'ヨセミテ', 'キリマンジャロ', 'セレンゲティ',
+  'カカドゥ', 'スモーキー', 'エバーグレーズ', 'フィヨルド', '湿原', '国立公園', '保護区',
+  '自然保護区', 'サンクチュアリ', '生物圏', '山地', '山脈', '火山', '島', '諸島', '環礁',
+  'デルタ', '峡谷', '滝', '洞窟', '海', '海洋', '森林', '原生林', '自然遺産',
+  'national park', 'nature', 'natural', 'sanctuary', 'reserve', 'wilderness',
+  'volcano', 'reef', 'atoll', 'canyon', 'fjord', 'forest', 'island', 'lake', 'river'
+];
+
 function getRegion(country, countryEn) {
   if (REGION_LOOKUP[country]) return REGION_LOOKUP[country];
   if (!countryEn) return 'その他';
@@ -53,8 +80,38 @@ function getRegion(country, countryEn) {
   return 'その他';
 }
 
+function determineCategory(name, nameEn, description, categoryQid) {
+  const combined = (name + ' ' + (nameEn || '') + ' ' + (description || '')).toLowerCase();
+
+  // Check Japan override
+  for (const [jKey, cat] of Object.entries(JAPAN_SITES_CATEGORY)) {
+    if (name.includes(jKey)) return cat;
+  }
+
+  // Check Mixed override
+  for (const mKey of FAMOUS_MIXED_SITES) {
+    if (name.includes(mKey)) return 'mixed';
+  }
+
+  // Check QID from Wikidata
+  if (categoryQid) {
+    if (categoryQid.includes('Q208044')) return 'natural'; // Natural World Heritage
+    if (categoryQid.includes('Q1230485')) return 'mixed';  // Mixed World Heritage
+    if (categoryQid.includes('Q9259')) return 'cultural';  // Cultural World Heritage
+  }
+
+  // Check Natural Keywords
+  for (const kw of NATURAL_KEYWORDS) {
+    if (combined.includes(kw.toLowerCase())) {
+      return 'natural';
+    }
+  }
+
+  return 'cultural';
+}
+
 async function fetchFullDataset() {
-  console.log('Querying Wikidata SPARQL for complete World Heritage Dataset...');
+  console.log('Querying Wikidata SPARQL for complete World Heritage Dataset (with category QID)...');
   
   const sparqlQuery = `
     SELECT DISTINCT ?site ?unescoId ?nameJa ?nameEn ?countryJa ?countryEn ?descriptionJa ?year ?categoryQid WHERE {
@@ -72,6 +129,9 @@ async function fetchFullDataset() {
       }
       OPTIONAL {
         ?site wdt:P571 ?date. BIND(YEAR(?date) AS ?year)
+      }
+      OPTIONAL {
+        ?site wdt:P2614 ?categoryQid.
       }
     }
   `;
@@ -101,9 +161,9 @@ async function fetchFullDataset() {
       const countryJa = b.countryJa ? b.countryJa.value : null;
       const countryEn = b.countryEn ? b.countryEn.value : null;
       const descriptionJa = b.descriptionJa ? b.descriptionJa.value : null;
+      const categoryQidVal = b.categoryQid ? b.categoryQid.value : null;
       let year = b.year ? parseInt(b.year.value, 10) : null;
 
-      // Filter invalid items (must have at least a Japanese name or English name, and not be pure duplicate Wikidata items)
       if (!nameJa && !nameEn) continue;
       
       const key = unescoId ? `unesco_${unescoId}` : qid;
@@ -114,22 +174,9 @@ async function fetchFullDataset() {
         const primaryCountryEn = countryEn || countryJa || 'Global';
         const region = getRegion(primaryCountry, primaryCountryEn);
 
-        // Determine category (Cultural by default, check natural/mixed indicators)
-        let category = 'cultural';
-        let categoryJa = '文化遺産';
-        const nameLower = (primaryName + ' ' + (nameEn || '') + ' ' + (descriptionJa || '')).toLowerCase();
-        
-        if (nameLower.includes('国立公園') || nameLower.includes('national park') || nameLower.includes('自然') || nameLower.includes('保全') || nameLower.includes('サンクチュアリ') || nameLower.includes('環礁') || nameLower.includes('湿原')) {
-          category = 'natural';
-          categoryJa = '自然遺産';
-        }
+        const category = determineCategory(primaryName, nameEn, descriptionJa, categoryQidVal);
+        const categoryJa = category === 'natural' ? '自然遺産' : category === 'mixed' ? '複合遺産' : '文化遺産';
 
-        if (nameLower.includes('複合') || (nameLower.includes('歴史') && nameLower.includes('公園'))) {
-          category = 'mixed';
-          categoryJa = '複合遺産';
-        }
-
-        // Clean up year (UNESCO started in 1978, if year < 1978 or year > 2026, set reasonable default or null)
         if (year && (year < 1978 || year > 2026)) {
           year = null;
         }
@@ -146,7 +193,7 @@ async function fetchFullDataset() {
           category,
           categoryJa,
           yearInscribed: year || (1980 + Math.floor(Math.random() * 40)),
-          description: descriptionJa || `${primaryCountry}にあるUNESCO世界遺産。歴史的・文化的に重要な価値を持っています。`,
+          description: descriptionJa || `${primaryCountry}にあるUNESCO世界遺産。`
         });
       }
     }
