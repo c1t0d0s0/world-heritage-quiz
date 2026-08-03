@@ -1,8 +1,10 @@
 import { SITES_DATA, HANDCRAFTED_QUESTIONS, BASIC_KNOWLEDGE_QUESTIONS } from './data/sites.js';
+import { KENTEI_GRADES, KENTEI_SPECIFIC_QUESTIONS } from './data/kentei.js';
 
 export class QuizEngine {
   constructor() {
-    this.mode = 'all'; // 'basic' | 'country' | 'year' | 'description' | 'all'
+    this.mode = 'all'; // 'basic' | 'country' | 'year' | 'description' | 'all' | 'kentei'
+    this.grade = null; // '4' | '3' | '2' | 'pre1' | '1'
     this.speedrun = false;
     this.questions = [];
     this.currentIndex = 0;
@@ -17,8 +19,9 @@ export class QuizEngine {
     this.history = [];
   }
 
-  startQuiz(mode = 'all', speedrun = false, questionCount = 10) {
+  startQuiz(mode = 'all', speedrun = false, questionCount = 10, grade = null) {
     this.mode = mode;
+    this.grade = grade;
     this.speedrun = speedrun;
     this.currentIndex = 0;
     this.score = 0;
@@ -27,11 +30,16 @@ export class QuizEngine {
     this.correctCount = 0;
     this.history = [];
 
-    this.questions = this.generateQuestions(mode, questionCount);
+    this.questions = this.generateQuestions(mode, questionCount, grade);
     return this.getCurrentQuestion();
   }
 
-  generateQuestions(mode, count) {
+  generateQuestions(mode, count, grade) {
+    // Sekai Isan Kentei Mode
+    if (mode === 'kentei' && grade && KENTEI_GRADES[grade]) {
+      return this.generateKenteiQuestions(grade);
+    }
+
     // Basic Knowledge Mode
     if (mode === 'basic') {
       const basicPool = BASIC_KNOWLEDGE_QUESTIONS.map(q => ({
@@ -148,8 +156,38 @@ export class QuizEngine {
       }
     }
 
-    // Shuffle pool and return requested count
-    return questionsPool.sort(() => 0.5 - Math.random()).slice(0, count);
+    // Deduplicate and select final questions
+    const finalQuestions = [];
+    const usedTexts = new Set();
+    const usedSiteIds = new Set();
+
+    const shuffledPool = questionsPool.sort(() => 0.5 - Math.random());
+
+    for (const q of shuffledPool) {
+      if (finalQuestions.length >= count) break;
+      const qText = q.question.trim();
+      const siteId = q.site && q.site.id ? q.site.id : null;
+
+      if (usedTexts.has(qText)) continue;
+      if (siteId && usedSiteIds.has(siteId)) continue;
+
+      usedTexts.add(qText);
+      if (siteId) usedSiteIds.add(siteId);
+      finalQuestions.push(q);
+    }
+
+    if (finalQuestions.length < count) {
+      for (const q of shuffledPool) {
+        if (finalQuestions.length >= count) break;
+        const qText = q.question.trim();
+        if (!usedTexts.has(qText)) {
+          usedTexts.add(qText);
+          finalQuestions.push(q);
+        }
+      }
+    }
+
+    return finalQuestions;
   }
 
   getCurrentQuestion() {
@@ -253,7 +291,7 @@ export class QuizEngine {
       badge = '🥈';
     }
 
-    return {
+    const summary = {
       score: this.score,
       correctCount: this.correctCount,
       totalQuestions: total,
@@ -262,5 +300,163 @@ export class QuizEngine {
       rank,
       badge
     };
+
+    if (this.mode === 'kentei' && this.grade && KENTEI_GRADES[this.grade]) {
+      const config = KENTEI_GRADES[this.grade];
+      summary.isKentei = true;
+      summary.gradeConfig = config;
+      summary.isPassed = accuracy >= config.passScorePercent;
+    }
+
+    return summary;
+  }
+
+  generateKenteiQuestions(grade) {
+    const config = KENTEI_GRADES[grade] || KENTEI_GRADES['4'];
+    const count = config.questionCount;
+    const pool = [];
+
+    // 1. Dedicated grade-specific questions (Randomly sample 2-4 items)
+    if (KENTEI_SPECIFIC_QUESTIONS[grade]) {
+      const specificShuffled = [...KENTEI_SPECIFIC_QUESTIONS[grade]].sort(() => 0.5 - Math.random());
+      for (const q of specificShuffled.slice(0, 4)) {
+        pool.push({
+          type: 'kentei',
+          site: { id: `kentei_${q.question}`, region: '世界遺産検定', categoryJa: `${config.name} 公式クイズ` },
+          title: `🎓 世界遺産検定 ${config.name}`,
+          question: q.question,
+          options: [...q.options],
+          correctIndex: q.correctIndex,
+          explanation: q.explanation
+        });
+      }
+    }
+
+    // 2. Add UNESCO basic questions for lower/mid grades (Randomly sample 2-3 items)
+    if (grade === '4' || grade === '3' || grade === '2') {
+      const basicShuffled = [...BASIC_KNOWLEDGE_QUESTIONS].sort(() => 0.5 - Math.random());
+      for (const q of basicShuffled.slice(0, 3)) {
+        pool.push({
+          type: 'basic',
+          site: { id: `basic_${q.question}`, region: 'UNESCO基礎知識', categoryJa: '制度・概念' },
+          title: `🎓 世界遺産検定 ${config.name}（基礎知識）`,
+          question: q.question,
+          options: [...q.options],
+          correctIndex: q.correctIndex,
+          explanation: q.explanation
+        });
+      }
+    }
+
+    // 3. Filter site dataset depending on grade
+    let filteredSites = [...SITES_DATA];
+    if (grade === '4') {
+      // Japan sites + top famous sites
+      filteredSites = SITES_DATA.filter(s => s.country === '日本' || s.yearInscribed <= 1985);
+    } else if (grade === '3') {
+      filteredSites = SITES_DATA.filter(s => s.country === '日本' || s.yearInscribed <= 1998);
+    } else if (grade === '2') {
+      filteredSites = SITES_DATA.filter(s => s.country === '日本' || s.yearInscribed <= 2010);
+    } // pre1 and 1 include all sites
+
+    // Generate site-based questions
+    const shuffled = [...filteredSites].sort(() => 0.5 - Math.random());
+    const allCountries = Array.from(new Set(SITES_DATA.map(s => s.country))).filter(c => c && c !== '不明');
+
+    for (const site of shuffled.slice(0, count * 2)) {
+      const r = Math.random();
+      if (r < 0.4) {
+        const otherCountries = allCountries.filter(c => c !== site.country).sort(() => 0.5 - Math.random()).slice(0, 3);
+        const options = [site.country, ...otherCountries].sort(() => 0.5 - Math.random());
+        pool.push({
+          type: 'country',
+          site: site,
+          title: `🎓 世界遺産検定 ${config.name}（所在地問題）`,
+          question: `【検定出題】世界遺産「${site.name}」が位置する国はどこでしょう？`,
+          options: options,
+          correctIndex: options.indexOf(site.country),
+          explanation: `正解は「${site.country}」です！${site.name}（${site.categoryJa}）は${site.region}に所在します。`
+        });
+      } else if (r < 0.7) {
+        const otherSites = SITES_DATA.filter(s => s.id !== site.id).sort(() => 0.5 - Math.random()).slice(0, 3);
+        const options = [site.name, ...otherSites.map(s => s.name)].sort(() => 0.5 - Math.random());
+        pool.push({
+          type: 'description',
+          site: site,
+          title: `🎓 世界遺産検定 ${config.name}（遺産同定問題）`,
+          question: `【検定出題】${site.country}にある${site.categoryJa}で、「${site.description}」という記述が該当する世界遺産は？`,
+          options: options,
+          correctIndex: options.indexOf(site.name),
+          explanation: `正解は「${site.name}」です！`
+        });
+      } else {
+        const baseYear = site.yearInscribed;
+        const dummyYears = new Set();
+        while (dummyYears.size < 3) {
+          const offset = (Math.floor(Math.random() * 6) + 1) * (Math.random() < 0.5 ? 1 : -1);
+          const y = baseYear + offset;
+          if (y !== baseYear && y >= 1978 && y <= 2026) dummyYears.add(y);
+        }
+        const options = [`${baseYear}年`, ...Array.from(dummyYears).map(y => `${y}年`)].sort(() => 0.5 - Math.random());
+        pool.push({
+          type: 'year',
+          site: site,
+          title: `🎓 世界遺産検定 ${config.name}（登録年問題）`,
+          question: `【検定出題】世界遺産「${site.name}」（${site.country}）がUNESCO世界遺産に登録された年は？`,
+          options: options,
+          correctIndex: options.indexOf(`${baseYear}年`),
+          explanation: `正解は「${baseYear}年」です！`
+        });
+      }
+    }
+
+    // Deduplicate and select final questions
+    const finalQuestions = [];
+    const usedTexts = new Set();
+    const usedSiteIds = new Set();
+
+    const shuffledPool = pool.sort(() => 0.5 - Math.random());
+
+    for (const q of shuffledPool) {
+      if (finalQuestions.length >= count) break;
+
+      const qText = q.question.trim();
+      const siteId = q.site && q.site.id ? q.site.id : null;
+
+      // Skip exact question duplicate
+      if (usedTexts.has(qText)) continue;
+
+      // Skip site duplicate if we haven't reached fallback limit
+      if (siteId && usedSiteIds.has(siteId)) continue;
+
+      usedTexts.add(qText);
+      if (siteId) usedSiteIds.add(siteId);
+
+      finalQuestions.push(q);
+    }
+
+    // Fallback if not enough questions collected
+    if (finalQuestions.length < count) {
+      for (const q of shuffledPool) {
+        if (finalQuestions.length >= count) break;
+        const qText = q.question.trim();
+        if (!usedTexts.has(qText)) {
+          usedTexts.add(qText);
+          finalQuestions.push(q);
+        }
+      }
+    }
+
+    return finalQuestions;
+  }
+
+  isKenteiPassed() {
+    if (this.mode !== 'kentei' || !this.grade || !KENTEI_GRADES[this.grade]) return false;
+    const config = KENTEI_GRADES[this.grade];
+    const total = this.questions.length;
+    if (total === 0) return false;
+    const accuracy = (this.correctCount / total) * 100;
+    return accuracy >= config.passScorePercent;
   }
 }
+

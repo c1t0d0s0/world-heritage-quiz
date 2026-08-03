@@ -93,6 +93,15 @@
                 </div>
                 <button class="btn btn-gold start-quiz-btn" data-mode="all" data-speedrun="true">スピードラン挑戦 ⚡</button>
               </div>
+
+              <div class="mode-card mode-card-kentei" style="border-color: rgba(99, 102, 241, 0.5); background: linear-gradient(135deg, rgba(30, 27, 75, 0.4), rgba(15, 23, 42, 0.6));">
+                <div>
+                  <div class="mode-icon">🎓</div>
+                  <h3 class="mode-title">世界遺産検定モード</h3>
+                  <p class="mode-desc">1級、準1級、2級、3級、4級のレベル別公式テスト！合格ライン突破で認定証とバッジを獲得。</p>
+                </div>
+                <button class="btn btn-kentei" id="open-kentei-btn">級を選んで受検 🎓</button>
+              </div>
             </div>
           </div>
         </div>
@@ -174,6 +183,16 @@
             </div>
           </div>
 
+          <!-- Kentei Certificate / Status display -->
+          <div id="kentei-result-certificate" class="kentei-certificate-box" style="display: none;">
+            <div class="cert-border">
+              <div class="cert-icon" id="cert-icon">🎓</div>
+              <div class="cert-header" id="cert-header">世界遺産検定 合格祈願</div>
+              <h3 class="cert-grade" id="cert-grade">3級 合格</h3>
+              <p class="cert-desc" id="cert-desc">貴殿は世界遺産検定3級の試験において優秀な成績を収め、その知識を有することを証明します。</p>
+            </div>
+          </div>
+
           <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem;">
             <button class="btn btn-primary" id="retry-quiz-btn">もう一度挑戦 🔄</button>
             <button class="btn btn-outline" id="go-explorer-btn">1273遺産図鑑を見る 📖</button>
@@ -248,6 +267,60 @@
         <button class="modal-close-btn" id="modal-close-btn">&times;</button>
         <div class="modal-content-area">
           <!-- Dynamically populated details -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Dialog for Sekai Isan Kentei Grade Selection -->
+    <div class="modal-overlay" id="kentei-modal-overlay">
+      <div class="modal-container kentei-modal-container">
+        <button class="modal-close-btn" id="kentei-modal-close-btn">&times;</button>
+        <div class="kentei-modal-header">
+          <span style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;">🎓</span>
+          <h2>世界遺産検定 モード</h2>
+          <p style="color: var(--text-secondary); margin-top: 0.25rem;">挑戦する検定レベル（級）を選択してください</p>
+        </div>
+
+        <div class="kentei-grade-grid">
+          <div class="grade-card" data-grade="4">
+            <div class="grade-badge" style="background: rgba(56, 189, 248, 0.2); color: #38bdf8; border: 1px solid #38bdf8;">🥉 4級</div>
+            <h3 class="grade-title">4級（入門・初級）</h3>
+            <p class="grade-desc">日本の全遺産＋世界の超有名遺産。基本知識を身につけるレベル。</p>
+            <div class="grade-meta">合格基準: 70%以上 (10問)</div>
+            <button class="btn btn-primary start-kentei-grade-btn" data-grade="4" style="margin-top: 0.75rem; width: 100%;">4級に挑戦 ➔</button>
+          </div>
+
+          <div class="grade-card" data-grade="3">
+            <div class="grade-badge" style="background: rgba(74, 222, 128, 0.2); color: #4ade80; border: 1px solid #4ade80;">🥈 3級</div>
+            <h3 class="grade-title">3級（中級）</h3>
+            <p class="grade-desc">日本の全遺産＋世界の主要遺産（約300件）。条約や登録基準の基礎。</p>
+            <div class="grade-meta">合格基準: 70%以上 (10問)</div>
+            <button class="btn btn-primary start-kentei-grade-btn" data-grade="3" style="margin-top: 0.75rem; width: 100%;">3級に挑戦 ➔</button>
+          </div>
+
+          <div class="grade-card" data-grade="2">
+            <div class="grade-badge" style="background: rgba(250, 204, 21, 0.2); color: #facc15; border: 1px solid #facc15;">🥇 2級</div>
+            <h3 class="grade-title">2級（上級）</h3>
+            <p class="grade-desc">世界の主要遺産（約500件）と評価基準・複合/危機遺産の知識。</p>
+            <div class="grade-meta">合格基準: 70%以上 (10問)</div>
+            <button class="btn btn-primary start-kentei-grade-btn" data-grade="2" style="margin-top: 0.75rem; width: 100%;">2級に挑戦 ➔</button>
+          </div>
+
+          <div class="grade-card" data-grade="pre1">
+            <div class="grade-badge" style="background: rgba(251, 146, 60, 0.2); color: #fb923c; border: 1px solid #fb923c;">💎 準1級</div>
+            <h3 class="grade-title">準1級（準エキスパート）</h3>
+            <p class="grade-desc">世界の広範な遺産（約1,000件）。評価基準ⅰ〜ⅹを完全網羅。</p>
+            <div class="grade-meta">合格基準: 75%以上 (12問)</div>
+            <button class="btn btn-primary start-kentei-grade-btn" data-grade="pre1" style="margin-top: 0.75rem; width: 100%;">準1級に挑戦 ➔</button>
+          </div>
+
+          <div class="grade-card" data-grade="1">
+            <div class="grade-badge" style="background: rgba(244, 63, 94, 0.2); color: #f43f5e; border: 1px solid #f43f5e;">👑 1級</div>
+            <h3 class="grade-title">1級（最難関・マスター）</h3>
+            <p class="grade-desc">全1,273件の全世界遺産が対象！知識・歴史・保全のすべてが問われる。</p>
+            <div class="grade-meta">合格基準: 80%以上 (15問)</div>
+            <button class="btn btn-primary start-kentei-grade-btn" data-grade="1" style="margin-top: 0.75rem; width: 100%;">1級に挑戦 ➔</button>
+          </div>
         </div>
       </div>
     </div>

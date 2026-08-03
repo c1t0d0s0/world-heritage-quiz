@@ -58,6 +58,19 @@ class App {
     this.modalOverlay = document.getElementById('site-modal-overlay');
     this.modalCloseBtn = document.getElementById('modal-close-btn');
 
+    // Kentei Modal Elements
+    this.openKenteiBtn = document.getElementById('open-kentei-btn');
+    this.kenteiModalOverlay = document.getElementById('kentei-modal-overlay');
+    this.kenteiModalCloseBtn = document.getElementById('kentei-modal-close-btn');
+    this.startKenteiGradeBtns = document.querySelectorAll('.start-kentei-grade-btn');
+
+    // Kentei Certificate Result Elements
+    this.kenteiResultCert = document.getElementById('kentei-result-certificate');
+    this.certIcon = document.getElementById('cert-icon');
+    this.certHeader = document.getElementById('cert-header');
+    this.certGrade = document.getElementById('cert-grade');
+    this.certDesc = document.getElementById('cert-desc');
+
     // Explorer Search/Filter
     this.explorerSearchInput = document.getElementById('explorer-search-input');
     this.catFilterBtns = document.querySelectorAll('#cat-filter-tags .filter-btn');
@@ -110,6 +123,41 @@ class App {
       });
     });
 
+    // Open Kentei Grade Selector Modal
+    if (this.openKenteiBtn && this.kenteiModalOverlay) {
+      this.openKenteiBtn.addEventListener('click', () => {
+        this.kenteiModalOverlay.classList.add('active');
+        audio.playClick();
+      });
+    }
+
+    if (this.kenteiModalCloseBtn && this.kenteiModalOverlay) {
+      this.kenteiModalCloseBtn.addEventListener('click', () => {
+        this.kenteiModalOverlay.classList.remove('active');
+        audio.playClick();
+      });
+    }
+
+    if (this.kenteiModalOverlay) {
+      this.kenteiModalOverlay.addEventListener('click', (e) => {
+        if (e.target === this.kenteiModalOverlay) {
+          this.kenteiModalOverlay.classList.remove('active');
+        }
+      });
+    }
+
+    // Start Kentei Grade Quiz
+    this.startKenteiGradeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const grade = btn.getAttribute('data-grade') || '4';
+        if (this.kenteiModalOverlay) {
+          this.kenteiModalOverlay.classList.remove('active');
+        }
+        this.startQuiz('kentei', false, grade);
+        audio.playClick();
+      });
+    });
+
     // Next Question Button
     if (this.nextBtn) {
       this.nextBtn.addEventListener('click', () => {
@@ -121,7 +169,7 @@ class App {
     // Retry & Explorer Buttons
     if (this.retryBtn) {
       this.retryBtn.addEventListener('click', () => {
-        this.startQuiz(this.lastMode, this.lastSpeedrun);
+        this.startQuiz(this.lastMode, this.lastSpeedrun, this.lastGrade);
         audio.playClick();
       });
     }
@@ -194,12 +242,13 @@ class App {
     }
   }
 
-  startQuiz(mode, speedrun) {
+  startQuiz(mode, speedrun, grade = null) {
     this.lastMode = mode;
     this.lastSpeedrun = speedrun;
+    this.lastGrade = grade;
     this.switchView('quiz');
 
-    const q = this.quiz.startQuiz(mode, speedrun, 10);
+    const q = this.quiz.startQuiz(mode, speedrun, 10, grade);
     this.renderQuestion(q);
     this.checkAchievement('first_quiz');
   }
@@ -327,6 +376,39 @@ class App {
     this.resultsMaxStreak.textContent = `🔥 ${summary.maxStreak}`;
     this.resultsPercentage.textContent = `${summary.accuracy}%`;
 
+    // Kentei Mode Certificate Handling
+    if (summary.isKentei && summary.gradeConfig && this.kenteiResultCert) {
+      this.kenteiResultCert.style.display = 'block';
+      const config = summary.gradeConfig;
+      if (summary.isPassed) {
+        this.kenteiResultCert.className = 'kentei-certificate-box passed';
+        if (this.certIcon) this.certIcon.textContent = config.icon || '🎓';
+        if (this.certHeader) this.certHeader.textContent = '世界遺産検定 合格祈願';
+        if (this.certGrade) this.certGrade.textContent = `🎉 世界遺産検定 ${config.name} 合格！`;
+        if (this.certDesc) this.certDesc.textContent = `正答率${summary.accuracy}%（合格基準 ${config.passScorePercent}%）で見事試験を突破しました！\n貴殿の世界遺産知識をここに証明します。`;
+
+        // Achievement unlocking per grade
+        const achievementMap = {
+          '4': 'kentei_4th',
+          '3': 'kentei_3rd',
+          '2': 'kentei_2nd',
+          'pre1': 'kentei_pre1st',
+          '1': 'kentei_1st'
+        };
+        if (achievementMap[this.lastGrade]) {
+          this.checkAchievement(achievementMap[this.lastGrade]);
+        }
+      } else {
+        this.kenteiResultCert.className = 'kentei-certificate-box failed';
+        if (this.certIcon) this.certIcon.textContent = '📝';
+        if (this.certHeader) this.certHeader.textContent = '世界遺産検定 試験結果';
+        if (this.certGrade) this.certGrade.textContent = `❌ ${config.name} 不合格...`;
+        if (this.certDesc) this.certDesc.textContent = `正答率${summary.accuracy}%（合格基準 ${config.passScorePercent}%）。あと少しです！もう一度復習して再挑戦しましょう。`;
+      }
+    } else if (this.kenteiResultCert) {
+      this.kenteiResultCert.style.display = 'none';
+    }
+
     this.switchView('results');
 
     // Update High Score
@@ -344,7 +426,7 @@ class App {
     }
 
     // Big confetti celebrate
-    if (summary.accuracy >= 70) {
+    if (summary.accuracy >= 70 || (summary.isKentei && summary.isPassed)) {
       confetti({
         particleCount: 120,
         spread: 90,

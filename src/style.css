@@ -1266,12 +1266,146 @@ button, .option-btn, .nav-btn, .mode-card, .site-card {
   margin-bottom: 1rem;
 }
 
-.question-site-region {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  background: rgba(255, 255, 255, 0.06);
+
+/* ==========================================================================
+   Sekai Isan Kentei (World Heritage Certification) Styles
+   ========================================================================== */
+.btn-kentei {
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  color: white;
+  border: none;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.35);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.btn-kentei:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.5);
+}
+
+.kentei-modal-container {
+  max-width: 850px;
+  padding: 2rem;
+}
+
+.kentei-modal-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.kentei-grade-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.25rem;
+}
+
+.grade-card {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.grade-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-glass-active);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.grade-badge {
+  display: inline-block;
+  align-self: flex-start;
   padding: 0.25rem 0.75rem;
   border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
 }
+
+.grade-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.35rem;
+}
+
+.grade-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.grade-meta {
+  font-size: 0.8rem;
+  color: var(--accent-gold);
+  font-weight: 600;
+}
+
+/* Kentei Certificate Box */
+.kentei-certificate-box {
+  margin: 2rem 0 1.5rem;
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 0.5s ease;
+}
+
+.kentei-certificate-box.passed {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(245, 158, 11, 0.05));
+  border: 2px solid #facc15;
+  box-shadow: 0 0 25px rgba(250, 204, 21, 0.25);
+}
+
+.kentei-certificate-box.failed {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(185, 28, 28, 0.05));
+  border: 1px solid #ef4444;
+}
+
+.cert-border {
+  border: 1px dashed rgba(250, 204, 21, 0.5);
+  padding: 1.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.kentei-certificate-box.failed .cert-border {
+  border-color: rgba(239, 68, 68, 0.5);
+}
+
+.cert-icon {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cert-header {
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  color: var(--accent-gold);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.cert-grade {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.cert-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
 
 
