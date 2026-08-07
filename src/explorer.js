@@ -57,11 +57,22 @@ export class ExplorerModule {
     let loadMoreHtml = '';
     if (this.displayedCount < filtered.length) {
       const remaining = filtered.length - this.displayedCount;
+      const progressPercent = Math.min(100, Math.round((this.displayedCount / filtered.length) * 100));
+
       loadMoreHtml = `
         <div class="load-more-wrap">
-          <button id="load-more-btn" class="btn btn-secondary">
-            さらに表示する（残り ${remaining} 件 / 全 ${filtered.length} 件）
-          </button>
+          <div class="load-more-card">
+            <button id="load-more-btn" class="load-more-btn-featured">
+              <span class="btn-icon-pulse">✨</span>
+              <span class="btn-text">さらに表示する</span>
+              <span class="load-more-badge">残り ${remaining} 件</span>
+              <span class="btn-arrow">➔</span>
+            </button>
+            <div class="load-more-progress">
+              <div class="load-more-progress-bar" style="width: ${progressPercent}%"></div>
+            </div>
+            <span class="load-more-counter">表示中: ${this.displayedCount} / 全 ${filtered.length} 件 (${progressPercent}%)</span>
+          </div>
         </div>
       `;
     }

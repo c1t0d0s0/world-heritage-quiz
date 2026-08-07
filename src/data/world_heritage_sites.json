@@ -54,7 +54,7 @@
   {
     "id": "site_5",
     "unescoId": "775",
-    "name": "原爆ドーム",
+    "name": "原爆ドーム（広島平和記念碑）",
     "nameEn": "Hiroshima Peace Memorial (Genbaku Dome)",
     "country": "日本",
     "countryEn": "Japan",
@@ -80,7 +80,7 @@
   {
     "id": "site_7",
     "unescoId": "688",
-    "name": "古都京都の文化財",
+    "name": "古都京都の文化財（京都、宇治、大津市）",
     "nameEn": "Historic Monuments of Ancient Kyoto",
     "country": "日本",
     "countryEn": "Japan",
@@ -106,7 +106,7 @@
   {
     "id": "site_9",
     "unescoId": "1698",
-    "name": "佐渡島の金山",
+    "name": "佐渡島の日金山遺跡",
     "nameEn": "Sado Island Gold Mines",
     "country": "日本",
     "countryEn": "Japan",
@@ -132,7 +132,7 @@
   {
     "id": "site_11",
     "unescoId": null,
-    "name": "国立西洋美術館（ル・コルビュジエの建築作品）",
+    "name": "ル・コルビュジエの建築作品：近代建築運動への顕著な貢献",
     "nameEn": "The Architectural Work of Le Corbusier",
     "country": "日本",
     "countryEn": "Japan",
@@ -236,7 +236,7 @@
   {
     "id": "site_19",
     "unescoId": null,
-    "name": "百舌鳥・古市古墳群 -古代日本の墳墓群-",
+    "name": "百舌鳥・古市古墳群－古代日本の墳墓群－",
     "nameEn": "Mozu-Furuichi Kofun Group: Mounded Tombs of Ancient Japan",
     "country": "日本",
     "countryEn": "Japan",
@@ -262,7 +262,7 @@
   {
     "id": "site_21",
     "unescoId": null,
-    "name": "富士山―信仰の対象と芸術の源泉",
+    "name": "富士山－信仰の対象と芸術の源泉",
     "nameEn": "Fujisan, sacred place and source of artistic inspiration",
     "country": "日本",
     "countryEn": "Japan",
@@ -275,7 +275,7 @@
   {
     "id": "site_22",
     "unescoId": null,
-    "name": "平泉―仏国土（浄土）を表す建築・庭園及び考古学的遺跡群―",
+    "name": "平泉－仏国土（浄土）を表す建築・庭園及び考古学的遺跡群",
     "nameEn": "Hiraizumi – Temples, Gardens and Archaeological Sites Representing the Buddhist Pure Land",
     "country": "日本",
     "countryEn": "Japan",
@@ -340,7 +340,7 @@
   {
     "id": "site_27",
     "unescoId": "1699",
-    "name": "'Uruq Bani Ma'arid",
+    "name": "ウルフ・バニー・マアリド自然保護区",
     "nameEn": "'Uruq Bani Ma'arid",
     "country": "サウジアラビア",
     "countryEn": "Saudi Arabia",
@@ -379,7 +379,7 @@
   {
     "id": "site_30",
     "unescoId": "549rev",
-    "name": "18th-Century Royal Palace at Caserta with the Park, the Aqueduct of Vanvitelli, and the San Leucio Complex",
+    "name": "カゼルタの18世紀の王宮と公園、ヴァンヴィテッリの水道橋とサン・レウチョの邸宅群",
     "nameEn": "18th-Century Royal Palace at Caserta with the Park, the Aqueduct of Vanvitelli, and the San Leucio Complex",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -405,7 +405,7 @@
   {
     "id": "site_32",
     "unescoId": "1361",
-    "name": "Al-Balad, Jeddah",
+    "name": "歴史都市ジェッダ、メッカへの門",
     "nameEn": "Al-Balad, Jeddah",
     "country": "サウジアラビア",
     "countryEn": "Saudi Arabia",
@@ -418,7 +418,7 @@
   {
     "id": "site_33",
     "unescoId": "1770",
-    "name": "Alamūt Castle and Related Fortifications",
+    "name": "アラムート城と関連要塞群",
     "nameEn": "Alamūt Castle and Related Fortifications",
     "country": "イラン",
     "countryEn": "Iran",
@@ -431,7 +431,7 @@
   {
     "id": "site_34",
     "unescoId": "1774",
-    "name": "Amazonia Theaters",
+    "name": "アマゾニア劇場群",
     "nameEn": "Amazonia Theaters",
     "country": "ブラジル",
     "countryEn": "Brazil",
@@ -444,7 +444,7 @@
   {
     "id": "site_35",
     "unescoId": "705",
-    "name": "Ancient Building Complex in the Wudang Mountains",
+    "name": "武当山の古建築群",
     "nameEn": "Ancient Building Complex in the Wudang Mountains",
     "country": "中華人民共和国",
     "countryEn": "People's Republic of China",
@@ -457,7 +457,7 @@
   {
     "id": "site_36",
     "unescoId": "22bis",
-    "name": "Ancient City of Bosra",
+    "name": "ボスラ古代都市",
     "nameEn": "Ancient City of Bosra",
     "country": "シリア",
     "countryEn": "Syria",
@@ -470,7 +470,7 @@
   {
     "id": "site_37",
     "unescoId": "217",
-    "name": "Ancient City of Nessebar",
+    "name": "ネセバルの古代都市",
     "nameEn": "Ancient City of Nessebar",
     "country": "ブルガリア",
     "countryEn": "Bulgaria",
@@ -483,7 +483,7 @@
   {
     "id": "site_38",
     "unescoId": "812",
-    "name": "Ancient City of Ping Yao",
+    "name": "平遥古城",
     "nameEn": "Ancient City of Ping Yao",
     "country": "中華人民共和国",
     "countryEn": "People's Republic of China",
@@ -496,7 +496,7 @@
   {
     "id": "site_39",
     "unescoId": "1411",
-    "name": "Ancient City of Tauric Chersonese and its Chora",
+    "name": "タウリカのケヘルソネソス古代都市とそのコーラ",
     "nameEn": "Ancient City of Tauric Chersonese and its Chora",
     "country": "ウクライナ",
     "countryEn": "Ukraine",
@@ -509,7 +509,7 @@
   {
     "id": "site_40",
     "unescoId": "1002",
-    "name": "Ancient Villages in Southern Anhui - Xidi and Hongcun",
+    "name": "安徽南部の古村落－西諦と宏村",
     "nameEn": "Ancient Villages in Southern Anhui - Xidi and Hongcun",
     "country": "中華人民共和国",
     "countryEn": "People's Republic of China",
@@ -522,7 +522,7 @@
   {
     "id": "site_41",
     "unescoId": "1501",
-    "name": "Antequera Dolmens Site",
+    "name": "アンテケラのドルメン遺跡",
     "nameEn": "Antequera Dolmens Site",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -535,7 +535,7 @@
   {
     "id": "site_42",
     "unescoId": "1686",
-    "name": "Anticosti",
+    "name": "アンティコスティ島",
     "nameEn": "Anticosti",
     "country": "カナダ",
     "countryEn": "Canada",
@@ -548,7 +548,7 @@
   {
     "id": "site_43",
     "unescoId": "65",
-    "name": "Antigua Guatemala",
+    "name": "古都アンティグア・グアテマラ",
     "nameEn": "Antigua Guatemala",
     "country": "グアテマラ",
     "countryEn": "Guatemala",
@@ -561,7 +561,7 @@
   {
     "id": "site_44",
     "unescoId": "1499",
-    "name": "Antigua Naval Dockyard and Related Archaeological Sites",
+    "name": "アンティグアの海軍造船所と関連考古遺跡群",
     "nameEn": "Antigua Naval Dockyard and Related Archaeological Sites",
     "country": "アンティグア・バーブーダ王国",
     "countryEn": "Antigua and Barbuda",
@@ -574,7 +574,7 @@
   {
     "id": "site_45",
     "unescoId": "1519",
-    "name": "Aphrodisias",
+    "name": "アフロディシアス",
     "nameEn": "Aphrodisias",
     "country": "トルコ",
     "countryEn": "Turkey",
@@ -587,7 +587,7 @@
   {
     "id": "site_46",
     "unescoId": "378-011",
-    "name": "Apse of La Seo",
+    "name": "ラ・セオの後陣",
     "nameEn": "Apse of La Seo",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -600,7 +600,7 @@
   {
     "id": "site_47",
     "unescoId": "1742",
-    "name": "Aqaba Marine Reserve",
+    "name": "アカバ海洋保護区",
     "nameEn": "Aqaba Marine Reserve",
     "country": "ヨルダン",
     "countryEn": "Jordan",
@@ -613,7 +613,7 @@
   {
     "id": "site_48",
     "unescoId": "1044",
-    "name": "Aranjuez Cultural Landscape",
+    "name": "アランフエスの文化的景観",
     "nameEn": "Aranjuez Cultural Landscape",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -626,7 +626,7 @@
   {
     "id": "site_49",
     "unescoId": "664",
-    "name": "Archaeological Ensemble of Mérida",
+    "name": "メリダの考古遺産群",
     "nameEn": "Archaeological Ensemble of Mérida",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -639,7 +639,7 @@
   {
     "id": "site_50",
     "unescoId": "37",
-    "name": "Archaeological site of Carthage",
+    "name": "カルタゴ遺跡",
     "nameEn": "Archaeological site of Carthage",
     "country": "チュニジア",
     "countryEn": "Tunisia",
@@ -652,7 +652,7 @@
   {
     "id": "site_51",
     "unescoId": "393",
-    "name": "archaeological Site of Delphi",
+    "name": "デルフィの考古遺跡",
     "nameEn": "archaeological Site of Delphi",
     "country": "ギリシャ",
     "countryEn": "Greece",
@@ -665,7 +665,7 @@
   {
     "id": "site_52",
     "unescoId": "790",
-    "name": "Archaeological Site of Panamá Viejo and Historic District of Panamá",
+    "name": "パナマ・ビエホ考古遺跡とパナマ歴史地区",
     "nameEn": "Archaeological Site of Panamá Viejo and Historic District of Panamá",
     "country": "パナマ",
     "countryEn": "Panama",
@@ -678,7 +678,7 @@
   {
     "id": "site_53",
     "unescoId": "184",
-    "name": "Archaeological Site of Sabratha",
+    "name": "サブラタの考古遺跡",
     "nameEn": "Archaeological Site of Sabratha",
     "country": "リビア",
     "countryEn": "Libya",
@@ -691,7 +691,7 @@
   {
     "id": "site_54",
     "unescoId": "941",
-    "name": "Archaeological Sites of Mycenae and Tiryns",
+    "name": "ミケーネとティリンスの考古遺跡群",
     "nameEn": "Archaeological Sites of Mycenae and Tiryns",
     "country": "ギリシャ",
     "countryEn": "Greece",
@@ -704,7 +704,7 @@
   {
     "id": "site_55",
     "unescoId": "1336",
-    "name": "Archaeological Sites of the Island of Meroe",
+    "name": "メロエ島考古遺跡群",
     "nameEn": "Archaeological Sites of the Island of Meroe",
     "country": "スーダン",
     "countryEn": "Sudan",
@@ -717,7 +717,7 @@
   {
     "id": "site_56",
     "unescoId": "1196",
-    "name": "Architectural, Residential and Cultural Complex of the Radziwill Family at Nesvizh",
+    "name": "ネスヴィジのラジヴィウ家の建築・居住・文化複合体",
     "nameEn": "Architectural, Residential and Cultural Complex of the Radziwill Family at Nesvizh",
     "country": "ベラルーシ",
     "countryEn": "Belarus",
@@ -730,7 +730,7 @@
   {
     "id": "site_57",
     "unescoId": "1550",
-    "name": "Asmara: A Modernist African City",
+    "name": "アスマラ：アフリカのモダニズム都市",
     "nameEn": "Asmara: A Modernist African City",
     "country": "エリトリア",
     "countryEn": "Eritrea",
@@ -743,7 +743,7 @@
   {
     "id": "site_58",
     "unescoId": "1678",
-    "name": "Astronomical Observatories of Kazan Federal University",
+    "name": "カザン連邦大学天文学天文台",
     "nameEn": "Astronomical Observatories of Kazan Federal University",
     "country": "ロシア",
     "countryEn": "Russia",
@@ -756,7 +756,7 @@
   {
     "id": "site_59",
     "unescoId": "200",
-    "name": "Atamasthana",
+    "name": "アタマスタナ（アヌラーダプラの8大聖地）",
     "nameEn": "Atamasthana",
     "country": "スリランカ",
     "countryEn": "Sri Lanka",
@@ -769,7 +769,7 @@
   {
     "id": "site_60",
     "unescoId": "278rev",
-    "name": "Babylon",
+    "name": "バビロン",
     "nameEn": "Babylon",
     "country": "イラク",
     "countryEn": "Iraq",
@@ -782,7 +782,7 @@
   {
     "id": "site_61",
     "unescoId": "973",
-    "name": "Bardejov Town Conservation Reserve",
+    "name": "バルデヨフ市街保存区",
     "nameEn": "Bardejov Town Conservation Reserve",
     "country": "スロバキア",
     "countryEn": "Slovakia",
@@ -795,7 +795,7 @@
   {
     "id": "site_62",
     "unescoId": "1581",
-    "name": "Beaches of the D-Day Landings, Normandy, 1944",
+    "name": "ノルマンディーの上陸作戦海岸",
     "nameEn": "Beaches of the D-Day Landings, Normandy, 1944",
     "country": "フランス",
     "countryEn": "France",
@@ -808,7 +808,7 @@
   {
     "id": "site_63",
     "unescoId": "1222",
-    "name": "Behistun",
+    "name": "ビソトゥン",
     "nameEn": "Behistun",
     "country": "イラン",
     "countryEn": "Iran",
@@ -821,7 +821,7 @@
   {
     "id": "site_64",
     "unescoId": "1431",
-    "name": "Bijagos Archipelago Biosphere Reserve",
+    "name": "ビジャゴ諸島生物圏保護区",
     "nameEn": "Bijagos Archipelago Biosphere Reserve",
     "country": "ギニアビサウ共和国",
     "countryEn": "Guinea-Bissau",
@@ -834,7 +834,7 @@
   {
     "id": "site_65",
     "unescoId": "1619",
-    "name": "Bir Hima Rock Petroglyphs and Inscriptions",
+    "name": "ヒマ文化地域の岩絵",
     "nameEn": "Bir Hima Rock Petroglyphs and Inscriptions",
     "country": "サウジアラビア",
     "countryEn": "Saudi Arabia",
@@ -847,7 +847,7 @@
   {
     "id": "site_66",
     "unescoId": "555",
-    "name": "Birka and Hovgården",
+    "name": "ビルカとホーヴゴーデン",
     "nameEn": "Birka and Hovgården",
     "country": "スウェーデン",
     "countryEn": "Sweden",
@@ -860,7 +860,7 @@
   {
     "id": "site_67",
     "unescoId": "984",
-    "name": "Blaenavon Industrial Landscape",
+    "name": "ブレナヴォン産業景観",
     "nameEn": "Blaenavon Industrial Landscape",
     "country": "イギリス",
     "countryEn": "United Kingdom",
@@ -873,7 +873,7 @@
   {
     "id": "site_68",
     "unescoId": "1356rev",
-    "name": "Blue and John Crow Mountains",
+    "name": "ブルー・アンド・ジョン・クロウ・マウンテンズ",
     "nameEn": "Blue and John Crow Mountains",
     "country": "ジャマイカ王国",
     "countryEn": "Jamaica",
@@ -886,7 +886,7 @@
   {
     "id": "site_69",
     "unescoId": "1808",
-    "name": "Boma-Badingilo Migratory Landscape",
+    "name": "ボマ・バディンギロの回遊景観",
     "nameEn": "Boma-Badingilo Migratory Landscape",
     "country": "南スーダン",
     "countryEn": "South Sudan",
@@ -899,7 +899,7 @@
   {
     "id": "site_70",
     "unescoId": "866-001",
-    "name": "Broeira",
+    "name": "ブロエイラ考古遺跡",
     "nameEn": "Broeira",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -912,7 +912,7 @@
   {
     "id": "site_71",
     "unescoId": "1452",
-    "name": "Bursa and Cumalıkızık: the Birth of the Ottoman Empire",
+    "name": "ブルサとジュマルクズク：オスマン帝国誕生の地",
     "nameEn": "Bursa and Cumalıkızık: the Birth of the Ottoman Empire",
     "country": "トルコ",
     "countryEn": "Turkey",
@@ -925,7 +925,7 @@
   {
     "id": "site_72",
     "unescoId": "1748",
-    "name": "Cambodian Memorial Sites: From centres of repression to places of peace and reflection",
+    "name": "カンボジアのメモリアル・サイト",
     "nameEn": "Cambodian Memorial Sites: From centres of repression to places of peace and reflection",
     "country": "カンボジア",
     "countryEn": "Cambodia",
@@ -938,7 +938,7 @@
   {
     "id": "site_73",
     "unescoId": "866-002",
-    "name": "Canada do Inferno / Rego da vide",
+    "name": "カナダ・ド・インフェルノ考古遺跡",
     "nameEn": "Canada do Inferno / Rego da vide",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -951,7 +951,7 @@
   {
     "id": "site_74",
     "unescoId": "496",
-    "name": "Canterbury Cathedral, St Augustine's Abbey, and St Martin's Church",
+    "name": "カンタベリー大聖堂、聖オーガスタス修道院及び聖マーティン教会",
     "nameEn": "Canterbury Cathedral, St Augustine's Abbey, and St Martin's Church",
     "country": "イギリス",
     "countryEn": "United Kingdom",
@@ -964,7 +964,7 @@
   {
     "id": "site_75",
     "unescoId": "988",
-    "name": "Catalan Romanesque Churches of the Vall de Boí",
+    "name": "バッル・デ・ボイのロマネスク様式教会群",
     "nameEn": "Catalan Romanesque Churches of the Vall de Boí",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -977,7 +977,7 @@
   {
     "id": "site_76",
     "unescoId": "383",
-    "name": "Cathedral, Alcázar and Archivo de Indias in Seville",
+    "name": "セビリアの大聖堂、アルカサル、インディアス古文書館",
     "nameEn": "Cathedral, Alcázar and Archivo de Indias in Seville",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -990,7 +990,7 @@
   {
     "id": "site_77",
     "unescoId": "827",
-    "name": "Cathedral, Torre Civica and Piazza Grande, Modena",
+    "name": "モデナの大聖堂、市民の塔、グランデ広場",
     "nameEn": "Cathedral, Torre Civica and Piazza Grande, Modena",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -1003,7 +1003,7 @@
   {
     "id": "site_78",
     "unescoId": "1747",
-    "name": "Cavernas do Peruaçu Environmental Protection Area",
+    "name": "ペルアスー渓谷環境保護地域",
     "nameEn": "Cavernas do Peruaçu Environmental Protection Area",
     "country": "ブラジル",
     "countryEn": "Brazil",
@@ -1016,7 +1016,7 @@
   {
     "id": "site_79",
     "unescoId": "1035",
-    "name": "Cavernas do Peruaçu National Park",
+    "name": "ペルアスー渓谷国立公園",
     "nameEn": "Cavernas do Peruaçu National Park",
     "country": "ブラジル",
     "countryEn": "Brazil",
@@ -1029,7 +1029,7 @@
   {
     "id": "site_80",
     "unescoId": "1714",
-    "name": "Central Axis of Beijing",
+    "name": "北京の中軸線：中国の理想的首都秩序を示す傑作",
     "nameEn": "Central Axis of Beijing",
     "country": "中華人民共和国",
     "countryEn": "People's Republic of China",
@@ -1042,7 +1042,7 @@
   {
     "id": "site_81",
     "unescoId": "766",
-    "name": "Central Sikhote-Alin",
+    "name": "シホテアリニ山脈中央部",
     "nameEn": "Central Sikhote-Alin",
     "country": "ロシア",
     "countryEn": "Russia",
@@ -1055,7 +1055,7 @@
   {
     "id": "site_82",
     "unescoId": "206",
-    "name": "Centro Histórico de Angra do Heroísmo",
+    "name": "アングラ・ド・エロイズモの歴史地区",
     "nameEn": "Centro Histórico de Angra do Heroísmo",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -1068,7 +1068,7 @@
   {
     "id": "site_83",
     "unescoId": "361",
-    "name": "Centro Histórico de Évora",
+    "name": "エヴォラ歴史地区",
     "nameEn": "Centro Histórico de Évora",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -1081,7 +1081,7 @@
   {
     "id": "site_84",
     "unescoId": "1035bis",
-    "name": "Cerrado Protected Areas: Chapada dos Veadeiros and Emas National Parks",
+    "name": "セラード保護地域：シャパーダ・ドス・ヴェアデイロス国立公園及びエマス国立公園",
     "nameEn": "Cerrado Protected Areas: Chapada dos Veadeiros and Emas National Parks",
     "country": "ブラジル",
     "countryEn": "Brazil",
@@ -1094,7 +1094,7 @@
   {
     "id": "site_85",
     "unescoId": "353rev",
-    "name": "Chaco Culture World Heritage Site",
+    "name": "チャコ文化国立歴史公園",
     "nameEn": "Chaco Culture World Heritage Site",
     "country": "アメリカ合衆国",
     "countryEn": "United States",
@@ -1107,7 +1107,7 @@
   {
     "id": "site_86",
     "unescoId": "1434rev",
-    "name": "Chaîne des Puys - Limagne fault tectonic arena",
+    "name": "シェーヌ・デ・ピュイ＝リマーニュ断層構造線の地質学的構造物群",
     "nameEn": "Chaîne des Puys - Limagne fault tectonic arena",
     "country": "フランス",
     "countryEn": "France",
@@ -1120,7 +1120,7 @@
   {
     "id": "site_87",
     "unescoId": "1624",
-    "name": "Chankillo Archaeoastronomical Complex",
+    "name": "チャンキロの天体考古学コンプレックス",
     "nameEn": "Chankillo Archaeoastronomical Complex",
     "country": "ペルー",
     "countryEn": "Peru",
@@ -1133,7 +1133,7 @@
   {
     "id": "site_88",
     "unescoId": "378-012",
-    "name": "Chapel of Saint Michael the Archangel (La Seo of Zaragoza)",
+    "name": "サン・ミゲル・エル・アンヘル礼拝堂",
     "nameEn": "Chapel of Saint Michael the Archangel (La Seo of Zaragoza)",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -1146,7 +1146,7 @@
   {
     "id": "site_89",
     "unescoId": "559-003",
-    "name": "Chinese Pavilion at Drottningholm",
+    "name": "ドロットニングホルムの中国館",
     "nameEn": "Chinese Pavilion at Drottningholm",
     "country": "スウェーデン",
     "countryEn": "Sweden",
@@ -1159,7 +1159,7 @@
   {
     "id": "site_90",
     "unescoId": "378-006",
-    "name": "Church of St. Thecla",
+    "name": "サンタ・テクラ教会",
     "nameEn": "Church of St. Thecla",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -1172,7 +1172,7 @@
   {
     "id": "site_91",
     "unescoId": "634",
-    "name": "Church of the Ascension, Kolomenskoye",
+    "name": "コロメンスコエの主昇天教会",
     "nameEn": "Church of the Ascension, Kolomenskoye",
     "country": "ロシア",
     "countryEn": "Russia",
@@ -1185,7 +1185,7 @@
   {
     "id": "site_92",
     "unescoId": "527-003",
-    "name": "Church of the Saviour at Berestovo",
+    "name": "ベレストヴォの救世主聖堂",
     "nameEn": "Church of the Saviour at Berestove",
     "country": "ウクライナ",
     "countryEn": "Ukraine",
@@ -1198,7 +1198,7 @@
   {
     "id": "site_93",
     "unescoId": "234",
-    "name": "Churches and Convents of Goa",
+    "name": "ゴアの教会群と修道院群",
     "nameEn": "Churches and Convents of Goa",
     "country": "インド",
     "countryEn": "India",
@@ -1211,7 +1211,7 @@
   {
     "id": "site_94",
     "unescoId": "842",
-    "name": "Cilento and Vallo di Diano National Park with the Archeological Sites of Paestum and Velia, and the Certosa di Padula",
+    "name": "パエストゥムとヴェリアの考古遺跡群とパドゥーラ修道院を含むチレント・ヴァッロ・ディ・ディアーノ国立公園",
     "nameEn": "Cilento and Vallo di Diano National Park with the Archeological Sites of Paestum and Velia, and the Certosa di Padula",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -1224,7 +1224,7 @@
   {
     "id": "site_95",
     "unescoId": "1070",
-    "name": "Citadel, Ancient City and Fortress Buildings of Derbent",
+    "name": "デルベントのシタデル、古代都市及び要塞建築物群",
     "nameEn": "Citadel, Ancient City and Fortress Buildings of Derbent",
     "country": "ロシア",
     "countryEn": "Russia",
@@ -1237,7 +1237,7 @@
   {
     "id": "site_96",
     "unescoId": "1360-095",
-    "name": "Cité des Électriciens",
+    "name": "シテ・デ・ゼレクトリシアン（電気技師の集合住宅）",
     "nameEn": "Cité des Électriciens",
     "country": "フランス",
     "countryEn": "France",
@@ -1250,7 +1250,7 @@
   {
     "id": "site_97",
     "unescoId": "699",
-    "name": "City of Luxembourg: its Old Quarters and Fortifications",
+    "name": "ルクセンブルク市：その古い街並みと要塞群",
     "nameEn": "City of Luxembourg: its Old Quarters and Fortifications",
     "country": "ルクセンブルク",
     "countryEn": "Luxembourg",
@@ -1263,7 +1263,7 @@
   {
     "id": "site_98",
     "unescoId": "614",
-    "name": "City of Safranbolu",
+    "name": "サフランボルの市街地",
     "nameEn": "City of Safranbolu",
     "country": "トルコ",
     "countryEn": "Turkey",
@@ -1276,7 +1276,7 @@
   {
     "id": "site_99",
     "unescoId": "820bis",
-    "name": "Cocos Island National Park",
+    "name": "ココ島国立公園",
     "nameEn": "Cocos Island National Park",
     "country": "コスタリカ",
     "countryEn": "Costa Rica",
@@ -1289,7 +1289,7 @@
   {
     "id": "site_100",
     "unescoId": "1121",
-    "name": "Coffee Cultural Landscape of Colombia",
+    "name": "コロンビアのコーヒー農園の文化的景観",
     "nameEn": "Coffee Cultural Landscape of Colombia",
     "country": "コロンビア",
     "countryEn": "Colombia",
@@ -1302,7 +1302,7 @@
   {
     "id": "site_101",
     "unescoId": "1693",
-    "name": "Cold Winter Deserts of Turan",
+    "name": "トゥランの温帯寒冷砂漠群",
     "nameEn": "Cold Winter Deserts of Turan",
     "country": "ウズベキスタン",
     "countryEn": "Uzbekistan",
@@ -1315,7 +1315,7 @@
   {
     "id": "site_102",
     "unescoId": "535",
-    "name": "Collegiate Church, Castle, and Old Town of Quedlinburg",
+    "name": "クヴェードリンブルクの修道院教会、城と旧市街",
     "nameEn": "Collegiate Church, Castle, and Old Town of Quedlinburg",
     "country": "ドイツ",
     "countryEn": "Germany",
@@ -1328,7 +1328,7 @@
   {
     "id": "site_103",
     "unescoId": "875",
-    "name": "Colonia Iulia Urbs Triumphalis Tarraco",
+    "name": "タラコの考古遺産群",
     "nameEn": "Colonia Iulia Urbs Triumphalis Tarraco",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -1341,7 +1341,7 @@
   {
     "id": "site_104",
     "unescoId": "658",
-    "name": "Coro and its Port",
+    "name": "コロとその港",
     "nameEn": "Coro and its Port",
     "country": "ベネズエラ",
     "countryEn": "Venezuela",
@@ -1354,7 +1354,7 @@
   {
     "id": "site_105",
     "unescoId": "1031bis",
-    "name": "Couros Zone",
+    "name": "コウロス地区",
     "nameEn": "Couros Zone",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -1367,7 +1367,7 @@
   {
     "id": "site_106",
     "unescoId": "1229",
-    "name": "Crac des Chevaliers and Qal’at Salah El-Din",
+    "name": "クラック・デ・シュヴァリエとカラット・サラーフ・エッディーン",
     "nameEn": "Crac des Chevaliers and Qal’at Salah El-Din",
     "country": "シリア",
     "countryEn": "Syria",
@@ -1380,7 +1380,7 @@
   {
     "id": "site_107",
     "unescoId": "1627",
-    "name": "Cultural Heritage Sites of Ancient Khuttal",
+    "name": "古代フッタル地域の文化的遺産群",
     "nameEn": "Cultural Heritage Sites of Ancient Khuttal",
     "country": "タジキスタン",
     "countryEn": "Tajikistan",
@@ -1393,7 +1393,7 @@
   {
     "id": "site_108",
     "unescoId": "1647",
-    "name": "Cultural Landscape of Hawraman/Uramanat",
+    "name": "ハウラマン／ウラマナトの文化的景観",
     "nameEn": "Cultural Landscape of Hawraman/Uramanat",
     "country": "イラン",
     "countryEn": "Iran",
@@ -1406,7 +1406,7 @@
   {
     "id": "site_109",
     "unescoId": "1688",
-    "name": "Cultural Landscape of Kenozero Lake",
+    "name": "ケノゼロ湖の文化的景観",
     "nameEn": "Cultural Landscape of Kenozero Lake",
     "country": "ロシア",
     "countryEn": "Russia",
@@ -1419,7 +1419,7 @@
   {
     "id": "site_110",
     "unescoId": "1696",
-    "name": "Cultural Landscape of Khinalig People and “Köç Yolu” Transhumance Route",
+    "name": "ヒナリグの人々の文化的景観と「ケチ・ヨル」トランスヒューマンス移牧ルート",
     "nameEn": "Cultural Landscape of Khinalig People and “Köç Yolu” Transhumance Route",
     "country": "アゼルバイジャン",
     "countryEn": "Azerbaijan",
@@ -1432,7 +1432,7 @@
   {
     "id": "site_111",
     "unescoId": "1665",
-    "name": "Cultural Landscape of Old Tea Forests of the Jingmai Mountain in Pu’er",
+    "name": "普洱の景邁山古茶林の文化的景観",
     "nameEn": "Cultural Landscape of Old Tea Forests of the Jingmai Mountain in Pu’er",
     "country": "中華人民共和国",
     "countryEn": "People's Republic of China",
@@ -1445,7 +1445,7 @@
   {
     "id": "site_112",
     "unescoId": "723",
-    "name": "Cultural Landscape of Sintra",
+    "name": "シントラの文化的景観",
     "nameEn": "Cultural Landscape of Sintra",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -1458,7 +1458,7 @@
   {
     "id": "site_113",
     "unescoId": "1371",
-    "name": "Cultural Landscape of the Serra de Tramuntana",
+    "name": "トラムンタナ山脈の文化的景観",
     "nameEn": "Cultural Landscape of the Serra de Tramuntana",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -1471,7 +1471,7 @@
   {
     "id": "site_114",
     "unescoId": "1137",
-    "name": "Cultural Reserve of Kernavė",
+    "name": "アルアインの文化的遺跡群（ハフィート、ヒリ、ビダ・ビン・サウドとオアシス群）",
     "nameEn": "Cultural Reserve of Kernavė",
     "country": "リトアニア",
     "countryEn": "Lithuania",
@@ -1484,7 +1484,7 @@
   {
     "id": "site_115",
     "unescoId": "1621",
-    "name": "Deer Stone Monuments, the Heart of Bronze Age Culture",
+    "name": "バリ州の文化的景観：トリ・ヒタ・カラナの哲学を表現したスバックシステム",
     "nameEn": "Deer Stone Monuments, the Heart of Bronze Age Culture",
     "country": "モンゴル国",
     "countryEn": "Mongolia",
@@ -1497,7 +1497,7 @@
   {
     "id": "site_116",
     "unescoId": "1745",
-    "name": "Diy-Gid-Biy",
+    "name": "ボソムトゥイ湖の文化景観",
     "nameEn": "Diy-Gid-Biy",
     "country": "カメルーン",
     "countryEn": "Cameroon",
@@ -1510,7 +1510,7 @@
   {
     "id": "site_117",
     "unescoId": "1730",
-    "name": "domus de janas",
+    "name": "オルホン渓谷の文化的景観",
     "nameEn": "domus de janas",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -1523,7 +1523,7 @@
   {
     "id": "site_118",
     "unescoId": "370bis",
-    "name": "Durham Castle and Cathedral",
+    "name": "コソボの中世建造物群",
     "nameEn": "Durham Castle and Cathedral",
     "country": "イギリス",
     "countryEn": "United Kingdom",
@@ -1536,7 +1536,7 @@
   {
     "id": "site_119",
     "unescoId": "759bis",
-    "name": "Dutch Water Defence Lines",
+    "name": "オランダの水利防衛線群",
     "nameEn": "Dutch Water Defence Lines",
     "country": "オランダ",
     "countryEn": "Netherlands",
@@ -1549,7 +1549,7 @@
   {
     "id": "site_120",
     "unescoId": "788",
-    "name": "Early Christian Monuments of Ravenna",
+    "name": "ラヴェンナの初期キリスト教建造物群",
     "nameEn": "Early Christian Monuments of Ravenna",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -1562,7 +1562,7 @@
   {
     "id": "site_121",
     "unescoId": "1018rev",
-    "name": "Ephesus",
+    "name": "モントゥーの初期キリスト教建造物群",
     "nameEn": "Ephesus",
     "country": "トルコ",
     "countryEn": "Turkey",
@@ -1575,7 +1575,7 @@
   {
     "id": "site_122",
     "unescoId": "1681",
-    "name": "ESMA Museum and Site of Memory – Former Clandestine Center of Detention, Torture and Extermination",
+    "name": "ラヴェンナの初期キリスト教建造物群",
     "nameEn": "ESMA Museum and Site of Memory – Former Clandestine Center of Detention, Torture and Extermination",
     "country": "アルゼンチン",
     "countryEn": "Argentina",
@@ -1588,7 +1588,7 @@
   {
     "id": "site_123",
     "unescoId": "1427",
-    "name": "Etna Park",
+    "name": "エチミアドジンの聖堂と修道院群及びズヴァルトノツの考古遺跡",
     "nameEn": "Etna Park",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -1601,7 +1601,7 @@
   {
     "id": "site_124",
     "unescoId": "1158",
-    "name": "Etruscan Necropolises of Cerveteri and Tarquinia",
+    "name": "エウフラシウス聖堂の歴史的建造物群",
     "nameEn": "Etruscan Necropolises of Cerveteri and Tarquinia",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -1614,7 +1614,7 @@
   {
     "id": "site_125",
     "unescoId": "1692",
-    "name": "Evaporitic Karst and Caves of Northern Apennines",
+    "name": "アペニン山脈北部の蒸発岩カルストと洞窟群",
     "nameEn": "Evaporitic Karst and Caves of Northern Apennines",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -1627,7 +1627,7 @@
   {
     "id": "site_126",
     "unescoId": "866-003",
-    "name": "Faia",
+    "name": "ウルネスの木造教会",
     "nameEn": "Faia",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -1640,7 +1640,7 @@
   {
     "id": "site_127",
     "unescoId": "866-004",
-    "name": "Faia - Vale Afonsinho",
+    "name": "ファイア－ヴァレ・アフォンシーニョ考古遺跡",
     "nameEn": "Faia - Vale Afonsinho",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -1653,7 +1653,7 @@
   {
     "id": "site_128",
     "unescoId": "1559",
-    "name": "Fanjingshan",
+    "name": "梵浄山",
     "nameEn": "Fanjingshan",
     "country": "中華人民共和国",
     "countryEn": "People's Republic of China",
@@ -1666,7 +1666,7 @@
   {
     "id": "site_129",
     "unescoId": "733",
-    "name": "Ferrara, City of the Renaissance, and its Po Delta",
+    "name": "ファテイプル・シークリー",
     "nameEn": "Ferrara, City of the Renaissance, and its Po Delta",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -1679,7 +1679,7 @@
   {
     "id": "site_130",
     "unescoId": "772rev",
-    "name": "Fertö / Neusiedlersee Cultural Landscape",
+    "name": "フェルテー湖／ノイジードラー・ゼーの文化的景観",
     "nameEn": "Fertö / Neusiedlersee Cultural Landscape",
     "country": "オーストリア",
     "countryEn": "Austria",
@@ -1692,7 +1692,7 @@
   {
     "id": "site_131",
     "unescoId": "1722",
-    "name": "Flow Country",
+    "name": "ブダペスト：ドナウ河岸とブダ城地区及びアンドラーシ通り",
     "nameEn": "Flow Country",
     "country": "イギリス",
     "countryEn": "United Kingdom",
@@ -1705,7 +1705,7 @@
   {
     "id": "site_132",
     "unescoId": "866-005",
-    "name": "Fonte Frieira",
+    "name": "ルーマニアの木造教会群",
     "nameEn": "Fonte Frieira",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -1718,7 +1718,7 @@
   {
     "id": "site_133",
     "unescoId": "1734",
-    "name": "Forest Research Institute Malaysia Forest Park Selangor",
+    "name": "アントニ・ガウディの作品群",
     "nameEn": "Forest Research Institute Malaysia Forest Park Selangor",
     "country": "マレーシア",
     "countryEn": "Malaysia",
@@ -1731,7 +1731,7 @@
   {
     "id": "site_134",
     "unescoId": "1608rev",
-    "name": "Frontiers of the Roman Empire – The Danube Limes (Western Segment)",
+    "name": "ル・コルビュジエの建築作品：近代建築運動への顕著な貢献",
     "nameEn": "Frontiers of the Roman Empire – The Danube Limes (Western Segment)",
     "country": "ドイツ",
     "countryEn": "Germany",
@@ -1744,7 +1744,7 @@
   {
     "id": "site_135",
     "unescoId": "1",
-    "name": "Galápagos Islands",
+    "name": "建築家フランク・ロイド・ライトの20世紀建築作品群",
     "nameEn": "Galápagos Islands",
     "country": "エクアドル",
     "countryEn": "Ecuador",
@@ -1757,7 +1757,7 @@
   {
     "id": "site_136",
     "unescoId": "860",
-    "name": "Gardens and Castle at Kroměříž",
+    "name": "ヴェローナ市街",
     "nameEn": "Gardens and Castle at Kroměříž",
     "country": "チェコ共和国",
     "countryEn": "Czech Republic",
@@ -1770,7 +1770,7 @@
   {
     "id": "site_137",
     "unescoId": "559-004",
-    "name": "Gardens of Drottningholm Palace",
+    "name": "ヴィチェンツァ市街とヴェネト地方のパラディオ様のヴィッラ",
     "nameEn": "Gardens of Drottningholm Palace",
     "country": "スウェーデン",
     "countryEn": "Sweden",
@@ -1783,7 +1783,7 @@
   {
     "id": "site_138",
     "unescoId": "1073",
-    "name": "Gebel Barkal and the Sites of the Napatan Region",
+    "name": "ザモシチ旧市街",
     "nameEn": "Gebel Barkal and the Sites of the Napatan Region",
     "country": "スーダン",
     "countryEn": "Sudan",
@@ -1796,7 +1796,7 @@
   {
     "id": "site_139",
     "unescoId": "1211",
-    "name": "Genoa: Le Strade Nuove and the system of the Palazzi dei Rolli",
+    "name": "グラツィアの歴史地区とエッゲンベルク城",
     "nameEn": "Genoa: Le Strade Nuove and the system of the Palazzi dei Rolli",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -1809,7 +1809,7 @@
   {
     "id": "site_140",
     "unescoId": "1076rev",
-    "name": "Gobustan Rock Art",
+    "name": "ポルトの歴史地区、ルイス1世橋およびセラ・ド・ピラール修道院",
     "nameEn": "Gobustan Rock Art",
     "country": "アゼルバイジャン",
     "countryEn": "Azerbaijan",
@@ -1822,7 +1822,7 @@
   {
     "id": "site_141",
     "unescoId": "1746",
-    "name": "Gola-Tiwai complex",
+    "name": "プラハ歴史地区",
     "nameEn": "Gola-Tiwai complex",
     "country": "シエラレオネ",
     "countryEn": "Sierra Leone",
@@ -1835,7 +1835,7 @@
   {
     "id": "site_142",
     "unescoId": "357",
-    "name": "Göreme National Park and the Rock Sites of Cappadocia",
+    "name": "フィレンツェ歴史地区",
     "nameEn": "Göreme National Park and the Rock Sites of Cappadocia",
     "country": "トルコ",
     "countryEn": "Turkey",
@@ -1848,7 +1848,7 @@
   {
     "id": "site_143",
     "unescoId": "1500",
-    "name": "Gorham's Cave complex",
+    "name": "グアナフアトの歴史地区と鉱山",
     "nameEn": "Gorham's Cave complex",
     "country": "イギリス",
     "countryEn": "United Kingdom",
@@ -1861,7 +1861,7 @@
   {
     "id": "site_144",
     "unescoId": "1349",
-    "name": "Grachtengordel",
+    "name": "リマ歴史地区",
     "nameEn": "Grachtengordel",
     "country": "オランダ",
     "countryEn": "Netherlands",
@@ -1874,7 +1874,7 @@
   {
     "id": "site_145",
     "unescoId": "258",
-    "name": "Gulf of Porto: Calanche of Piana, Gulf of Girolata, Scandola Reserve",
+    "name": "モレリア歴史地区",
     "nameEn": "Gulf of Porto: Calanche of Piana, Gulf of Girolata, Scandola Reserve",
     "country": "フランス",
     "countryEn": "France",
@@ -1887,7 +1887,7 @@
   {
     "id": "site_146",
     "unescoId": "272",
-    "name": "Hanseatic City of Lübeck",
+    "name": "サン・ジミニャーノ歴史地区",
     "nameEn": "Hanseatic City of Lübeck",
     "country": "ドイツ",
     "countryEn": "Germany",
@@ -1900,7 +1900,7 @@
   {
     "id": "site_147",
     "unescoId": "731",
-    "name": "Hanseatic town of Visby",
+    "name": "シエナ歴史地区",
     "nameEn": "Hanseatic town of Visby",
     "country": "スウェーデン",
     "countryEn": "Sweden",
@@ -1913,7 +1913,7 @@
   {
     "id": "site_148",
     "unescoId": "1189rev",
-    "name": "Harar Jugol, the Fortified Historic Town",
+    "name": "テルチ歴史地区",
     "nameEn": "Harar Jugol, the Fortified Historic Town",
     "country": "エチオピア",
     "countryEn": "Ethiopia",
@@ -1926,7 +1926,7 @@
   {
     "id": "site_149",
     "unescoId": "1544",
-    "name": "Heritage district of Yazd",
+    "name": "トドス・オス・サントス湾のサルヴァドール・デ・バイア歴史地区",
     "nameEn": "Heritage district of Yazd",
     "country": "イラン",
     "countryEn": "Iran",
@@ -1939,7 +1939,7 @@
   {
     "id": "site_150",
     "unescoId": "1268",
-    "name": "Historic Center of Agadez",
+    "name": "ワルシャワ歴史地区",
     "nameEn": "Historic Center of Agadez",
     "country": "ニジェール",
     "countryEn": "Niger",
@@ -1952,7 +1952,7 @@
   {
     "id": "site_151",
     "unescoId": "1016",
-    "name": "Historic Centre of Arequipa",
+    "name": "クラクフ歴史地区",
     "nameEn": "Historic Centre of Arequipa",
     "country": "ペルー",
     "countryEn": "Peru",
@@ -1965,7 +1965,7 @@
   {
     "id": "site_152",
     "unescoId": "602bis",
-    "name": "Historic Centre of Bukhara",
+    "name": "エッサウィラのメディナ（旧モーガドール）",
     "nameEn": "Historic Centre of Bukhara",
     "country": "ウズベキスタン",
     "countryEn": "Uzbekistan",
@@ -1978,7 +1978,7 @@
   {
     "id": "site_153",
     "unescoId": "1270",
-    "name": "Historic Centre of Camagüey",
+    "name": "フェズのメディナ",
     "nameEn": "Historic Centre of Camagüey",
     "country": "キューバ",
     "countryEn": "Cuba",
@@ -1991,7 +1991,7 @@
   {
     "id": "site_154",
     "unescoId": "617",
-    "name": "Historic Centre of Český Krumlov",
+    "name": "マラケシュのメディナ",
     "nameEn": "Historic Centre of Český Krumlov",
     "country": "チェコ共和国",
     "countryEn": "Czech Republic",
@@ -2004,7 +2004,7 @@
   {
     "id": "site_155",
     "unescoId": "1202",
-    "name": "Historic Centre of Cienfuegos",
+    "name": "スースのメディナ",
     "nameEn": "Historic Centre of Cienfuegos",
     "country": "キューバ",
     "countryEn": "Cuba",
@@ -2017,7 +2017,7 @@
   {
     "id": "site_156",
     "unescoId": "273",
-    "name": "Historic centre of Cusco",
+    "name": "テトゥアンのメディナ（旧ティタウィン）",
     "nameEn": "Historic centre of Cusco",
     "country": "ペルー",
     "countryEn": "Peru",
@@ -2030,7 +2030,7 @@
   {
     "id": "site_157",
     "unescoId": "1031",
-    "name": "Historic Centre of Guimarães and Couros Zone",
+    "name": "チュニスのメディナ",
     "nameEn": "Historic Centre of Guimarães and Couros Zone",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -2043,7 +2043,7 @@
   {
     "id": "site_158",
     "unescoId": "412",
-    "name": "Historic Centre of Mexico City and Xochimilco",
+    "name": "歴史都市ブハラ",
     "nameEn": "Historic Centre of Mexico City and Xochimilco",
     "country": "メキシコ",
     "countryEn": "Mexico",
@@ -2056,7 +2056,7 @@
   {
     "id": "site_159",
     "unescoId": "585",
-    "name": "Historic Centre of Morelia",
+    "name": "カザンのクレムリン建築群",
     "nameEn": "Historic Centre of Morelia",
     "country": "メキシコ",
     "countryEn": "Mexico",
@@ -2069,7 +2069,7 @@
   {
     "id": "site_160",
     "unescoId": "415",
-    "name": "Historic Centre of Oaxaca and Archaeological Site of Monte Albán",
+    "name": "トゥルクの古代都市群",
     "nameEn": "Historic Centre of Oaxaca and Archaeological Site of Monte Albán",
     "country": "メキシコ",
     "countryEn": "Mexico",
@@ -2082,7 +2082,7 @@
   {
     "id": "site_161",
     "unescoId": "616bis",
-    "name": "Historic Centre of Prague",
+    "name": "ヒヴァのイチャン・カラ",
     "nameEn": "Historic Centre of Prague",
     "country": "チェコ共和国",
     "countryEn": "Czech Republic",
@@ -2095,7 +2095,7 @@
   {
     "id": "site_162",
     "unescoId": "416",
-    "name": "Historic Centre of Puebla",
+    "name": "サマルカンド－文化の交差点",
     "nameEn": "Historic Centre of Puebla",
     "country": "メキシコ",
     "countryEn": "Mexico",
@@ -2108,7 +2108,7 @@
   {
     "id": "site_163",
     "unescoId": "821",
-    "name": "Historic Centre of São Luís",
+    "name": "シャフリサブス歴史地区",
     "nameEn": "Historic Centre of São Luís",
     "country": "ブラジル",
     "countryEn": "Brazil",
@@ -2121,7 +2121,7 @@
   {
     "id": "site_164",
     "unescoId": "1549",
-    "name": "Historic Centre of Sheki with the Khan’s Palace",
+    "name": "ゴレスタン宮殿",
     "nameEn": "Historic Centre of Sheki with the Khan’s Palace",
     "country": "アゼルバイジャン",
     "countryEn": "Azerbaijan",
@@ -2134,7 +2134,7 @@
   {
     "id": "site_165",
     "unescoId": "621",
-    "name": "Historic Centre of Telč",
+    "name": "ソルターニーイェ",
     "nameEn": "Historic Centre of Telč",
     "country": "チェコ共和国",
     "countryEn": "Czech Republic",
@@ -2147,7 +2147,7 @@
   {
     "id": "site_166",
     "unescoId": "789",
-    "name": "Historic Centre of the City of Pienza",
+    "name": "ゴンバデ・カーブース",
     "nameEn": "Historic Centre of the City of Pienza",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -2160,7 +2160,7 @@
   {
     "id": "site_167",
     "unescoId": "890",
-    "name": "Historic Centre of the Town of Diamantina",
+    "name": "パスガルダエ",
     "nameEn": "Historic Centre of the Town of Diamantina",
     "country": "ブラジル",
     "countryEn": "Brazil",
@@ -2173,7 +2173,7 @@
   {
     "id": "site_168",
     "unescoId": "993",
-    "name": "Historic Centre of the Town of Goiás",
+    "name": "ペルセポリス",
     "nameEn": "Historic Centre of the Town of Goiás",
     "country": "ブラジル",
     "countryEn": "Brazil",
@@ -2186,7 +2186,7 @@
   {
     "id": "site_169",
     "unescoId": "828",
-    "name": "Historic Centre of Urbino",
+    "name": "チョガ・ザンビール",
     "nameEn": "Historic Centre of Urbino",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -2199,7 +2199,7 @@
   {
     "id": "site_170",
     "unescoId": "1351-037",
-    "name": "Historic centre of Zacatecas",
+    "name": "タフテ・ソレイマーン",
     "nameEn": "Historic centre of Zacatecas",
     "country": "メキシコ",
     "countryEn": "Mexico",
@@ -2212,7 +2212,7 @@
   {
     "id": "site_171",
     "unescoId": "569",
-    "name": "Historic Centres of Berat and Gjirokastër",
+    "name": "バーミヤン渓谷の文化的景観と古代遺跡群",
     "nameEn": "Historic Centres of Berat and Gjirokastër",
     "country": "アルバニア",
     "countryEn": "Albania",
@@ -2225,7 +2225,7 @@
   {
     "id": "site_172",
     "unescoId": "1551",
-    "name": "Historic City of Ahmadabad",
+    "name": "ジャームのミナレットと考古遺跡群",
     "nameEn": "Historic City of Ahmadabad",
     "country": "インド",
     "countryEn": "India",
@@ -2238,7 +2238,7 @@
   {
     "id": "site_173",
     "unescoId": "379",
-    "name": "Historic City of Toledo",
+    "name": "カトマンズの谷",
     "nameEn": "Historic City of Toledo",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -2251,7 +2251,7 @@
   {
     "id": "site_174",
     "unescoId": "810",
-    "name": "Historic City of Trogir",
+    "name": "ルンビニ、仏陀の生誕地",
     "nameEn": "Historic City of Trogir",
     "country": "クロアチア",
     "countryEn": "Croatia",
@@ -2264,7 +2264,7 @@
   {
     "id": "site_175",
     "unescoId": "895",
-    "name": "Historic Fortified Town of Campeche",
+    "name": "シーギリヤの古代都市",
     "nameEn": "Historic Fortified Town of Campeche",
     "country": "メキシコ",
     "countryEn": "Mexico",
@@ -2277,7 +2277,7 @@
   {
     "id": "site_176",
     "unescoId": "604",
-    "name": "Historic Monuments of Novgorod and Surroundings",
+    "name": "聖地キャンディ",
     "nameEn": "Historic Monuments of Novgorod and Surroundings",
     "country": "ロシア",
     "countryEn": "Russia",
@@ -2290,7 +2290,7 @@
   {
     "id": "site_177",
     "unescoId": "792",
-    "name": "Historic Monuments Zone of Querétaro",
+    "name": "ゴール旧市街とその要塞群",
     "nameEn": "Historic Monuments Zone of Querétaro",
     "country": "メキシコ",
     "countryEn": "Mexico",
@@ -2303,7 +2303,7 @@
   {
     "id": "site_178",
     "unescoId": "618",
-    "name": "Historic Town of Banská Štiavnica and the Technical Monuments in its Vicinity",
+    "name": "ポロンナルワの古代都市",
     "nameEn": "Historic Town of Banská Štiavnica and the Technical Monuments in its Vicinity",
     "country": "スロバキア",
     "countryEn": "Slovakia",
@@ -2316,7 +2316,7 @@
   {
     "id": "site_179",
     "unescoId": "124",
-    "name": "Historic Town of Ouro Preto",
+    "name": "ダンブッラ黄金寺院",
     "nameEn": "Historic Town of Ouro Preto",
     "country": "ブラジル",
     "countryEn": "Brazil",
@@ -2329,7 +2329,7 @@
   {
     "id": "site_180",
     "unescoId": "1324",
-    "name": "Historic Villages of Korea: Hahoe and Yangdong",
+    "name": "アヌラーダプラの聖地",
     "nameEn": "Historic Villages of Korea: Hahoe and Yangdong",
     "country": "大韓民国",
     "countryEn": "South Korea",
@@ -2342,7 +2342,7 @@
   {
     "id": "site_181",
     "unescoId": "1308rev-005",
-    "name": "Historical center of Paraty",
+    "name": "パラチーとイルハ・グランデの文化と生物多様性",
     "nameEn": "Historical center of Paraty",
     "country": "ブラジル",
     "countryEn": "Brazil",
@@ -2355,7 +2355,7 @@
   {
     "id": "site_182",
     "unescoId": "1170",
-    "name": "historical centre of Yaroslavl",
+    "name": "ヤロスラヴリ歴史地区",
     "nameEn": "historical centre of Yaroslavl",
     "country": "ロシア",
     "countryEn": "Russia",
@@ -2368,7 +2368,7 @@
   {
     "id": "site_183",
     "unescoId": "97",
-    "name": "Historical Complex of Split with the Palace of Diocletian",
+    "name": "ディオクレティアヌス宮殿があるスプリトの歴史的建造物群",
     "nameEn": "Historical Complex of Split with the Palace of Diocletian",
     "country": "クロアチア",
     "countryEn": "Croatia",
@@ -2381,7 +2381,7 @@
   {
     "id": "site_184",
     "unescoId": "143",
-    "name": "Historical Monuments at Makli, Thatta",
+    "name": "タッターのマクリ大墓地",
     "nameEn": "Historical Monuments at Makli, Thatta",
     "country": "パキスタン",
     "countryEn": "Pakistan",
@@ -2394,7 +2394,7 @@
   {
     "id": "site_185",
     "unescoId": "1689",
-    "name": "Hopewell Ceremonial Earthworks",
+    "name": "ホープウェルの儀礼用土塚群",
     "nameEn": "Hopewell Ceremonial Earthworks",
     "country": "アメリカ合衆国",
     "countryEn": "United States",
@@ -2407,7 +2407,7 @@
   {
     "id": "site_186",
     "unescoId": "1509",
-    "name": "Hubei Shennongjia",
+    "name": "湖北の神農架",
     "nameEn": "Hubei Shennongjia",
     "country": "中華人民共和国",
     "countryEn": "People's Republic of China",
@@ -2420,7 +2420,7 @@
   {
     "id": "site_187",
     "unescoId": "1704",
-    "name": "Huichol route to Huiricuta",
+    "name": "ウィリクタへのウィチョル族の巡礼ルート",
     "nameEn": "Huichol route to Huiricuta",
     "country": "メキシコ",
     "countryEn": "Mexico",
@@ -2433,7 +2433,7 @@
   {
     "id": "site_188",
     "unescoId": "1676",
-    "name": "Human Rights, Liberation and Reconciliation: Nelson Mandela Legacy Sites",
+    "name": "人権、解放と和解：ネルソン・マンデラ遺産群",
     "nameEn": "Human Rights, Liberation and Reconciliation: Nelson Mandela Legacy Sites",
     "country": "南アフリカ共和国",
     "countryEn": "South Africa",
@@ -2446,7 +2446,7 @@
   {
     "id": "site_189",
     "unescoId": "1584",
-    "name": "Hyrcanian Forests",
+    "name": "ヒルカニアの森林群",
     "nameEn": "Hyrcanian Forests",
     "country": "アゼルバイジャン",
     "countryEn": "Azerbaijan",
@@ -2459,7 +2459,7 @@
   {
     "id": "site_190",
     "unescoId": "417rev",
-    "name": "Ibiza, Biodiversity and Culture",
+    "name": "イビサの生物多様性と文化",
     "nameEn": "Ibiza, Biodiversity and Culture",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -2472,7 +2472,7 @@
   {
     "id": "site_191",
     "unescoId": "378-007",
-    "name": "Iglesia de Santa María",
+    "name": "サンタ・マリア教会",
     "nameEn": "Iglesia de Santa María",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -2498,7 +2498,7 @@
   {
     "id": "site_193",
     "unescoId": "1538",
-    "name": "Ivrea, industrial city of the 20th century",
+    "name": "20世紀の産業都市イヴレーア",
     "nameEn": "Ivrea, industrial city of the 20th century",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -2511,7 +2511,7 @@
   {
     "id": "site_194",
     "unescoId": "697",
-    "name": "Jelling Heritage Site",
+    "name": "イェリングの墳墓群、ルーン石碑群と教会",
     "nameEn": "Jelling Heritage Site",
     "country": "デンマーク",
     "countryEn": "Denmark",
@@ -2524,7 +2524,7 @@
   {
     "id": "site_195",
     "unescoId": "648",
-    "name": "Jesuit Missions of La Santísima Trinidad de Paraná and Jesús de Tavarangüé",
+    "name": "パラナのラ・サンティシマ・トリニダードとヘスス・デ・タバランゲのイエズス会伝道所群",
     "nameEn": "Jesuit Missions of La Santísima Trinidad de Paraná and Jesús de Tavarangüé",
     "country": "パラグアイ",
     "countryEn": "Paraguay",
@@ -2537,7 +2537,7 @@
   {
     "id": "site_196",
     "unescoId": "1656",
-    "name": "Jewish-Medieval Heritage of Erfurt",
+    "name": "エルフルトの中世ユダヤ遺産",
     "nameEn": "Jewish-Medieval Heritage of Erfurt",
     "country": "ドイツ",
     "countryEn": "Germany",
@@ -2550,7 +2550,7 @@
   {
     "id": "site_197",
     "unescoId": "1765",
-    "name": "Jingdezhen Handicraft Porcelain Industry Sites",
+    "name": "景徳鎮の磁器手工業遺跡群",
     "nameEn": "Jingdezhen Handicraft Porcelain Industry Sites",
     "country": "中華人民共和国",
     "countryEn": "People's Republic of China",
@@ -2563,7 +2563,7 @@
   {
     "id": "site_198",
     "unescoId": "1680",
-    "name": "Jodensavanne",
+    "name": "ヨーデンサファンネの開拓地とカシポラクーリの墓地",
     "nameEn": "Jodensavanne",
     "country": "スリナム",
     "countryEn": "Suriname",
@@ -2576,7 +2576,7 @@
   {
     "id": "site_199",
     "unescoId": "1285",
-    "name": "Joggins Fossil Cliffs",
+    "name": "ジョギンズ化石の断崖",
     "nameEn": "Joggins Fossil Cliffs",
     "country": "カナダ",
     "countryEn": "Canada",
@@ -2589,7 +2589,7 @@
   {
     "id": "site_200",
     "unescoId": "1037",
-    "name": "Jungfrau-Aletsch protected area",
+    "name": "スイス・アルプス ユングフラウ～アレッチ",
     "nameEn": "Jungfrau-Aletsch protected area",
     "country": "スイス",
     "countryEn": "Switzerland",
@@ -2602,7 +2602,7 @@
   {
     "id": "site_201",
     "unescoId": "1461rev",
-    "name": "Kaeng Krachan Forest Complex",
+    "name": "ケーンクラチャン森林保護区群",
     "nameEn": "Kaeng Krachan Forest Complex",
     "country": "タイ王国",
     "countryEn": "Thailand",
@@ -2615,7 +2615,7 @@
   {
     "id": "site_202",
     "unescoId": "147",
-    "name": "Kakadu National Park",
+    "name": "カカドゥ国立公園",
     "nameEn": "Kakadu National Park",
     "country": "オーストラリア",
     "countryEn": "Australia",
@@ -2628,7 +2628,7 @@
   {
     "id": "site_203",
     "unescoId": "905",
-    "name": "Kalwaria Zebrzydowska park",
+    "name": "カルヴァリア・ゼブジドフスカ：マニエリスム様式の建築と公園の景観および巡礼公園",
     "nameEn": "Kalwaria Zebrzydowska park",
     "country": "ポーランド",
     "countryEn": "Poland",
@@ -2641,7 +2641,7 @@
   {
     "id": "site_204",
     "unescoId": "1743",
-    "name": "Kapova Cave",
+    "name": "カポヴァ洞窟の岩壁画",
     "nameEn": "Kapova Cave",
     "country": "ロシア",
     "countryEn": "Russia",
@@ -2654,7 +2654,7 @@
   {
     "id": "site_205",
     "unescoId": "1333rev",
-    "name": "Konso Cultural Landscape",
+    "name": "コンソの文化的景観",
     "nameEn": "Konso Cultural Landscape",
     "country": "エチオピア",
     "countryEn": "Ethiopia",
@@ -2667,7 +2667,7 @@
   {
     "id": "site_206",
     "unescoId": "633-006",
-    "name": "Kremlin of Suzdal and Cathedral of the Nativity",
+    "name": "スズダリのクレムリンと聖母安息大聖堂",
     "nameEn": "Kremlin of Suzdal and Cathedral of the Nativity",
     "country": "ロシア",
     "countryEn": "Russia",
@@ -2680,7 +2680,7 @@
   {
     "id": "site_207",
     "unescoId": "1599",
-    "name": "Krzemionki Prehistoric Striped Flint Mining Region",
+    "name": "クシェミオンキの先史時代縞状フリント採掘地域",
     "nameEn": "Krzemionki Prehistoric Striped Flint Mining Region",
     "country": "ポーランド",
     "countryEn": "Poland",
@@ -2693,7 +2693,7 @@
   {
     "id": "site_208",
     "unescoId": "1536",
-    "name": "Kujataa",
+    "name": "クヤター・グリーンランド：氷床縁部におけるノース人とイヌイットの農業景観",
     "nameEn": "Kujataa",
     "country": "グリーンランド",
     "countryEn": "Greenland",
@@ -2706,7 +2706,7 @@
   {
     "id": "site_209",
     "unescoId": "1302",
-    "name": "La Chaux-de-Fonds / Le Locle, Watchmaking Town Planning",
+    "name": "ラ・ショー‐ド‐フォン／ル・ロクル、時計製造都市の都市計画",
     "nameEn": "La Chaux-de-Fonds / Le Locle, Watchmaking Town Planning",
     "country": "スイス",
     "countryEn": "Switzerland",
@@ -2719,7 +2719,7 @@
   {
     "id": "site_210",
     "unescoId": "1055",
-    "name": "Lamu Old Town",
+    "name": "ラム旧市街",
     "nameEn": "Lamu Old Town",
     "country": "ケニア",
     "countryEn": "Kenya",
@@ -2732,7 +2732,7 @@
   {
     "id": "site_211",
     "unescoId": "1700",
-    "name": "Landmarks of the Ancient Kingdom of Saba",
+    "name": "サバの古代王国の遺跡群",
     "nameEn": "Landmarks of the Ancient Kingdom of Saba",
     "country": "イエメン",
     "countryEn": "Yemen",
@@ -2745,7 +2745,7 @@
   {
     "id": "site_212",
     "unescoId": "1589",
-    "name": "Landscape for Breeding and Training of Ceremonial Carriage Horses at Kladruby nad Labem",
+    "name": "クラドリュビ・ナド・ラベムの儀式用馬の繁殖・訓練景観",
     "nameEn": "Landscape for Breeding and Training of Ceremonial Carriage Horses at Kladruby nad Labem",
     "country": "チェコ共和国",
     "countryEn": "Czech Republic",
@@ -2758,7 +2758,7 @@
   {
     "id": "site_213",
     "unescoId": "1117",
-    "name": "Landscape of the Pico Island Vineyard Culture",
+    "name": "ピコ島のブドウ畑景観",
     "nameEn": "Landscape of the Pico Island Vineyard Culture",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -2771,7 +2771,7 @@
   {
     "id": "site_214",
     "unescoId": "1448",
-    "name": "Landscapes of Dauria",
+    "name": "ダウリアの景観群",
     "nameEn": "Landscapes of Dauria",
     "country": "モンゴル国",
     "countryEn": "Mongolia",
@@ -2784,7 +2784,7 @@
   {
     "id": "site_215",
     "unescoId": "378-010",
-    "name": "Lantern of La Seo",
+    "name": "ラ・セオのランタン構造",
     "nameEn": "Lantern of La Seo",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -2797,7 +2797,7 @@
   {
     "id": "site_216",
     "unescoId": "1024rev",
-    "name": "Late Baroque Towns of the Val di Noto",
+    "name": "ヴァル・ディ・ノートのバロック様式の晩期町群",
     "nameEn": "Late Baroque Towns of the Val di Noto",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -2810,7 +2810,7 @@
   {
     "id": "site_217",
     "unescoId": "1571rev",
-    "name": "Le Colline del Prosecco di Conegliano e Valdobbiadene",
+    "name": "コネリアーノとヴァルドッビアーデネのプロセッコ栽培丘陵群",
     "nameEn": "Le Colline del Prosecco di Conegliano e Valdobbiadene",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -2823,7 +2823,7 @@
   {
     "id": "site_218",
     "unescoId": "1718",
-    "name": "Limes Dacicus",
+    "name": "ライムス・ダキクス（ダキアの国境線）",
     "nameEn": "Limes Dacicus",
     "country": "ルーマニア",
     "countryEn": "Romania",
@@ -2836,7 +2836,7 @@
   {
     "id": "site_219",
     "unescoId": "669bis-007",
-    "name": "Lugo Cathedral",
+    "name": "ルーゴの大聖堂",
     "nameEn": "Lugo Cathedral",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -2849,7 +2849,7 @@
   {
     "id": "site_220",
     "unescoId": "778",
-    "name": "Lushan Quaternary Glaciation National Geopark",
+    "name": "廬山国立公園",
     "nameEn": "Lushan Quaternary Glaciation National Geopark",
     "country": "中華人民共和国",
     "countryEn": "People's Republic of China",
@@ -2862,7 +2862,7 @@
   {
     "id": "site_221",
     "unescoId": "1711",
-    "name": "Maidam",
+    "name": "モイダム（アホム王国の墳墓群）",
     "nameEn": "Maidam",
     "country": "インド",
     "countryEn": "India",
@@ -2875,7 +2875,7 @@
   {
     "id": "site_222",
     "unescoId": "1216",
-    "name": "Malpelo Fauna and Flora Sanctuary",
+    "name": "マルペロ動植物保護区",
     "nameEn": "Malpelo Fauna and Flora Sanctuary",
     "country": "コロンビア",
     "countryEn": "Colombia",
@@ -2888,7 +2888,7 @@
   {
     "id": "site_223",
     "unescoId": "302",
-    "name": "Mana Pools National Park, Sapi and Chewore Safari Areas",
+    "name": "マナ・プールズ国立公園、サピとチュウォール狩猟保護区",
     "nameEn": "Mana Pools National Park, Sapi and Chewore Safari Areas",
     "country": "ジンバブエ",
     "countryEn": "Zimbabwe",
@@ -2901,7 +2901,7 @@
   {
     "id": "site_224",
     "unescoId": "795",
-    "name": "Maritime Greenwich",
+    "name": "河港都市グリニッジ",
     "nameEn": "Maritime Greenwich",
     "country": "イギリス",
     "countryEn": "United Kingdom",
@@ -2914,7 +2914,7 @@
   {
     "id": "site_225",
     "unescoId": "1058rev",
-    "name": "Mazagan",
+    "name": "マザガン（エル・ジャディダ）のポルトガル都市",
     "nameEn": "Mazagan",
     "country": "モロッコ",
     "countryEn": "Morocco",
@@ -2927,7 +2927,7 @@
   {
     "id": "site_226",
     "unescoId": "753rev",
-    "name": "Medina of Essaouira",
+    "name": "エッサウィラのメディナ",
     "nameEn": "Medina of Essaouira",
     "country": "モロッコ",
     "countryEn": "Morocco",
@@ -2940,7 +2940,7 @@
   {
     "id": "site_227",
     "unescoId": "793",
-    "name": "Medina of Meknes",
+    "name": "古都メクネス",
     "nameEn": "Medina of Meknes",
     "country": "モロッコ",
     "countryEn": "Morocco",
@@ -2953,7 +2953,7 @@
   {
     "id": "site_228",
     "unescoId": "498",
-    "name": "Medina of Sousse",
+    "name": "スースのメディナ",
     "nameEn": "Medina of Sousse",
     "country": "チュニジア",
     "countryEn": "Tunisia",
@@ -2966,7 +2966,7 @@
   {
     "id": "site_229",
     "unescoId": "837",
-    "name": "Medina of Tétouan",
+    "name": "テトゥアンのメディナ",
     "nameEn": "Medina of Tétouan",
     "country": "モロッコ",
     "countryEn": "Morocco",
@@ -2979,7 +2979,7 @@
   {
     "id": "site_230",
     "unescoId": "36",
-    "name": "Medina of Tunis",
+    "name": "チュニスのメディナ",
     "nameEn": "Medina of Tunis",
     "country": "チュニジア",
     "countryEn": "Tunisia",
@@ -2992,7 +2992,7 @@
   {
     "id": "site_231",
     "unescoId": "1725",
-    "name": "Megaliths of Carnac and of the shores of Morbihan",
+    "name": "カルナックの巨石群とモルビアンの沿岸",
     "nameEn": "Megaliths of Carnac and of the shores of Morbihan",
     "country": "フランス",
     "countryEn": "France",
@@ -3005,7 +3005,7 @@
   {
     "id": "site_232",
     "unescoId": "866-006",
-    "name": "Meijapão",
+    "name": "メイジャパン考古遺跡",
     "nameEn": "Meijapão",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -3018,7 +3018,7 @@
   {
     "id": "site_233",
     "unescoId": "1223",
-    "name": "Melaka and George Town, Historic Cities of the Straits of Malacca",
+    "name": "メラカとジョージタウン、マラッカ海峡の歴史都市群",
     "nameEn": "Melaka and George Town, Historic Cities of the Straits of Malacca",
     "country": "マレーシア",
     "countryEn": "Malaysia",
@@ -3031,7 +3031,7 @@
   {
     "id": "site_234",
     "unescoId": "1586",
-    "name": "Memorial sites of the Genocide: Nyamata, Murambi, Gisozi and Bisesero",
+    "name": "ジェノサイドのメモリアル遺跡群：ニャマタ、ムランビ、ギソジ、ビセセロ",
     "nameEn": "Memorial sites of the Genocide: Nyamata, Murambi, Gisozi and Bisesero",
     "country": "ルワンダ",
     "countryEn": "Rwanda",
@@ -3044,7 +3044,7 @@
   {
     "id": "site_235",
     "unescoId": "86",
-    "name": "Memphis and its Necropolis – the Pyramid Fields from Giza to Dahshur",
+    "name": "メンフィスとその墓地遺跡－ギザからダハシュールまでのピラミッド地帯",
     "nameEn": "Memphis and its Necropolis – the Pyramid Fields from Giza to Dahshur",
     "country": "エジプト",
     "countryEn": "Egypt",
@@ -3057,7 +3057,7 @@
   {
     "id": "site_236",
     "unescoId": "1606",
-    "name": "Migratory Bird Sanctuaries along the Coast of Yellow Sea-Bohai Gulf of China (Phase I)",
+    "name": "中国の黄海・渤海湾沿岸の渡り鳥保護区群（第1段階）",
     "nameEn": "Migratory Bird Sanctuaries along the Coast of Yellow Sea-Bohai Gulf of China (Phase I)",
     "country": "中華人民共和国",
     "countryEn": "People's Republic of China",
@@ -3070,7 +3070,7 @@
   {
     "id": "site_237",
     "unescoId": "211rev",
-    "name": "Minaret and Archaeological Remains of Jam",
+    "name": "ジャームのミナレットと考古遺跡群",
     "nameEn": "Minaret and Archaeological Remains of Jam",
     "country": "アフガニスタン",
     "countryEn": "Afghanistan",
@@ -3083,7 +3083,7 @@
   {
     "id": "site_238",
     "unescoId": "1661",
-    "name": "Modernist Kaunas: Architecture of Optimism, 1919-1939",
+    "name": "モダニズム都市カウナス：楽観主義の建築（1919-1939年）",
     "nameEn": "Modernist Kaunas: Architecture of Optimism, 1919-1939",
     "country": "リトアニア",
     "countryEn": "Lithuania",
@@ -3096,7 +3096,7 @@
   {
     "id": "site_239",
     "unescoId": "777",
-    "name": "Monasteries of Haghpat and Sanahin",
+    "name": "ハグパットとサナヒンの修道院群",
     "nameEn": "Monasteries of Haghpat and Sanahin",
     "country": "アルメニア",
     "countryEn": "Armenia",
@@ -3109,7 +3109,7 @@
   {
     "id": "site_240",
     "unescoId": "318",
-    "name": "Monastery and Site of the Escurial, Madrid",
+    "name": "マドリードのエスコリアル修道院とその遺跡",
     "nameEn": "Monastery and Site of the Escurial, Madrid",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -3122,7 +3122,7 @@
   {
     "id": "site_241",
     "unescoId": "1090bis",
-    "name": "Monte San Giorgio site fossils",
+    "name": "サン・ジョルジョ山",
     "nameEn": "Monte San Giorgio site fossils",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -3135,7 +3135,7 @@
   {
     "id": "site_242",
     "unescoId": "312",
-    "name": "Monuments of Oviedo and the Kingdom of the Asturias",
+    "name": "オビエド歴史地区とアストゥリアス王国の建造物群",
     "nameEn": "Monuments of Oviedo and the Kingdom of the Asturias",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -3148,7 +3148,7 @@
   {
     "id": "site_243",
     "unescoId": "1468bis",
-    "name": "Moravian Church Settlements",
+    "name": "モラヴィア兄弟団の入植地群",
     "nameEn": "Moravian Church Settlements",
     "country": "ドイツ",
     "countryEn": "Germany",
@@ -3161,7 +3161,7 @@
   {
     "id": "site_244",
     "unescoId": "509",
-    "name": "Mosi-oa-Tunya / Victoria Falls",
+    "name": "モシ・オ・トゥニャ／ヴィクトリアの滝",
     "nameEn": "Mosi-oa-Tunya / Victoria Falls",
     "country": "ザンビア",
     "countryEn": "Zambia",
@@ -3174,7 +3174,7 @@
   {
     "id": "site_245",
     "unescoId": "1810",
-    "name": "Mount Amel Castles",
+    "name": "アメル山の城塞群",
     "nameEn": "Mount Amel Castles",
     "country": "レバノン",
     "countryEn": "Lebanon",
@@ -3187,7 +3187,7 @@
   {
     "id": "site_246",
     "unescoId": "454",
-    "name": "Mount Athos",
+    "name": "アトス山",
     "nameEn": "Mount Athos",
     "country": "ギリシャ",
     "countryEn": "Greece",
@@ -3200,7 +3200,7 @@
   {
     "id": "site_247",
     "unescoId": "779",
-    "name": "Mount Emei Scenic Area, including Leshan Giant Buddha Scenic Area",
+    "name": "峨眉山と楽山大仏",
     "nameEn": "Mount Emei Scenic Area, including Leshan Giant Buddha Scenic Area",
     "country": "中華人民共和国",
     "countryEn": "People's Republic of China",
@@ -3213,7 +3213,7 @@
   {
     "id": "site_248",
     "unescoId": "1403",
-    "name": "Mount Hamiguitan Range Wildlife Sanctuary",
+    "name": "ハミギタン山脈野生生物保護区",
     "nameEn": "Mount Hamiguitan Range Wildlife Sanctuary",
     "country": "フィリピン",
     "countryEn": "Philippines",
@@ -3226,7 +3226,7 @@
   {
     "id": "site_249",
     "unescoId": "378",
-    "name": "Mudejar Architecture of Aragon",
+    "name": "アラゴンのムデハル様式建築",
     "nameEn": "Mudejar Architecture of Aragon",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -3239,7 +3239,7 @@
   {
     "id": "site_250",
     "unescoId": "1709",
-    "name": "Murujuga National Park",
+    "name": "ムルジュガの文化的景観",
     "nameEn": "Murujuga National Park",
     "country": "オーストラリア",
     "countryEn": "Australia",
@@ -3252,7 +3252,7 @@
   {
     "id": "site_251",
     "unescoId": "1127bis",
-    "name": "Muskauer Park (Sachgesamtheit)",
+    "name": "ムスカウ公園／ムザコフスキ公園",
     "nameEn": "Muskauer Park (Sachgesamtheit)",
     "country": "ドイツ",
     "countryEn": "Germany",
@@ -3265,7 +3265,7 @@
   {
     "id": "site_252",
     "unescoId": "1430",
-    "name": "Namib Sand Sea",
+    "name": "ナミブ砂海",
     "nameEn": "Namib Sand Sea",
     "country": "ナミビア",
     "countryEn": "Namibia",
@@ -3278,7 +3278,7 @@
   {
     "id": "site_253",
     "unescoId": "125",
-    "name": "Natural and Culturo-Historical Region of Kotor",
+    "name": "コトルの自然と文化歴史地域",
     "nameEn": "Natural and Culturo-Historical Region of Kotor",
     "country": "モンテネグロ",
     "countryEn": "Montenegro",
@@ -3291,7 +3291,7 @@
   {
     "id": "site_254",
     "unescoId": "871",
-    "name": "Naval City of Karlskrona",
+    "name": "カールスクルーナの軍港",
     "nameEn": "Naval City of Karlskrona",
     "country": "スウェーデン",
     "countryEn": "Sweden",
@@ -3304,7 +3304,7 @@
   {
     "id": "site_255",
     "unescoId": "1635",
-    "name": "Nice, Winter Resort Town of the Riviera",
+    "name": "リヴィエラの行楽都市ニース",
     "nameEn": "Nice, Winter Resort Town of the Riviera",
     "country": "フランス",
     "countryEn": "France",
@@ -3317,7 +3317,7 @@
   {
     "id": "site_256",
     "unescoId": "1360",
-    "name": "northern French coal mining region",
+    "name": "北部フランスの炭鉱地帯",
     "nameEn": "northern French coal mining region",
     "country": "フランス",
     "countryEn": "France",
@@ -3330,7 +3330,7 @@
   {
     "id": "site_257",
     "unescoId": "866-013",
-    "name": "Núcleo Arqueológico de Habitat Paleolítico do Salto do Boi/Cardina",
+    "name": "サルト・ド・ボイ／カルディナのパレオリティック遺跡",
     "nameEn": "Núcleo Arqueológico de Habitat Paleolítico do Salto do Boi/Cardina",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -3343,7 +3343,7 @@
   {
     "id": "site_258",
     "unescoId": "1751",
-    "name": "Okefenokee National Wildlife Refuge",
+    "name": "オキフェノーキー国立野生生物保護区",
     "nameEn": "Okefenokee National Wildlife Refuge",
     "country": "アメリカ合衆国",
     "countryEn": "United States",
@@ -3356,7 +3356,7 @@
   {
     "id": "site_259",
     "unescoId": "728",
-    "name": "Old and New Towns of Edinburgh",
+    "name": "エディンバラの旧市街と新市街",
     "nameEn": "Old and New Towns of Edinburgh",
     "country": "イギリス",
     "countryEn": "United Kingdom",
@@ -3369,7 +3369,7 @@
   {
     "id": "site_260",
     "unescoId": "946",
-    "name": "Old Bridge Area of the Old City of Mostar",
+    "name": "モスタル古橋地区の旧市街",
     "nameEn": "Old Bridge Area of the Old City of Mostar",
     "country": "ボスニア・ヘルツェゴビナ",
     "countryEn": "Bosnia and Herzegovina",
@@ -3382,7 +3382,7 @@
   {
     "id": "site_261",
     "unescoId": "95",
-    "name": "Old city (Dubrovnik)",
+    "name": "ドゥブロヴニク旧市街",
     "nameEn": "Old city (Dubrovnik)",
     "country": "クロアチア",
     "countryEn": "Croatia",
@@ -3395,7 +3395,7 @@
   {
     "id": "site_262",
     "unescoId": "204",
-    "name": "Old Havana and its Fortification System",
+    "name": "ハバナ旧市街とその要塞群",
     "nameEn": "Old Havana and its Fortification System",
     "country": "キューバ",
     "countryEn": "Cuba",
@@ -3408,7 +3408,7 @@
   {
     "id": "site_263",
     "unescoId": "348",
-    "name": "Old Town of Ávila with its Extra-Muros Churches",
+    "name": "アビラ旧市街と市外の教会群",
     "nameEn": "Old Town of Ávila with its Extra-Muros Churches",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -3421,7 +3421,7 @@
   {
     "id": "site_264",
     "unescoId": "384",
-    "name": "old town of Cáceres",
+    "name": "カセレス旧市街",
     "nameEn": "old town of Cáceres",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -3434,7 +3434,7 @@
   {
     "id": "site_265",
     "unescoId": "978",
-    "name": "Old town of Corfu",
+    "name": "コルフ旧市街",
     "nameEn": "Old town of Corfu",
     "country": "ギリシャ",
     "countryEn": "Greece",
@@ -3447,7 +3447,7 @@
   {
     "id": "site_266",
     "unescoId": "362",
-    "name": "Old Town of Ghadamès",
+    "name": "ガダーミス旧市街",
     "nameEn": "Old Town of Ghadamès",
     "country": "リビア",
     "countryEn": "Libya",
@@ -3460,7 +3460,7 @@
   {
     "id": "site_267",
     "unescoId": "1658",
-    "name": "Old town of Kuldīga",
+    "name": "クルディ-ガ旧市街",
     "nameEn": "Old town of Kuldīga",
     "country": "ラトビア",
     "countryEn": "Latvia",
@@ -3473,7 +3473,7 @@
   {
     "id": "site_268",
     "unescoId": "811",
-    "name": "Old Town of Lijiang",
+    "name": "麗江古城",
     "nameEn": "Old Town of Lijiang",
     "country": "中華人民共和国",
     "countryEn": "People's Republic of China",
@@ -3486,7 +3486,7 @@
   {
     "id": "site_269",
     "unescoId": "347",
-    "name": "old town of Santiago de Compostela",
+    "name": "サンティアゴ・デ・コンポステーラ旧市街",
     "nameEn": "old town of Santiago de Compostela",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -3499,7 +3499,7 @@
   {
     "id": "site_270",
     "unescoId": "1478",
-    "name": "Ore Mountain Mining Region",
+    "name": "エルツ山地（クルシノホジー）鉱業地域",
     "nameEn": "Ore Mountain Mining Region",
     "country": "ドイツ",
     "countryEn": "Germany",
@@ -3512,7 +3512,7 @@
   {
     "id": "site_271",
     "unescoId": "786",
-    "name": "Palace and gardens of Schönbrunn",
+    "name": "シェーンブルン宮殿と庭園群",
     "nameEn": "Palace and gardens of Schönbrunn",
     "country": "オーストリア",
     "countryEn": "Austria",
@@ -3525,7 +3525,7 @@
   {
     "id": "site_272",
     "unescoId": "83bis",
-    "name": "Palace and Park of Versailles",
+    "name": "ヴェルサイユの宮殿と庭園",
     "nameEn": "Palace and Park of Versailles",
     "country": "フランス",
     "countryEn": "France",
@@ -3538,7 +3538,7 @@
   {
     "id": "site_273",
     "unescoId": "426",
-    "name": "Palace of Westminster and Westminster Abbey including Saint Margaret's Church",
+    "name": "ウェストミンスター宮殿、ウェストミンスター寺院及び聖マーガレット教会",
     "nameEn": "Palace of Westminster and Westminster Abbey including Saint Margaret's Church",
     "country": "イギリス",
     "countryEn": "United Kingdom",
@@ -3551,7 +3551,7 @@
   {
     "id": "site_274",
     "unescoId": "804",
-    "name": "Palau de la Música Catalana and Hospital de Sant Pau, Barcelona",
+    "name": "バルセロナのカタルーニャ音楽堂とサン・パウ病院",
     "nameEn": "Palau de la Música Catalana and Hospital de Sant Pau, Barcelona",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -3564,7 +3564,7 @@
   {
     "id": "site_275",
     "unescoId": "1492",
-    "name": "Palestine: Land of Olives and Vines – Cultural Landscape of Southern Jerusalem, Battir",
+    "name": "パレスチナ：オリーブとワインの地－南エルサレム・バティールの文化的景観",
     "nameEn": "Palestine: Land of Olives and Vines – Cultural Landscape of Southern Jerusalem, Battir",
     "country": "パレスチナ国",
     "countryEn": "Palestine",
@@ -3577,7 +3577,7 @@
   {
     "id": "site_276",
     "unescoId": "79",
-    "name": "Paphos",
+    "name": "パフォス",
     "nameEn": "Paphos",
     "country": "キプロス",
     "countryEn": "Cyprus",
@@ -3590,7 +3590,7 @@
   {
     "id": "site_277",
     "unescoId": "1308rev",
-    "name": "Paraty and Ilha Grande – Culture and Biodiversity",
+    "name": "パラチーとイルハ・グランデ",
     "nameEn": "Paraty and Ilha Grande – Culture and Biodiversity",
     "country": "ブラジル",
     "countryEn": "Brazil",
@@ -3603,7 +3603,7 @@
   {
     "id": "site_278",
     "unescoId": "1618",
-    "name": "Paseo del Prado and Buen Retiro, a landscape of Arts and Sciences",
+    "name": "プラド通りとブエン・レティーロ公園、芸術と科学の景観",
     "nameEn": "Paseo del Prado and Buen Retiro, a landscape of Arts and Sciences",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -3616,7 +3616,7 @@
   {
     "id": "site_279",
     "unescoId": "1194",
-    "name": "Pegulingan Temple",
+    "name": "ペグリガン寺院遺跡",
     "nameEn": "Pegulingan Temple",
     "country": "インドネシア",
     "countryEn": "Indonesia",
@@ -3629,7 +3629,7 @@
   {
     "id": "site_280",
     "unescoId": "866-007",
-    "name": "Penascosa",
+    "name": "ペナスコサ考古遺跡",
     "nameEn": "Penascosa",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -3642,7 +3642,7 @@
   {
     "id": "site_281",
     "unescoId": "1457",
-    "name": "Pergamon and its Multi-Layered Cultural Landscape",
+    "name": "ペルガモンとその多層的文化的景観",
     "nameEn": "Pergamon and its Multi-Layered Cultural Landscape",
     "country": "トルコ",
     "countryEn": "Turkey",
@@ -3655,7 +3655,7 @@
   {
     "id": "site_282",
     "unescoId": "1668",
-    "name": "Persian Caravanserai",
+    "name": "ペルシアのキャラバンサライ",
     "nameEn": "Persian Caravanserai",
     "country": "イラン",
     "countryEn": "Iran",
@@ -3668,7 +3668,7 @@
   {
     "id": "site_283",
     "unescoId": "1654",
-    "name": "Petroglyphs of Lake Onega and the White Sea",
+    "name": "オネガ湖と白海のペトログリフ（岩絵）",
     "nameEn": "Petroglyphs of Lake Onega and the White Sea",
     "country": "ロシア",
     "countryEn": "Russia",
@@ -3681,7 +3681,7 @@
   {
     "id": "site_284",
     "unescoId": "1507",
-    "name": "Phu Phrabat, a testimony to the Sīma stone tradition of the Dvaravati period",
+    "name": "フー・プラバート：ドヴァーラヴァティー期のシーマ石伝統の証し",
     "nameEn": "Phu Phrabat, a testimony to the Sīma stone tradition of the Dvaravati period",
     "country": "タイ王国",
     "countryEn": "Thailand",
@@ -3694,7 +3694,7 @@
   {
     "id": "site_285",
     "unescoId": "229bis",
-    "name": "Place Stanislas, Place de la Carrière and Place d'Alliance in Nancy",
+    "name": "ナンシーのスタニスラス広場、カリエール広場、アリアンス広場",
     "nameEn": "Place Stanislas, Place de la Carrière and Place d'Alliance in Nancy",
     "country": "フランス",
     "countryEn": "France",
@@ -3707,7 +3707,7 @@
   {
     "id": "site_286",
     "unescoId": "1303",
-    "name": "Pontcysyllte Aqueduct and Canal",
+    "name": "ポントカサリテ水路橋と運河",
     "nameEn": "Pontcysyllte Aqueduct and Canal",
     "country": "イギリス",
     "countryEn": "United Kingdom",
@@ -3720,7 +3720,7 @@
   {
     "id": "site_287",
     "unescoId": "826",
-    "name": "Portovenere, Cinque Terre, and the Islands (Palmaria, Tino and Tinetto)",
+    "name": "ポルトヴェーネレ、チンクエ・テッレ及び島々（パルマリア島、ティーノ島、ティネット島）",
     "nameEn": "Portovenere, Cinque Terre, and the Islands (Palmaria, Tino and Tinetto)",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -3733,7 +3733,7 @@
   {
     "id": "site_288",
     "unescoId": "791",
-    "name": "Pre-Hispanic Town of Uxmal",
+    "name": "ウシュマルの先スペイン都市",
     "nameEn": "Pre-Hispanic Town of Uxmal",
     "country": "メキシコ",
     "countryEn": "Mexico",
@@ -3746,7 +3746,7 @@
   {
     "id": "site_289",
     "unescoId": "1453",
-    "name": "Precolumbian Chiefdom Settlements with Stone Spheres of the Diquís",
+    "name": "ディキスの石球のある先コロンブス期首長制集落群",
     "nameEn": "Precolumbian Chiefdom Settlements with Stone Spheres of the Diquís",
     "country": "コスタリカ",
     "countryEn": "Costa Rica",
@@ -3759,7 +3759,7 @@
   {
     "id": "site_290",
     "unescoId": "1352",
-    "name": "Prehistoric Caves of Yagul and Mitla in the Central Valley of Oaxaca",
+    "name": "オアハカ中央谷群のヤグルとミトラの先史時代洞窟",
     "nameEn": "Prehistoric Caves of Yagul and Mitla in the Central Valley of Oaxaca",
     "country": "メキシコ",
     "countryEn": "Mexico",
@@ -3772,7 +3772,7 @@
   {
     "id": "site_291",
     "unescoId": "866bis",
-    "name": "Prehistoric Rock-Art Site of the Côa Valley and Siega Verde",
+    "name": "コーア渓谷とシエガ・ベルデの先史時代岩壁画群",
     "nameEn": "Prehistoric Rock-Art Site of the Côa Valley and Siega Verde",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -3785,7 +3785,7 @@
   {
     "id": "site_292",
     "unescoId": "1744",
-    "name": "Prehistoric Sites of the Khorramabad Valley",
+    "name": "ホッラマーバード渓谷の先史時代遺跡群",
     "nameEn": "Prehistoric Sites of the Khorramabad Valley",
     "country": "イラン",
     "countryEn": "Iran",
@@ -3798,7 +3798,7 @@
   {
     "id": "site_293",
     "unescoId": "1351-015",
-    "name": "Protective town of San Miguel and the Sanctuary of Jesús Nazareno de Atotonilco",
+    "name": "サン・ミゲルの保護都市とアトトニルコのヒスス・ナサレノ聖堂",
     "nameEn": "Protective town of San Miguel and the Sanctuary of Jesús Nazareno de Atotonilco",
     "country": "メキシコ",
     "countryEn": "Mexico",
@@ -3811,7 +3811,7 @@
   {
     "id": "site_294",
     "unescoId": "873",
-    "name": "Provins",
+    "name": "中世市場都市プロヴァン",
     "nameEn": "Provins",
     "country": "フランス",
     "countryEn": "France",
@@ -3824,7 +3824,7 @@
   {
     "id": "site_295",
     "unescoId": "332",
-    "name": "Punic Town of Kerkuane and its Necropolis",
+    "name": "ケルクアンのフェニキア人都市とその墓地遺跡",
     "nameEn": "Punic Town of Kerkuane and its Necropolis",
     "country": "チュニジア",
     "countryEn": "Tunisia",
@@ -3837,7 +3837,7 @@
   {
     "id": "site_296",
     "unescoId": "773bis",
-    "name": "Pyrénées – Mont Perdu World Heritage Site",
+    "name": "ピレネー山脈のモン・ペルデュ",
     "nameEn": "Pyrénées – Mont Perdu World Heritage Site",
     "country": "フランス",
     "countryEn": "France",
@@ -3850,7 +3850,7 @@
   {
     "id": "site_297",
     "unescoId": "595",
-    "name": "Pythagoreion and Heraion of Samos",
+    "name": "サモス島のピタゴリオとヘラ神殿",
     "nameEn": "Pythagoreion and Heraion of Samos",
     "country": "ギリシャ",
     "countryEn": "Greece",
@@ -3863,7 +3863,7 @@
   {
     "id": "site_298",
     "unescoId": "1444",
-    "name": "Pyu Ancient Cities",
+    "name": "ピューの古代都市群",
     "nameEn": "Pyu Ancient Cities",
     "country": "ミャンマー",
     "countryEn": "Myanmar",
@@ -3876,7 +3876,7 @@
   {
     "id": "site_299",
     "unescoId": "1712",
-    "name": "Qaryat al-Faw",
+    "name": "カリアト・アル・ファウの文化景観",
     "nameEn": "Qaryat al-Faw",
     "country": "サウジアラビア",
     "countryEn": "Saudi Arabia",
@@ -3889,7 +3889,7 @@
   {
     "id": "site_300",
     "unescoId": "1001",
-    "name": "Qingchengshan-Dujiangyan National Park",
+    "name": "青城山と都江堰",
     "nameEn": "Qingchengshan-Dujiangyan National Park",
     "country": "中華人民共和国",
     "countryEn": "People's Republic of China",
@@ -3902,7 +3902,7 @@
   {
     "id": "site_301",
     "unescoId": "866-008",
-    "name": "Quinta da Barca",
+    "name": "キンタ・ダ・バルカ考古遺跡",
     "nameEn": "Quinta da Barca",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -3915,7 +3915,7 @@
   {
     "id": "site_302",
     "unescoId": "866-009",
-    "name": "Quinta da Ervamoira",
+    "name": "キンタ・ダ・エルヴァモイラ考古遺跡",
     "nameEn": "Quinta da Ervamoira",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -3928,7 +3928,7 @@
   {
     "id": "site_303",
     "unescoId": "866-010",
-    "name": "Quinta do Fariseu",
+    "name": "キンタ・ド・ファリゼウ考古遺跡",
     "nameEn": "Quinta do Fariseu",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -3941,7 +3941,7 @@
   {
     "id": "site_304",
     "unescoId": "1570",
-    "name": "Ramappa Temple",
+    "name": "ラマッパ寺院",
     "nameEn": "Ramappa Temple",
     "country": "インド",
     "countryEn": "India",
@@ -3954,7 +3954,7 @@
   {
     "id": "site_305",
     "unescoId": "1705",
-    "name": "Residence Ensemble Schwerin",
+    "name": "シュヴェリーン要塞建築群",
     "nameEn": "Residence Ensemble Schwerin",
     "country": "ドイツ",
     "countryEn": "Germany",
@@ -3967,7 +3967,7 @@
   {
     "id": "site_306",
     "unescoId": "866-011",
-    "name": "Ribeira de Piscos / Quinta dos Poios",
+    "name": "リベイラ・デ・ピスコス考古遺跡",
     "nameEn": "Ribeira de Piscos / Quinta dos Poios",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -3980,7 +3980,7 @@
   {
     "id": "site_307",
     "unescoId": "866-012",
-    "name": "Ribeirinha",
+    "name": "リベイリーニャ考古遺跡",
     "nameEn": "Ribeirinha",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -3993,7 +3993,7 @@
   {
     "id": "site_308",
     "unescoId": "1221",
-    "name": "Rideau Canal World Heritage Site",
+    "name": "リドー運河",
     "nameEn": "Rideau Canal World Heritage Site",
     "country": "カナダ",
     "countryEn": "Canada",
@@ -4006,7 +4006,7 @@
   {
     "id": "site_309",
     "unescoId": "216",
-    "name": "Rila Monastery",
+    "name": "リラ修道院",
     "nameEn": "Rila Monastery",
     "country": "ブルガリア",
     "countryEn": "Bulgaria",
@@ -4019,7 +4019,7 @@
   {
     "id": "site_310",
     "unescoId": "1760",
-    "name": "Rock Mosques and Associated Sacred Sites of Mangystau",
+    "name": "マンギスタウの岩窟モスクと聖なる遺跡群",
     "nameEn": "Rock Mosques and Associated Sacred Sites of Mangystau",
     "country": "カザフスタン",
     "countryEn": "Kazakhstan",
@@ -4032,7 +4032,7 @@
   {
     "id": "site_311",
     "unescoId": "38",
-    "name": "Roman amphitheatre of El Jem",
+    "name": "エル・ジェムの円形闘技場",
     "nameEn": "Roman amphitheatre of El Jem",
     "country": "チュニジア",
     "countryEn": "Tunisia",
@@ -4045,7 +4045,7 @@
   {
     "id": "site_312",
     "unescoId": "163bis",
-    "name": "Roman Theatre and its Surroundings and the \"Triumphal Arch\" of Orange",
+    "name": "オランジュのローマ劇場とその周辺及び「勝利のアーチ」",
     "nameEn": "Roman Theatre and its Surroundings and the \"Triumphal Arch\" of Orange",
     "country": "フランス",
     "countryEn": "France",
@@ -4058,7 +4058,7 @@
   {
     "id": "site_313",
     "unescoId": "987",
-    "name": "Roman Walls of Lugo",
+    "name": "ルーゴのローマ城壁群",
     "nameEn": "Roman Walls of Lugo",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -4071,7 +4071,7 @@
   {
     "id": "site_314",
     "unescoId": "55",
-    "name": "Røros Mining Town and the Circumference",
+    "name": "レーロースの鉱山都市とその周辺",
     "nameEn": "Røros Mining Town and the Circumference",
     "country": "ノルウェー王国",
     "countryEn": "Norway",
@@ -4084,7 +4084,7 @@
   {
     "id": "site_315",
     "unescoId": "669",
-    "name": "Routes of Santiago de Compostela: Camino Francés and Routes of Northern Spain",
+    "name": "サンティアゴ・デ・コンポステーラの巡礼路：カミノ・フランセスとスペイン北部の巡礼路",
     "nameEn": "Routes of Santiago de Compostela: Camino Francés and Routes of Northern Spain",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -4097,7 +4097,7 @@
   {
     "id": "site_316",
     "unescoId": "601",
-    "name": "Royal abbey of Saint-Remi",
+    "name": "サン・レミ修道院",
     "nameEn": "Royal abbey of Saint-Remi",
     "country": "フランス",
     "countryEn": "France",
@@ -4110,7 +4110,7 @@
   {
     "id": "site_317",
     "unescoId": "1573",
-    "name": "Royal Building of Mafra",
+    "name": "マフラの首長宮殿",
     "nameEn": "Royal Building of Mafra",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -4123,7 +4123,7 @@
   {
     "id": "site_318",
     "unescoId": "1755",
-    "name": "Royal Capetian Fortresses of Languedoc",
+    "name": "ラングドックのカペー朝王立要塞群",
     "nameEn": "Royal Capetian Fortresses of Languedoc",
     "country": "フランス",
     "countryEn": "France",
@@ -4136,7 +4136,7 @@
   {
     "id": "site_319",
     "unescoId": "1713",
-    "name": "Royal Court of Tiébélé",
+    "name": "ティエベレの王立宮廷群",
     "nameEn": "Royal Court of Tiébélé",
     "country": "ブルキナファソ",
     "countryEn": "Burkina Faso",
@@ -4149,7 +4149,7 @@
   {
     "id": "site_320",
     "unescoId": "613",
-    "name": "Ruínas de León Viejo",
+    "name": "レオン・ビエホ遺跡",
     "nameEn": "Ruínas de León Viejo",
     "country": "ニカラグア",
     "countryEn": "Nicaragua",
@@ -4162,7 +4162,7 @@
   {
     "id": "site_321",
     "unescoId": "15",
-    "name": "Ruins of Aksum",
+    "name": "アクサムの遺跡",
     "nameEn": "Ruins of Aksum",
     "country": "エチオピア",
     "countryEn": "Ethiopia",
@@ -4175,7 +4175,7 @@
   {
     "id": "site_322",
     "unescoId": "1670",
-    "name": "Sacred Ensembles of the Hoysalas",
+    "name": "ホイサラ朝の神聖な建造物群",
     "nameEn": "Sacred Ensembles of the Hoysalas",
     "country": "インド",
     "countryEn": "India",
@@ -4188,7 +4188,7 @@
   {
     "id": "site_323",
     "unescoId": "1068-006",
-    "name": "Sacro Monte di Ossuccio",
+    "name": "オッスッチョのサクロ・モンテ",
     "nameEn": "Sacro Monte di Ossuccio",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -4201,7 +4201,7 @@
   {
     "id": "site_324",
     "unescoId": "954",
-    "name": "Saint Catherine Area",
+    "name": "シナイ山・聖カタリナ修道院地域",
     "nameEn": "Saint Catherine Area",
     "country": "エジプト",
     "countryEn": "Egypt",
@@ -4214,7 +4214,7 @@
   {
     "id": "site_325",
     "unescoId": "1466",
-    "name": "San Antonio Missions",
+    "name": "サン・アントニオ伝道所群",
     "nameEn": "San Antonio Missions",
     "country": "アメリカ合衆国",
     "countryEn": "United States",
@@ -4227,7 +4227,7 @@
   {
     "id": "site_326",
     "unescoId": "1245",
-    "name": "San Marino Historic Centre and Mount Titano",
+    "name": "サンマリノ歴史地区とチターノ山",
     "nameEn": "San Marino Historic Centre and Mount Titano",
     "country": "サンマリノ",
     "countryEn": "San Marino",
@@ -4240,7 +4240,7 @@
   {
     "id": "site_327",
     "unescoId": "1272rev",
-    "name": "São Francisco Square",
+    "name": "サン・フランシスコ広場",
     "nameEn": "São Francisco Square",
     "country": "ブラジル",
     "countryEn": "Brazil",
@@ -4253,7 +4253,7 @@
   {
     "id": "site_328",
     "unescoId": "1731",
-    "name": "Sardis and the Lydian Tumuli of Bin Tepe",
+    "name": "サルディスとビン・テペのリュディア墳墓群",
     "nameEn": "Sardis and the Lydian Tumuli of Bin Tepe",
     "country": "トルコ",
     "countryEn": "Turkey",
@@ -4266,7 +4266,7 @@
   {
     "id": "site_329",
     "unescoId": "578",
-    "name": "Shark Bay",
+    "name": "シャーク湾",
     "nameEn": "Shark Bay",
     "country": "オーストラリア",
     "countryEn": "Australia",
@@ -4279,7 +4279,7 @@
   {
     "id": "site_330",
     "unescoId": "1636",
-    "name": "ShUM Sites of Speyer, Worms and Mainz",
+    "name": "シュパイヤー、ヴォルムス、マインツのShUM都市群",
     "nameEn": "ShUM Sites of Speyer, Worms and Mainz",
     "country": "ドイツ",
     "countryEn": "Germany",
@@ -4292,7 +4292,7 @@
   {
     "id": "site_331",
     "unescoId": "1315",
-    "name": "Shushtar Historical Hydraulic System",
+    "name": "シュシュタルの歴史的水利施設",
     "nameEn": "Shushtar Historical Hydraulic System",
     "country": "イラン",
     "countryEn": "Iran",
@@ -4305,7 +4305,7 @@
   {
     "id": "site_332",
     "unescoId": "1620",
-    "name": "Sítio Roberto Burle Marx",
+    "name": "シティオ・ロベルト・ブルーレ・マルクス",
     "nameEn": "Sítio Roberto Burle Marx",
     "country": "ブラジル",
     "countryEn": "Brazil",
@@ -4318,7 +4318,7 @@
   {
     "id": "site_333",
     "unescoId": "1263",
-    "name": "Socotra Archipelago",
+    "name": "ソコトラ諸島",
     "nameEn": "Socotra Archipelago",
     "country": "マフラ首長国",
     "countryEn": "Mahra Sultanate",
@@ -4331,7 +4331,7 @@
   {
     "id": "site_334",
     "unescoId": "632",
-    "name": "Solovetsky state Museum-reserve",
+    "name": "ソロヴェツキー諸島の歴史的・文化的分野",
     "nameEn": "Solovetsky state Museum-reserve",
     "country": "ロシア",
     "countryEn": "Russia",
@@ -4344,7 +4344,7 @@
   {
     "id": "site_335",
     "unescoId": "968",
-    "name": "Southern Öland cultural landscape",
+    "name": "エーランド島南部の農業景観",
     "nameEn": "Southern Öland cultural landscape",
     "country": "スウェーデン",
     "countryEn": "Sweden",
@@ -4357,7 +4357,7 @@
   {
     "id": "site_336",
     "unescoId": "1715rev",
-    "name": "Śródmieście",
+    "name": "シロドミエシチエ（ワルシャワ中心街）",
     "nameEn": "Śródmieście",
     "country": "ポーランド",
     "countryEn": "Poland",
@@ -4370,7 +4370,7 @@
   {
     "id": "site_337",
     "unescoId": "983",
-    "name": "St George and Related Fortifications",
+    "name": "セント・ジョージ歴史都市と要塞群",
     "nameEn": "St George and Related Fortifications",
     "country": "イギリス",
     "countryEn": "United Kingdom",
@@ -4383,7 +4383,7 @@
   {
     "id": "site_338",
     "unescoId": "1240",
-    "name": "Stari Grad Plain",
+    "name": "スタリー・グラード平原",
     "nameEn": "Stari Grad Plain",
     "country": "クロアチア",
     "countryEn": "Croatia",
@@ -4396,7 +4396,7 @@
   {
     "id": "site_339",
     "unescoId": "1226",
-    "name": "Stone Circles of Senegambia",
+    "name": "セネガンビアのストーン・サークル",
     "nameEn": "Stone Circles of Senegambia",
     "country": "セネガル",
     "countryEn": "Senegal",
@@ -4409,7 +4409,7 @@
   {
     "id": "site_340",
     "unescoId": "495bis",
-    "name": "Strasbourg: from Grande-île to Neustadt, a European urban scene",
+    "name": "ストラスブール：グラン・ディルからノイシュタットまでの欧州都市景観",
     "nameEn": "Strasbourg: from Grande-île to Neustadt, a European urban scene",
     "country": "フランス",
     "countryEn": "France",
@@ -4422,7 +4422,7 @@
   {
     "id": "site_341",
     "unescoId": "1648",
-    "name": "Sudanese style mosques in northern Côte d'Ivoire",
+    "name": "コートジボワール北部のスーダン様式モスク群",
     "nameEn": "Sudanese style mosques in northern Côte d'Ivoire",
     "country": "コートジボワール",
     "countryEn": "Ivory Coast",
@@ -4435,7 +4435,7 @@
   {
     "id": "site_342",
     "unescoId": "798",
-    "name": "Sundarbans Reserved Forest",
+    "name": "シュンドルボン",
     "nameEn": "Sundarbans Reserved Forest",
     "country": "バングラデシュ",
     "countryEn": "Bangladesh",
@@ -4448,7 +4448,7 @@
   {
     "id": "site_343",
     "unescoId": "1525",
-    "name": "Sviyazhsk Assumption Monastery",
+    "name": "スヴィヤジスクの生実修道院と聖堂",
     "nameEn": "Sviyazhsk Assumption Monastery",
     "country": "ロシア",
     "countryEn": "Russia",
@@ -4461,7 +4461,7 @@
   {
     "id": "site_344",
     "unescoId": "1200",
-    "name": "Syracuse and the Rocky Necropolis of Pantalica",
+    "name": "シラクーサとパンターリカの断崖のネクロポリス",
     "nameEn": "Syracuse and the Rocky Necropolis of Pantalica",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -4474,7 +4474,7 @@
   {
     "id": "site_345",
     "unescoId": "205bis",
-    "name": "Talamanca Range-La Amistad Reserves",
+    "name": "タラマンカ高地＝ラ・アミスター保護区群",
     "nameEn": "Talamanca Range-La Amistad Reserves",
     "country": "コスタリカ",
     "countryEn": "Costa Rica",
@@ -4487,7 +4487,7 @@
   {
     "id": "site_346",
     "unescoId": "1528",
-    "name": "Talayotic Culture of Minorca",
+    "name": "メノルカ島のタラヨティック文化",
     "nameEn": "Talayotic Culture of Minorca",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -4500,7 +4500,7 @@
   {
     "id": "site_347",
     "unescoId": "1539",
-    "name": "Tarnowskie Góry Lead-Silver-Zinc Mine and its Underground Water Management System",
+    "name": "タルノフスキェ・グルイの鉛・亜鉛・銀鉱山とその地下水管理システム",
     "nameEn": "Tarnowskie Góry Lead-Silver-Zinc Mine and its Underground Water Management System",
     "country": "ポーランド",
     "countryEn": "Poland",
@@ -4513,7 +4513,7 @@
   {
     "id": "site_348",
     "unescoId": "1766",
-    "name": "Tashkent Modernist Architecture. Modernity and Tradition in Central Asia",
+    "name": "タシケントのモダニズム建築",
     "nameEn": "Tashkent Modernist Architecture. Modernity and Tradition in Central Asia",
     "country": "ウズベキスタン",
     "countryEn": "Uzbekistan",
@@ -4526,7 +4526,7 @@
   {
     "id": "site_349",
     "unescoId": "1749",
-    "name": "Tell Umm el-'Amr",
+    "name": "テル・ウム・エル・アムル（サン・ヒラリオン修道院）",
     "nameEn": "Tell Umm el-'Amr",
     "country": "パレスチナ国",
     "countryEn": "Palestine",
@@ -4539,7 +4539,7 @@
   {
     "id": "site_350",
     "unescoId": "1351-005",
-    "name": "Templo y exconvento de San Francisco",
+    "name": "サン・フランシスコ寺院と旧修道院",
     "nameEn": "Templo y exconvento de San Francisco",
     "country": "メキシコ",
     "countryEn": "Mexico",
@@ -4552,7 +4552,7 @@
   {
     "id": "site_351",
     "unescoId": "1758",
-    "name": "The Bony Fish Fossils of the Western Limfjord – Evolution and Climate Adaptation in the Earliest Eocene",
+    "name": "西リムフィヨルドの硬骨魚類化石群",
     "nameEn": "The Bony Fish Fossils of the Western Limfjord – Evolution and Climate Adaptation in the Earliest Eocene",
     "country": "デンマーク",
     "countryEn": "Denmark",
@@ -4565,7 +4565,7 @@
   {
     "id": "site_352",
     "unescoId": "1759",
-    "name": "The Cemetery Complexes of the Xiongnu Nobility",
+    "name": "匈奴貴族の墓地建造物群",
     "nameEn": "The Cemetery Complexes of the Xiongnu Nobility",
     "country": "モンゴル国",
     "countryEn": "Mongolia",
@@ -4578,7 +4578,7 @@
   {
     "id": "site_353",
     "unescoId": "1582",
-    "name": "The Colonial Transisthmian Route of Panamá",
+    "name": "パナマの植民地時代の地中海間交易ルート",
     "nameEn": "The Colonial Transisthmian Route of Panamá",
     "country": "パナマ",
     "countryEn": "Panama",
@@ -4591,7 +4591,7 @@
   {
     "id": "site_354",
     "unescoId": "1732",
-    "name": "The Complex of Yen Tu Monuments and Landscape",
+    "name": "イエントゥの建造物群と景観",
     "nameEn": "The Complex of Yen Tu Monuments and Landscape",
     "country": "ベトナム",
     "countryEn": "Vietnam",
@@ -4604,7 +4604,7 @@
   {
     "id": "site_355",
     "unescoId": "1237rev",
-    "name": "The Dolomites",
+    "name": "ドロミーティ",
     "nameEn": "The Dolomites",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -4617,7 +4617,7 @@
   {
     "id": "site_356",
     "unescoId": "1641",
-    "name": "The Gedeo Cultural Landscape",
+    "name": "ゲデオの文化的景観",
     "nameEn": "The Gedeo Cultural Landscape",
     "country": "エチオピア",
     "countryEn": "Ethiopia",
@@ -4630,7 +4630,7 @@
   {
     "id": "site_357",
     "unescoId": "438",
-    "name": "The Great Wall",
+    "name": "万里の長城",
     "nameEn": "The Great Wall",
     "country": "中華人民共和国",
     "countryEn": "People's Republic of China",
@@ -4643,7 +4643,7 @@
   {
     "id": "site_358",
     "unescoId": "933bis",
-    "name": "The Loire Valley between Sully-sur-Loire and Chalonnes",
+    "name": "シュリー＝シュル＝ロワールとシャロンヌ間のロワール渓谷",
     "nameEn": "The Loire Valley between Sully-sur-Loire and Chalonnes",
     "country": "フランス",
     "countryEn": "France",
@@ -4656,7 +4656,7 @@
   {
     "id": "site_359",
     "unescoId": "1768",
-    "name": "The Medinas of the Historic Sultanates of the Comoros",
+    "name": "コモロの歴史的スルタン国のメディナ群",
     "nameEn": "The Medinas of the Historic Sultanates of the Comoros",
     "country": "コモロ",
     "countryEn": "Comoros",
@@ -4669,7 +4669,7 @@
   {
     "id": "site_360",
     "unescoId": "1726",
-    "name": "The Palaces of King Ludwig II of Bavaria: Neuschwanstein, Linderhof, Schachen and Herrenchiemsee",
+    "name": "バイエルン国王ルートヴィヒ2世の宮殿群：ノイシュヴァンシュタイン、リンダーホーフ、シャッヘン、ヘレンキームゼー",
     "nameEn": "The Palaces of King Ludwig II of Bavaria: Neuschwanstein, Linderhof, Schachen and Herrenchiemsee",
     "country": "ドイツ",
     "countryEn": "Germany",
@@ -4682,7 +4682,7 @@
   {
     "id": "site_361",
     "unescoId": "1372",
-    "name": "The Persian Garden",
+    "name": "ペルシャ式庭園",
     "nameEn": "The Persian Garden",
     "country": "イラン",
     "countryEn": "Iran",
@@ -4695,7 +4695,7 @@
   {
     "id": "site_362",
     "unescoId": "1750",
-    "name": "The Roças of Sao Tome and Principe: Colonial Agricultural System and Forced Migration",
+    "name": "サントメ・プリンシペのロサス（農園遺構群）",
     "nameEn": "The Roças of Sao Tome and Principe: Colonial Agricultural System and Forced Migration",
     "country": "サントメ・プリンシペ",
     "countryEn": "São Tomé and Príncipe",
@@ -4708,7 +4708,7 @@
   {
     "id": "site_363",
     "unescoId": "670",
-    "name": "The Sassi and the Park of the Rupestrian Churches of Matera",
+    "name": "マテーラのサッシと洞窟教会公園",
     "nameEn": "The Sassi and the Park of the Rupestrian Churches of Matera",
     "country": "イタリア",
     "countryEn": "Italy",
@@ -4721,7 +4721,7 @@
   {
     "id": "site_364",
     "unescoId": "1633",
-    "name": "The Slate Landscape of Northwest Wales",
+    "name": "ウェールズ北西部のスレート景観",
     "nameEn": "The Slate Landscape of Northwest Wales",
     "country": "イギリス",
     "countryEn": "United Kingdom",
@@ -4734,7 +4734,7 @@
   {
     "id": "site_365",
     "unescoId": "1719",
-    "name": "The wider area of Mount Olympus",
+    "name": "オリンポス山周辺地域",
     "nameEn": "The wider area of Mount Olympus",
     "country": "ギリシャ",
     "countryEn": "Greece",
@@ -4747,7 +4747,7 @@
   {
     "id": "site_366",
     "unescoId": "1643",
-    "name": "The works of Jože Plečnik in Ljubljana – Human Centred Urban Design",
+    "name": "リュブリャナにおけるヨジェ・プレチニクの作品：人中心の都市デザイン",
     "nameEn": "The works of Jože Plečnik in Ljubljana – Human Centred Urban Design",
     "country": "スロベニア",
     "countryEn": "Slovenia",
@@ -4760,7 +4760,7 @@
   {
     "id": "site_367",
     "unescoId": "1100",
-    "name": "Tijuca Forest",
+    "name": "チジュカ国立公園",
     "nameEn": "Tijuca Forest",
     "country": "ブラジル",
     "countryEn": "Brazil",
@@ -4773,7 +4773,7 @@
   {
     "id": "site_368",
     "unescoId": "12",
-    "name": "Tiya archaeological site",
+    "name": "ティヤの考古遺跡",
     "nameEn": "Tiya archaeological site",
     "country": "エチオピア",
     "countryEn": "Ethiopia",
@@ -4786,7 +4786,7 @@
   {
     "id": "site_369",
     "unescoId": "1063",
-    "name": "Tokaj Wine Region Historic Cultural Landscape",
+    "name": "トカイのワイン銘醸地の歴史的文化的景観",
     "nameEn": "Tokaj Wine Region Historic Cultural Landscape",
     "country": "ハンガリー",
     "countryEn": "Hungary",
@@ -4799,7 +4799,7 @@
   {
     "id": "site_370",
     "unescoId": "624",
-    "name": "Town of Bamberg",
+    "name": "バンベルクの町",
     "nameEn": "Town of Bamberg",
     "country": "ドイツ",
     "countryEn": "Germany",
@@ -4812,7 +4812,7 @@
   {
     "id": "site_371",
     "unescoId": "1564",
-    "name": "Tr'ondëk-Klondike",
+    "name": "トロンドゥック＝クロンダイク",
     "nameEn": "Tr'ondëk-Klondike",
     "country": "カナダ",
     "countryEn": "Canada",
@@ -4825,7 +4825,7 @@
   {
     "id": "site_372",
     "unescoId": "1528rev-008",
-    "name": "Trepucó",
+    "name": "トレプコ遺構",
     "nameEn": "Trepucó",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -4838,7 +4838,7 @@
   {
     "id": "site_373",
     "unescoId": "460",
-    "name": "Trinidad and the Valley de los Ingenios",
+    "name": "トリニダとロス・インヘニオスの渓谷",
     "nameEn": "Trinidad and the Valley de los Ingenios",
     "country": "キューバ",
     "countryEn": "Cuba",
@@ -4851,7 +4851,7 @@
   {
     "id": "site_374",
     "unescoId": "299",
-    "name": "Tyre",
+    "name": "ティルス",
     "nameEn": "Tyre",
     "country": "レバノン",
     "countryEn": "Lebanon",
@@ -4864,7 +4864,7 @@
   {
     "id": "site_375",
     "unescoId": "1721",
-    "name": "Umm el-Jimal",
+    "name": "アム・エル・ジマル",
     "nameEn": "Umm el-Jimal",
     "country": "ヨルダン",
     "countryEn": "Jordan",
@@ -4877,7 +4877,7 @@
   {
     "id": "site_376",
     "unescoId": "876",
-    "name": "University and Historic Precinct of Alcalá de Henares",
+    "name": "アルカラ・デ・エナーレスの大学と歴史地区",
     "nameEn": "University and Historic Precinct of Alcalá de Henares",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -4890,7 +4890,7 @@
   {
     "id": "site_377",
     "unescoId": "709",
-    "name": "Upper Svaneti",
+    "name": "アッパー・スヴァネティ",
     "nameEn": "Upper Svaneti",
     "country": "ジョージア",
     "countryEn": "Georgia",
@@ -4903,7 +4903,7 @@
   {
     "id": "site_378",
     "unescoId": "769",
-    "name": "Uvs Nuur Basin",
+    "name": "ウヴス・ヌール盆地",
     "nameEn": "Uvs Nuur Basin",
     "country": "モンゴル国",
     "countryEn": "Mongolia",
@@ -4916,7 +4916,7 @@
   {
     "id": "site_379",
     "unescoId": "1678-002",
-    "name": "V. P. Engel天文台",
+    "name": "エンゲルハルト天文台",
     "nameEn": "Engelhardt Observatory",
     "country": "ロシア",
     "countryEn": "Russia",
@@ -4929,7 +4929,7 @@
   {
     "id": "site_380",
     "unescoId": "866-014",
-    "name": "Vale de Figueira / Teixugo",
+    "name": "ヴァレ・デ・フィゲイラ考古遺跡",
     "nameEn": "Vale de Figueira / Teixugo",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -4942,7 +4942,7 @@
   {
     "id": "site_381",
     "unescoId": "866-015",
-    "name": "Vale de Moinhos",
+    "name": "ヴァレ・デ・モイーニョス考古遺跡",
     "nameEn": "Vale de Moinhos",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -4955,7 +4955,7 @@
   {
     "id": "site_382",
     "unescoId": "866-016",
-    "name": "Vale de Namoradas",
+    "name": "ヴァレ・デ・ナモラーダス考古遺跡",
     "nameEn": "Vale de Namoradas",
     "country": "ポルトガル",
     "countryEn": "Portugal",
@@ -4968,7 +4968,7 @@
   {
     "id": "site_383",
     "unescoId": "874-661",
-    "name": "Valmayor V",
+    "name": "ヴァルマイヨールV考古遺跡",
     "nameEn": "Valmayor V",
     "country": "スペイン王国",
     "countryEn": "Spain",
@@ -4981,7 +4981,7 @@
   {
     "id": "site_384",
     "unescoId": "1143",
-    "name": "Vega Archipelago",
+    "name": "ヴェーガ群島",
     "nameEn": "Vega Archipelago",
     "country": "ノルウェー王国",
     "countryEn": "Norway",
@@ -4994,7 +4994,7 @@
   {
     "id": "site_385",
     "unescoId": "84",
-    "name": "Vézelay, Church and Hill",
+    "name": "ヴェズレーの教会と丘",
     "nameEn": "Vézelay, Church and Hill",
     "country": "フランス",
     "countryEn": "France",
@@ -5007,7 +5007,7 @@
   {
     "id": "site_386",
     "unescoId": "1660",
-    "name": "Viking Age Ring Fortresses",
+    "name": "バイキング時代の環状要塞群",
     "nameEn": "Viking Age Ring Fortresses",
     "country": "デンマーク",
     "countryEn": "Denmark",
@@ -5020,7 +5020,7 @@
   {
     "id": "site_387",
     "unescoId": "1673",
-    "name": "Vjetrenica",
+    "name": "ヴィエトレニツァ洞窟",
     "nameEn": "Vjetrenica",
     "country": "ボスニア・ヘルツェゴビナ",
     "countryEn": "Bosnia and Herzegovina",
@@ -5033,7 +5033,7 @@
   {
     "id": "site_388",
     "unescoId": "1657",
-    "name": "Volcanoes and Forests of Mount Pelée and the Pitons of Northern Martinique",
+    "name": "プレー山とマルティニーク北部のプレトン群の火山と森林",
     "nameEn": "Volcanoes and Forests of Mount Pelée and the Pitons of Northern Martinique",
     "country": "フランス",
     "countryEn": "France",
@@ -5046,7 +5046,7 @@
   {
     "id": "site_389",
     "unescoId": "765",
-    "name": "Volcanoes of Kamchatka",
+    "name": "カムチャツカ火山群",
     "nameEn": "Volcanoes of Kamchatka",
     "country": "ロシア",
     "countryEn": "Russia",
@@ -5072,7 +5072,7 @@
   {
     "id": "site_391",
     "unescoId": "1314ter",
-    "name": "Wadden Sea",
+    "name": "ワッデン海",
     "nameEn": "Wadden Sea",
     "country": "ドイツ",
     "countryEn": "Germany",
@@ -5085,7 +5085,7 @@
   {
     "id": "site_392",
     "unescoId": "1724",
-    "name": "Wadi Wurayah",
+    "name": "ワディ・ウラヤ",
     "nameEn": "Wadi Wurayah",
     "country": "アラブ首長国連邦",
     "countryEn": "United Arab Emirates",
@@ -5098,7 +5098,7 @@
   {
     "id": "site_393",
     "unescoId": "1334",
-    "name": "West Lake Cultural Landscape of Hangzhou",
+    "name": "杭州の西湖の文化的景観",
     "nameEn": "West Lake Cultural Landscape of Hangzhou",
     "country": "中華人民共和国",
     "countryEn": "People's Republic of China",
@@ -5111,7 +5111,7 @@
   {
     "id": "site_394",
     "unescoId": "900",
-    "name": "Western Caucasus",
+    "name": "西カフカース",
     "nameEn": "Western Caucasus",
     "country": "ロシア",
     "countryEn": "Russia",
@@ -5124,7 +5124,7 @@
   {
     "id": "site_395",
     "unescoId": "1736",
-    "name": "Western Xia Mausoleums",
+    "name": "西夏陵",
     "nameEn": "Western Xia Mausoleums",
     "country": "中華人民共和国",
     "countryEn": "People's Republic of China",
@@ -5137,7 +5137,7 @@
   {
     "id": "site_396",
     "unescoId": "554",
-    "name": "Whale Sanctuary of El Vizcaino",
+    "name": "エル・ビスカイノのクジラ保護区",
     "nameEn": "Whale Sanctuary of El Vizcaino",
     "country": "メキシコ",
     "countryEn": "Mexico",
@@ -5150,7 +5150,7 @@
   {
     "id": "site_397",
     "unescoId": "32",
-    "name": "Wieliczka and Bochnia Royal Salt Mines",
+    "name": "ヴィエリチカとボフニアの王立岩塩坑群",
     "nameEn": "Wieliczka and Bochnia Royal Salt Mines",
     "country": "ポーランド",
     "countryEn": "Poland",
@@ -5163,7 +5163,7 @@
   {
     "id": "site_398",
     "unescoId": "818",
-    "name": "Windmills at Kinderdijk",
+    "name": "キンデルダイク-エルスハウトの風車網",
     "nameEn": "Windmills at Kinderdijk",
     "country": "オランダ",
     "countryEn": "Netherlands",
@@ -5176,7 +5176,7 @@
   {
     "id": "site_399",
     "unescoId": "1694",
-    "name": "Wooden Hypostyle Mosques of Medieval Anatolia",
+    "name": "アナトリアの中世木造柱構造モスク群",
     "nameEn": "Wooden Hypostyle Mosques of Medieval Anatolia",
     "country": "トルコ",
     "countryEn": "Turkey",
@@ -5189,7 +5189,7 @@
   {
     "id": "site_400",
     "unescoId": "169",
-    "name": "Würzburg Residence with the Court Gardens and Residence Square",
+    "name": "ヴュルツブルクの司教座館、その庭園群と広場",
     "nameEn": "Würzburg Residence with the Court Gardens and Residence Square",
     "country": "ドイツ",
     "countryEn": "Germany",
@@ -5202,7 +5202,7 @@
   {
     "id": "site_401",
     "unescoId": "484",
-    "name": "Xanthos-Letoon",
+    "name": "クセントス-レトゥーン",
     "nameEn": "Xanthos-Letoon",
     "country": "トルコ",
     "countryEn": "Turkey",
@@ -5215,7 +5215,7 @@
   {
     "id": "site_402",
     "unescoId": "1023",
-    "name": "Zapovednik Wrangel Island",
+    "name": "ウランゲリ島保護区の自然体系",
     "nameEn": "Zapovednik Wrangel Island",
     "country": "ロシア",
     "countryEn": "Russia",
@@ -5228,7 +5228,7 @@
   {
     "id": "site_403",
     "unescoId": "1558-2023",
-    "name": "Žatec and the Landscape of Saaz Hops",
+    "name": "ジャテツとサアズ・ホップの景観",
     "nameEn": "Žatec and the Landscape of Saaz Hops",
     "country": "チェコ共和国",
     "countryEn": "Czech Republic",
@@ -6177,7 +6177,7 @@
   {
     "id": "site_476",
     "unescoId": "966",
-    "name": "イスチグアラスト/タランパジャ自然公園群",
+    "name": "イスチグアラスト／タランパジャ自然公園群",
     "nameEn": "Ischigualasto / Talampaya Natural Parks",
     "country": "アルゼンチン",
     "countryEn": "Argentina",
@@ -7113,7 +7113,7 @@
   {
     "id": "site_548",
     "unescoId": "698",
-    "name": "オーストラリアの哺乳類化石地域（リヴァーズレー/ナラコーアテ）",
+    "name": "オーストラリアの哺乳類化石地域（リヴァーズレー／ナラコーアテ）",
     "nameEn": "Australian Fossil Mammal Sites (Riversleigh / Naracoorte)",
     "country": "オーストラリア",
     "countryEn": "Australia",
@@ -8179,7 +8179,7 @@
   {
     "id": "site_630",
     "unescoId": "72ter",
-    "name": "クルエーン/ランゲル＝セント・イライアス/グレイシャー・ベイ/タッチェンシニー＝アルセク",
+    "name": "クルエーン／ランゲル＝セント・イライアス／グレイシャー・ベイ／タッチェンシニー＝アルセク",
     "nameEn": "Kluane / Wrangell – St. Elias / Glacier Bay / Tatshenshini-Alsek",
     "country": "アメリカ合衆国",
     "countryEn": "United States",
@@ -13821,7 +13821,7 @@
   {
     "id": "site_1064",
     "unescoId": "1565",
-    "name": "ヘブロン/アル＝ハリール旧市街",
+    "name": "ヘブロン／アル＝ハリール旧市街",
     "nameEn": "Old City of Hebron",
     "country": "パレスチナ国",
     "countryEn": "Palestine",

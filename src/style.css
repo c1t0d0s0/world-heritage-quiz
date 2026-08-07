@@ -1196,10 +1196,116 @@ button, .option-btn, .nav-btn, .mode-card, .site-card {
   color: var(--text-secondary);
 }
 
+/* Enhanced Prominent Load More Button */
 .load-more-wrap {
   text-align: center;
-  margin-top: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 3.5rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.load-more-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  background: rgba(30, 41, 59, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-glass-active);
+  padding: 1.5rem 2.25rem;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
+  max-width: 520px;
+  width: 100%;
+}
+
+.load-more-btn-featured {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 1.15rem 2rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+  background-size: 200% 200%;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.45);
+  transition: all var(--transition-normal);
+  animation: gradientShift 4s ease infinite, pulseGlow 2.5s infinite;
+}
+
+.load-more-btn-featured:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(168, 85, 247, 0.65);
+  background-position: right center;
+}
+
+.load-more-btn-featured:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.btn-icon-pulse {
+  font-size: 1.25rem;
+  animation: bounce 1.5s infinite;
+}
+
+.load-more-badge {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.btn-arrow {
+  font-size: 1.1rem;
+  transition: transform var(--transition-fast);
+}
+
+.load-more-btn-featured:hover .btn-arrow {
+  transform: translateX(4px);
+}
+
+.load-more-progress {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.load-more-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #6366f1, #ec4899);
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+.load-more-counter {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 8px 25px rgba(99, 102, 241, 0.45); }
+  50% { box-shadow: 0 12px 35px rgba(236, 72, 153, 0.65); }
 }
 
 /* Text-based Heritage Card Design */
