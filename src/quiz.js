@@ -223,6 +223,17 @@ export function isMaskedSiteNameUnsolvable(maskedName) {
   return false;
 }
 
+/**
+ * 説明文がプレースホルダー（「〜にあるUNESCO世界遺産。」など内容が薄い定型文）か判定する
+ */
+export function isGenericDescription(description) {
+  if (!description) return true;
+  const trimmed = description.trim();
+  if (trimmed.length < 15) return true;
+  if (trimmed.includes('にあるUNESCO世界遺産') || trimmed.includes('にあるユネスコ世界遺産')) return true;
+  return false;
+}
+
 export class QuizEngine {
   constructor() {
     this.mode = 'all'; // 'basic' | 'country' | 'year' | 'description' | 'all' | 'kentei'
@@ -327,23 +338,25 @@ export class QuizEngine {
 
       // 2. Name identification question from Description & Region
       if (mode === 'description' || mode === 'all') {
-        const otherSites = SITES_DATA.filter(s => s.id !== site.id)
-          .sort(() => 0.5 - Math.random())
-          .slice(0, 3);
-        const rawOptions = [site.name, ...otherSites.map(s => s.name)].sort(() => 0.5 - Math.random());
-        const correctIndex = rawOptions.indexOf(site.name);
-        const options = rawOptions.map(optName => sanitizeSiteNameForCountryQuestion(optName, site.country));
-        const maskedDesc = sanitizeDescriptionForQuiz(site.description, site.name);
+        if (!isGenericDescription(site.description)) {
+          const otherSites = SITES_DATA.filter(s => s.id !== site.id)
+            .sort(() => 0.5 - Math.random())
+            .slice(0, 3);
+          const rawOptions = [site.name, ...otherSites.map(s => s.name)].sort(() => 0.5 - Math.random());
+          const correctIndex = rawOptions.indexOf(site.name);
+          const options = rawOptions.map(optName => sanitizeSiteNameForCountryQuestion(optName, site.country));
+          const maskedDesc = sanitizeDescriptionForQuiz(site.description, site.name);
 
-        questionsPool.push({
-          type: 'description',
-          site: site,
-          title: '🏛 遺産当てクイズ',
-          question: `【${site.country}】にある${site.categoryJa}（${site.yearInscribed}年登録）で、「${maskedDesc}」という特徴を持つ世界遺産はどれでしょう？`,
-          options: options,
-          correctIndex: correctIndex,
-          explanation: `正解は「${site.name}」です！${site.country}の${site.categoryJa}として登録されています。`
-        });
+          questionsPool.push({
+            type: 'description',
+            site: site,
+            title: '🏛 遺産当てクイズ',
+            question: `【${site.country}】にある${site.categoryJa}（${site.yearInscribed}年登録）で、「${maskedDesc}」という特徴を持つ世界遺産はどれでしょう？`,
+            options: options,
+            correctIndex: correctIndex,
+            explanation: `正解は「${site.name}」です！${site.country}の${site.categoryJa}として登録されています。`
+          });
+        }
       }
 
       // 3. Year inscribed question
@@ -615,20 +628,22 @@ export class QuizEngine {
           });
         }
       } else if (r < 0.7) {
-        const otherSites = SITES_DATA.filter(s => s.id !== site.id).sort(() => 0.5 - Math.random()).slice(0, 3);
-        const rawOptions = [site.name, ...otherSites.map(s => s.name)].sort(() => 0.5 - Math.random());
-        const correctIndex = rawOptions.indexOf(site.name);
-        const options = rawOptions.map(optName => sanitizeSiteNameForCountryQuestion(optName, site.country));
-        const maskedDesc = sanitizeDescriptionForQuiz(site.description, site.name);
-        pool.push({
-          type: 'description',
-          site: site,
-          title: `🎓 世界遺産検定 ${config.name}（遺産同定問題）`,
-          question: `【検定出題】${site.country}にある${site.categoryJa}で、「${maskedDesc}」という記述が該当する世界遺産は？`,
-          options: options,
-          correctIndex: correctIndex,
-          explanation: `正解は「${site.name}」です！`
-        });
+        if (!isGenericDescription(site.description)) {
+          const otherSites = SITES_DATA.filter(s => s.id !== site.id).sort(() => 0.5 - Math.random()).slice(0, 3);
+          const rawOptions = [site.name, ...otherSites.map(s => s.name)].sort(() => 0.5 - Math.random());
+          const correctIndex = rawOptions.indexOf(site.name);
+          const options = rawOptions.map(optName => sanitizeSiteNameForCountryQuestion(optName, site.country));
+          const maskedDesc = sanitizeDescriptionForQuiz(site.description, site.name);
+          pool.push({
+            type: 'description',
+            site: site,
+            title: `🎓 世界遺産検定 ${config.name}（遺産同定問題）`,
+            question: `【検定出題】${site.country}にある${site.categoryJa}で、「${maskedDesc}」という記述が該当する世界遺産は？`,
+            options: options,
+            correctIndex: correctIndex,
+            explanation: `正解は「${site.name}」です！`
+          });
+        }
       } else {
         const baseYear = site.yearInscribed;
         const dummyYears = new Set();
