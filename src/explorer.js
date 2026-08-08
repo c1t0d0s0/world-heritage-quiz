@@ -1,4 +1,4 @@
-import { SITES_DATA } from './data/sites.js';
+import { SITES_DATA, getCountryFlagHtml } from './data/sites.js';
 
 export class ExplorerModule {
   constructor(containerEl, modalEl) {
@@ -44,7 +44,7 @@ export class ExplorerModule {
           </div>
           <div class="site-card-body">
             <div class="site-card-meta">
-              <span class="site-country">🏳️ ${site.country}</span>
+              <span class="site-country">${getCountryFlagHtml(site.country)} ${site.country}</span>
               <span class="site-year">📜 ${site.yearInscribed}年登録</span>
             </div>
             <p class="site-desc">${site.description.substring(0, 80)}${site.description.length > 80 ? '...' : ''}</p>
@@ -161,7 +161,7 @@ export class ExplorerModule {
           <div class="detail-grid">
             <div class="detail-item">
               <span class="detail-label">所在国</span>
-              <span class="detail-val">🏳️ ${site.country} (${site.countryEn})</span>
+              <span class="detail-val">${getCountryFlagHtml(site.country, 'flag-icon-lg')} ${site.country} (${site.countryEn})</span>
             </div>
             <div class="detail-item">
               <span class="detail-label">登録年</span>

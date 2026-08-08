@@ -2,7 +2,7 @@ import confetti from 'canvas-confetti';
 import { QuizEngine } from './quiz.js';
 import { ExplorerModule } from './explorer.js';
 import { audio } from './audio.js';
-import { ACHIEVEMENTS } from './data/sites.js';
+import { ACHIEVEMENTS, getCountryFlagHtml } from './data/sites.js';
 
 class App {
   constructor() {
@@ -272,7 +272,8 @@ class App {
     // Question content
     this.questionTag.textContent = q.title;
     if (this.questionSiteRegion && q.site) {
-      this.questionSiteRegion.textContent = `📍 ${q.site.region} / ${q.site.categoryJa}`;
+      const flagHtml = q.site.country ? getCountryFlagHtml(q.site.country) + ' ' : '';
+      this.questionSiteRegion.innerHTML = `${flagHtml}📍 ${q.site.region} / ${q.site.categoryJa}`;
     }
     this.questionText.textContent = q.question;
 
@@ -281,12 +282,18 @@ class App {
     this.nextBtnWrap.style.display = 'none';
 
     // Options buttons
-    this.optionsContainer.innerHTML = q.options.map((opt, idx) => `
-      <button class="option-btn" data-index="${idx}">
-        <span>${opt}</span>
-        <span class="option-indicator"></span>
-      </button>
-    `).join('');
+    this.optionsContainer.innerHTML = q.options.map((opt, idx) => {
+      let flagHtml = '';
+      if (q.type === 'country') {
+        flagHtml = getCountryFlagHtml(opt, 'option-flag-icon');
+      }
+      return `
+        <button class="option-btn" data-index="${idx}">
+          <span class="option-content">${flagHtml}<span class="option-label">${opt}</span></span>
+          <span class="option-indicator"></span>
+        </button>
+      `;
+    }).join('');
 
     this.optionsContainer.querySelectorAll('.option-btn').forEach(btn => {
       btn.addEventListener('click', () => {

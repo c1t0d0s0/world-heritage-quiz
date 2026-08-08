@@ -1138,6 +1138,7 @@ button, .option-btn, .nav-btn, .mode-card, .site-card {
   left: 0;
   right: 0;
   bottom: 0;
+  background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.95)), url('./images/hero_banner.jpg');
   background-size: cover;
   background-position: center;
   filter: brightness(0.65) contrast(1.1);
@@ -1194,6 +1195,52 @@ button, .option-btn, .nav-btn, .mode-card, .site-card {
   margin-bottom: 1.25rem;
   font-size: 0.95rem;
   color: var(--text-secondary);
+}
+
+/* Flag Icon Premium Styling */
+.flag-icon {
+  width: 22px;
+  height: 15px;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+  transition: transform var(--transition-fast);
+}
+
+.flag-icon:hover {
+  transform: scale(1.15);
+}
+
+.flag-icon-lg {
+  width: 32px;
+  height: 22px;
+  border-radius: 3px;
+  margin-right: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.flag-icon-sm {
+  width: 18px;
+  height: 12px;
+  margin-right: 4px;
+}
+
+.option-flag-icon {
+  width: 26px;
+  height: 18px;
+  border-radius: 3px;
+  margin-right: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+}
+
+.option-content {
+  display: inline-flex;
+  align-items: center;
 }
 
 /* Enhanced Prominent Load More Button */
