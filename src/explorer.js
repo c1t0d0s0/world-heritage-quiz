@@ -60,18 +60,28 @@ export class ExplorerModule {
       const progressPercent = Math.min(100, Math.round((this.displayedCount / filtered.length) * 100));
 
       loadMoreHtml = `
-        <div class="load-more-wrap">
-          <div class="load-more-card">
-            <button id="load-more-btn" class="load-more-btn-featured">
-              <span class="btn-icon-pulse">✨</span>
-              <span class="btn-text">さらに表示する</span>
-              <span class="load-more-badge">残り ${remaining} 件</span>
-              <span class="btn-arrow">➔</span>
+        <div class="load-more-continuation-wrap">
+          <!-- フェードオーバーレイ（下へカードが隠れている視覚効果） -->
+          <div class="load-more-fade-overlay"></div>
+
+          <!-- チラ見せゴーストカード（続きの存在を表現） -->
+          <div class="load-more-ghost-preview">
+            <div class="ghost-card-skeleton"></div>
+            <div class="ghost-card-skeleton"></div>
+            <div class="ghost-card-skeleton"></div>
+          </div>
+
+          <!-- 展開アクションボタン・プログレス -->
+          <div class="load-more-action-center">
+            <button id="load-more-btn" class="load-more-stream-btn">
+              <span class="stream-icon-arrow">⬇</span>
+              <span class="stream-btn-label">続きの遺産を表示する</span>
+              <span class="stream-badge">残り ${remaining} 件</span>
             </button>
-            <div class="load-more-progress">
-              <div class="load-more-progress-bar" style="width: ${progressPercent}%"></div>
+            <div class="stream-progress-wrap">
+              <div class="stream-progress-bar" style="width: ${progressPercent}%"></div>
             </div>
-            <span class="load-more-counter">表示中: ${this.displayedCount} / 全 ${filtered.length} 件 (${progressPercent}%)</span>
+            <span class="stream-counter-info">表示中: ${this.displayedCount} / 全 ${filtered.length} 件 (${progressPercent}%)</span>
           </div>
         </div>
       `;
