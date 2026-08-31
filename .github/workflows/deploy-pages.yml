@@ -37,6 +37,8 @@ jobs:
         run: npm ci
 
       - name: Build application
+        env:
+          GTM_ID: ${{ vars.GTM_ID || secrets.GTM_ID }}
         run: npm run build
 
       - name: Setup Pages

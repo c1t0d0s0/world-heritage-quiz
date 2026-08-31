@@ -10,6 +10,12 @@ function googleAnalyticsPlugin() {
   const configPath = path.resolve(__dirname, 'config.js');
 
   const getGtmId = () => {
+    if (process.env.GTM_ID && process.env.GTM_ID.trim()) {
+      return process.env.GTM_ID.trim();
+    }
+    if (process.env.VITE_GTM_ID && process.env.VITE_GTM_ID.trim()) {
+      return process.env.VITE_GTM_ID.trim();
+    }
     if (!fs.existsSync(configPath)) {
       return null;
     }
